@@ -55,7 +55,7 @@ public class TweetPreProcessing {
 			
 		}*/
 		
-		// read input text file and 
+		// clean data
 		
 		try{
 			// read input text file
@@ -83,8 +83,14 @@ public class TweetPreProcessing {
 						socialApproach(s);
 						tokensArrayList.remove(i);
 					}
+					// write token
 					else {
-					writer.write(s+" ");
+						// clean the &#digits
+						if (s.contains("&#")){
+							String pattern = "&#\\d*";
+							s = s.replaceAll(pattern, "");
+						}
+						writer.write(s+" ");
 					}
 			
 				}
