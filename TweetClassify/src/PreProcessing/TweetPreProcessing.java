@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.net.*;
-
+import com.google.gson.Gson;
 
 
 
@@ -19,7 +19,7 @@ public class TweetPreProcessing {
 	// file is encoded in ASCII
 	private static final Charset charset = Charset.forName("US-ASCII");
 	// path of the input file
-	private static final String input = "test04";
+	private static final String input = "test06";
 	// path of the output file
 	private static final String output = "test07";
 	
@@ -40,20 +40,59 @@ public class TweetPreProcessing {
 	
 	public static void main(String[] args){
 		
+		
+		// find the tweets which has less than five answers
+		// for previous testing
+		/*try{
+		BufferedReader reader = Files.newBufferedReader(Paths.get(input), charset);
+		
+		String line = null;
+		
+		long a = 1;
+		String pindex = "";
+		String pcontent = "";
+		
+		
+		while ((line = reader.readLine()) != null){
+			
+			String index = line.split("\t")[0];
+			String content = line.split("\t")[1];
+			
+			if ((pindex.equals(index)) && (!pcontent.equals(content))){
+				System.out.println(index);
+			}
+			
+			pindex = index;
+			pcontent = content;
+			
+		}
+		
+	}
+	catch(IOException e){
+		System.err.println(e);
+		
+	}*/
+		
+		
 		// extract tweet data, add index and delete duplicated from Mechanical Turk data
+		// input test02, output test05
 		/*try{
 			BufferedReader reader = Files.newBufferedReader(Paths.get(input), charset);
 			BufferedWriter writer = Files.newBufferedWriter(Paths.get(output), charset);
 			String line = null;
 			
 			long a = 1;
-			long b = 1;
+			long b = 0;
 			while ((line = reader.readLine()) != null){
 				if (a % 5 == 1) {
+				
+				b++;
 				writer.write(b + "\t" + line);
 				writer.newLine();
-				b++;
+				
 				}
+				
+				
 				
 				a++;
 				
@@ -68,6 +107,7 @@ public class TweetPreProcessing {
 		
 		
 		// extract answers and index
+		// input test03, output test06
 		/*try{
 			BufferedReader reader = Files.newBufferedReader(Paths.get(input), charset);
 			BufferedWriter writer = Files.newBufferedWriter(Paths.get(output), charset);
@@ -96,6 +136,7 @@ public class TweetPreProcessing {
 		}*/
 		
 		// count each tweet's answers,format as: index	ArtsCulture#	Business#	Sports#	Politics#	ScienceTechnology#	OtherUnknown#	
+		// input test06, output test07
 		/*try{
 			BufferedReader reader = Files.newBufferedReader(Paths.get(input), charset);
 			BufferedWriter writer = Files.newBufferedWriter(Paths.get(output), charset);
@@ -133,8 +174,8 @@ public class TweetPreProcessing {
 				
 				
 				if (a % 5 == 0) {
-					writer.write(b + "\t" + ArtsCulture + "\t" + Business + "\t" + Sports
-							+ "\t" + Politics + "\t" + ScienceTechnology + "\t" + OtherUnknown);
+					writer.write(b + "," + ArtsCulture + "," + Business + "," + Sports
+							+ "," + Politics + "," + ScienceTechnology + "," + OtherUnknown);
 					writer.newLine();
 					b++;
 					ArtsCulture = 0; Business = 0; Sports = 0; Politics = 0; ScienceTechnology = 0; OtherUnknown = 0;
@@ -151,7 +192,7 @@ public class TweetPreProcessing {
 			
 		}*/
 		
-		// clean data
+		// preprocesse data (only for testing not use in project yet)
 		
 		/*try{
 			// read input text file
@@ -196,12 +237,6 @@ public class TweetPreProcessing {
 				}
 				writer.newLine();
 				
-				// extract wikipedia article
-				URL query = new URL("http://localhost:8983/solr/collection1/query_clustering?q=" 
-				+ line + "&wt=json&rows=200");
-				URLConnection qc = query.openConnection();
-				InputStream in = qc.getInputStream();
-				String encoding = qc.getContentEncoding();
 				
 				
 				
@@ -215,6 +250,8 @@ public class TweetPreProcessing {
 			System.err.println(e);
 		
 		}*/
+		
+		
 		
 		
 	}
