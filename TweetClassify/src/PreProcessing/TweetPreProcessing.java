@@ -19,9 +19,9 @@ public class TweetPreProcessing {
 	// file is encoded in ASCII
 	private static final Charset charset = Charset.forName("US-ASCII");
 	// path of the input file
-	private static final String input = "test06";
+	private static final String input = "data_preprocess/csvY.csv";
 	// path of the output file
-	private static final String output = "test07";
+	private static final String output = "data_preprocess/csvY_2.csv";
 	
 	public static void hashtagApproach(String hashtag){
 		// classify tweets based on its hashtags
@@ -39,6 +39,53 @@ public class TweetPreProcessing {
 	}
 	
 	public static void main(String[] args){
+		
+		//
+		/*try{
+			BufferedReader reader = Files.newBufferedReader(Paths.get(input), charset);
+			BufferedWriter writer = Files.newBufferedWriter(Paths.get(output), charset);
+			String line = null;
+			
+		
+			while ((line = reader.readLine()) != null){
+				String[] tokens = line.split(",");
+				Integer max = 0;
+				int j = 0;
+				for(int i = 1; i < 7;i++){
+					
+					Integer a = Integer.parseInt(tokens[i]);
+					if (a > max){
+						max = a;
+						j = i;
+						tokens[i] = "1";
+						if (i > 1){
+							tokens[1] = "0";
+						}
+					}
+					else {
+						tokens[i] = "0";
+					}
+				}
+				
+				for (int i = 1; i <7; i++){
+					if (i == j){
+						tokens[i] = "1";
+					}
+					else
+						tokens[i] = "0";
+				}
+				
+				for (String s : tokens){
+					writer.write(s + ",");
+				}
+				writer.newLine();
+			}
+			writer.close();
+		}
+		catch(IOException e){
+			System.err.println(e);
+			
+		}*/
 		
 		
 		// find the tweets which has less than five answers
@@ -192,7 +239,8 @@ public class TweetPreProcessing {
 			
 		}*/
 		
-		// preprocesse data (only for testing not use in project yet)
+		// preprocesse data 
+		//input test05, output test05_5
 		
 		/*try{
 			// read input text file
@@ -203,6 +251,11 @@ public class TweetPreProcessing {
 			String line = null;
 		
 			while ((line = reader.readLine()) != null){
+				// split by tab and get index and content
+				String index = line.split("\t")[0];
+				writer.write(index+"\t");
+				line = line.split("\t")[1];
+				
 				// tokenize input line
 				List<String> tokens = Arrays.asList(line.split(" "));
 				ArrayList<String> tokensArrayList = new ArrayList<String>();
@@ -210,18 +263,24 @@ public class TweetPreProcessing {
 				// extract hashtags, social relationships(@username)
 				for (int i = 0; i < tokensArrayList.size(); i++){
 					String s = tokensArrayList.get(i);
-					// extract hashtags
-					if (s.startsWith("#")){
-						hashtagApproach(s);
-						tokensArrayList.remove(i);
-					}
+					
+					// move extract hashtags into else bolck and replace else if with if in the next line
 					// extract social relationships
-					else if (s.startsWith("RT") || s.contains("@")){
+					if (s.startsWith("RT") || s.contains("@")){
 						socialApproach(s);
 						tokensArrayList.remove(i);
 					}
 					// write token
 					else {
+						// extract hashtags, remove #, leave hashtag text
+						if (s.startsWith("#")){
+							hashtagApproach(s);
+							//tokensArrayList.remove(i);
+							s = s.replace("#", "");
+							
+						}
+						
+						
 						// clean the &#digits
 						if (s.contains("&#")){
 							String pattern = "&#\\d*";
@@ -231,6 +290,9 @@ public class TweetPreProcessing {
 						String pattern2 = "[^a-zA-Z]";
 						s = s.replaceAll(pattern2, "");
 						
+						// need to convert upper case? may or may not
+						
+						// write token and add white-space
 						writer.write(s+" ");
 					}
 			
@@ -251,7 +313,46 @@ public class TweetPreProcessing {
 		
 		}*/
 		
+		// clean result csv file, delete empty rows and all 0 rows
+		// input csvX, output csvX_m
+		// input csvX_p, output csvX_pm
+		/*try{
+		BufferedReader reader = Files.newBufferedReader(Paths.get(input), charset);
+		BufferedWriter writer = Files.newBufferedWriter(Paths.get(output), charset);
+		String line = null;
 		
+		
+		while ((line = reader.readLine()) != null){
+			String[] tokens = line.split(","); 
+			//remove empty lines
+			if (tokens.length < 2){
+				System.out.println("line#: "+ tokens[0]);
+				continue;
+			}
+			// remove all 0 lines
+			String token1 = tokens[1];
+			String token2 = tokens[2];
+			String token3 = tokens[3];
+			if (token1.equals("0.0") && token2.equals("0.0") && token3.equals("0.0")){
+				System.out.println("line#: "+tokens[0]);
+				continue;
+			}
+			
+			
+			
+			writer.write(line);
+			writer.newLine();
+			
+			
+			
+			
+		}
+		writer.close();
+	}
+	catch(IOException e){
+		System.err.println(e);
+		
+	}*/
 		
 		
 	}

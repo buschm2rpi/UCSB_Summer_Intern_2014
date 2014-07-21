@@ -5,6 +5,7 @@ test03: all answers
 test04: all tweets with index
 test05: all tweets with index and remove duplicates (query dataset for TAQOS system) 
 test05_5: temporary file for testing
+test05_p: all preprocessed tweets with index and remove duplicates (prepocess query dataset for TAQOS system)
 
 test06: all answers with index
 test07: count each tweet's answers,format as: index,ArtsCulture#,Business#,Sports#,Politics#,ScienceTechnology#,OtherUnknown# (csv format for y values)
