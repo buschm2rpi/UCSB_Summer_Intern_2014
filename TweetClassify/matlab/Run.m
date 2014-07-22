@@ -14,29 +14,27 @@ clear; close all; clc
     
 %% Run for topic ArtsCulture    
 %    topic = 1;
-%    lambda = 6;
+%    lambda = 0;
 %    [x1,y1,theta1] = main(topic,lambda);
 
 %% Run for topic Business
 %    topic = 2;
-%    lambda = 10;
+%    lambda = 0;
 %    [x2,y2,theta2] = main(topic,lambda);
 
 %% Run for topic Sports 
 %    topic = 3;
-%    lambda = 10;
+%    lambda = 0;
 %    [x3,y3,theta3] = main(topic,lambda);
 
 %% Run for topic Politics    
 %    topic = 4;
-%    lambda = 10;
+%    lambda = 0;
 %    [x4,y4,theta4] = main(topic,lambda);
 
-%% Run for topic ScienceTechnology
-    
-    
+%% Run for topic ScienceTechnology    
 %    topic = 5;
-%    lambda = 10;
+%    lambda = 0;
 %    [x5,y5,theta5] = main(topic,lambda);
 %end
 
@@ -56,23 +54,26 @@ for i = 1:iter
 end
 
 %% plot errors_trains
+t = ['ArtsCulture' 'Business' 'Sports' 'Politics' 'ScienceTechnology'];
 figure;
 for i = 1:5
     subplot(2,3,i);
     hist(errors_train(:,i)',10);
-    title('training error distributions')   
-    xlabel('scaled error values')
-    ylabel('count Errors')
+    title(t(i))
+    legend('Training Error')
+    xlabel('Error')
+    ylabel('Count Errors')
 
 end
 
 %% plot errors_val
 figure;
-for i = 1:5
+for i = 1:5 
     subplot(2,3,i);
     hist(errors_val(:,i)',10);
-    title('validation error distributions')   
-    xlabel('scaled error values')
-    ylabel('count Errors')
+    title(t(i))
+    legend('Validation Error')
+    xlabel('Error')
+    ylabel('Count Errors')
 
 end

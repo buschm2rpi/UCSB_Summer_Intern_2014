@@ -5,10 +5,13 @@ lambda = 0
 
 normal equation theta,
 
-axis([0 n 0 2])
+axis([0 n 0 20])
 
 data numbers with train_error and val_error
 
+result01_2
+...
+axis([0 n 0 200])
 
 result02
 training error distributions, iteration times: 100,

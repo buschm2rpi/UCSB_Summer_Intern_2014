@@ -10,7 +10,8 @@ m = length(Y);
 n = length(Yval);
 
 %% X data features normalize
-[X] = featureNormalize(X);
+%[X] = featureNormalize(X);
+%[Xval] = featureNormalize(Xval);
 
 %% init X
 X = [ones(m,1) X];

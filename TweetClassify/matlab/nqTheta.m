@@ -1,4 +1,4 @@
-function [theta] = trainingTheta(X,Y,lambda)
+function [theta] = nqTheta(X,Y,lambda)
 
 %% create diagonal matrix
 v = ones(1,size(X,2));

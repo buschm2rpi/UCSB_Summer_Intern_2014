@@ -9,7 +9,7 @@ temp = theta;
 temp(1) = 0;
 
 for i = 1 : size(theta,1)
-grad(i) = 1/m * sum((X*theta - y) .* X(:,i)) + lambda/m * temp(i);
+    grad(i) = 1/m * sum((X*theta - y) .* X(:,i)) + lambda/m * temp(i);
 end
 
 grad = grad(:);

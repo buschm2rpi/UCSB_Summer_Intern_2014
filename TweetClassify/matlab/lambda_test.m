@@ -10,7 +10,8 @@ m = length(Y);
 n = length(Yval);
 
 %% X data features normalize
-[X] = featureNormalize(X);
+%[X] = featureNormalize(X);
+%[Xval] = featureNormalize(Xval);
 
 %% init X
 X = [ones(m,1) X];
@@ -22,9 +23,13 @@ Xval = [ones(n,1) Xval];
 [lambda_vec,train_error,val_error] = ...
     regulationCurve(X,Y,Xval,Yval);
 
+t = ['ArtsCulture' 'Business' 'Sports' 'Politics' 'ScienceTechnology'];
+
+%% plot result
 subplot(2,3,topic);
 plot(lambda_vec,train_error,lambda_vec,val_error);
-legend('Train', 'Cross Validation');
-xlabel('lambda');
-ylabel('Error');
+title(t(topic))
+legend('Train', 'Cross Validation')
+xlabel('lambda')
+ylabel('Error')
 %axis([0 10 0 100]);

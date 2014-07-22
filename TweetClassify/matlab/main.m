@@ -10,7 +10,8 @@ m = length(Y);
 n = length(Yval);
 
 %% X data features normalize
-[X] = featureNormalize(X);
+%[X] = featureNormalize(X);
+%[Xval] = featureNormalize(Xval);
 
 %% init X
 X = [ones(m,1) X];
@@ -22,6 +23,7 @@ Xval = [ones(n,1) Xval];
 train_error = zeros(m,1);
 val_error = zeros(m,1);
 
+t = ['ArtsCulture' 'Business' 'Sports' 'Politics' 'ScienceTechnology'];
 
 %% Run linear regression and plot training error with validation error
 
@@ -36,11 +38,11 @@ end
 
 subplot(2,3,topic);
 plot(1:m, train_error, 1:m,val_error);
-title('Learning curve for linear regression')
-legend('Train','Cross Validation')
+title(t(topic))
+legend('Train','Validation')
 xlabel('Number of training samples')
 ylabel('Error')
-axis([0 m 0 20])
+axis([0 m 0 3])
 
 %% Polynomial Regression
 
