@@ -12,10 +12,6 @@ data numbers with train_error and val_error
 result01_2
 boxplot train_errors
 
-result01_3
-boxplot val_errors
-ylim([0.5 2.5])
-
 result02
 training error distributions, iteration times: 100,
 

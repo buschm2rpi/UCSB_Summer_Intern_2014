@@ -29,7 +29,7 @@ t = ['ArtsCulture' 'Business' 'Sports' 'Politics' 'ScienceTechnology'];
 subplot(2,3,topic);
 plot(lambda_vec,train_error,lambda_vec,val_error);
 title(t(topic))
-legend('Train', 'Cross Validation')
+legend('Train', 'Validation')
 xlabel('lambda')
 ylabel('Error')
 %axis([0 10 0 100]);

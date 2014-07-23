@@ -1,4 +1,4 @@
-function [Xval,Yval,theta] = main(topic,lambda)
+function [Xval,Yval,theta,train_error,val_error] = main(topic,lambda)
 
 %% load data
 [X,Y,Xval,Yval] = loadData(topic);
@@ -23,7 +23,7 @@ Xval = [ones(n,1) Xval];
 train_error = zeros(m,1);
 val_error = zeros(m,1);
 
-t = ['ArtsCulture' 'Business' 'Sports' 'Politics' 'ScienceTechnology'];
+t = {'ArtsCulture' 'Business' 'Sports' 'Politics' 'ScienceTechnology'};
 
 %% Run linear regression and plot training error with validation error
 
@@ -43,6 +43,8 @@ legend('Train','Validation')
 xlabel('Number of training samples')
 ylabel('Error')
 axis([0 m 0 3])
+
+
 
 %% Polynomial Regression
 
