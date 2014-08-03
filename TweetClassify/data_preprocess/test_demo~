@@ -1,0 +1,16 @@
+test01: original tweets with answers
+test02: all tweets
+test03: all answers
+
+test04: all tweets with index
+test05: all tweets with index and remove duplicates (query dataset for TAQOS system) 
+test05_5: temporary file for testing
+test05_p: all preprocessed tweets with index and remove duplicates (prepocess query dataset for TAQOS system)
+
+test06: all answers with index
+test07: count each tweet's answers,format as: index,ArtsCulture#,Business#,Sports#,Politics#,ScienceTechnology#,OtherUnknown# (csv format for y values)
+
+csvY: Mechanical Turk topic answers, (number of votes for each topic)
+csvY_2: mechanical Turk topic answers (the max vote topic)
+
+

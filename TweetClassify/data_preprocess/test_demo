@@ -10,3 +10,7 @@ test05_p: all preprocessed tweets with index and remove duplicates (prepocess qu
 test06: all answers with index
 test07: count each tweet's answers,format as: index,ArtsCulture#,Business#,Sports#,Politics#,ScienceTechnology#,OtherUnknown# (csv format for y values)
 
+csvY: Mechanical Turk topic answers, (number of votes for each topic)
+csvY_2: mechanical Turk topic answers (the max vote topic)
+
+csvY_t1 ~ csvY_t6: tweet index and tweet contents for each topic
