@@ -1,5 +1,11 @@
 package PreProcessing;
 
+/* some code pieces for clean the data set  
+
+*/
+
+
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -19,9 +25,21 @@ public class TweetPreProcessing {
 	// file is encoded in ASCII
 	private static final Charset charset = Charset.forName("US-ASCII");
 	// path of the input file
-	private static final String input = "data_preprocess/csvY.csv";
+	private static final String input = "data_preprocess/test05";
+	// path of the second input if needed
+	private static final String input2 = "data_preprocess/csvY_2.csv";
 	// path of the output file
-	private static final String output = "data_preprocess/csvY_2.csv";
+	private static final String output = "data_preprocess/csvY_t1.csv";
+	// path of the output file
+	private static final String output2 = "data_preprocess/csvY_t2.csv";
+	// path of the output file
+	private static final String output3 = "data_preprocess/csvY_t3.csv";
+	// path of the output file
+	private static final String output4 = "data_preprocess/csvY_t4.csv";
+	// path of the output file
+	private static final String output5 = "data_preprocess/csvY_t5.csv";
+	// path of the output file
+	private static final String output6 = "data_preprocess/csvY_t6.csv";
 	
 	public static void hashtagApproach(String hashtag){
 		// classify tweets based on its hashtags
@@ -40,7 +58,57 @@ public class TweetPreProcessing {
 	
 	public static void main(String[] args){
 		
-		//
+		// extract tweets contents related to each topic into seperated files
+		// input test05, csvY_2
+		// output csvY_t1 ~ csvY_t6
+		try{
+			BufferedReader reader1 = Files.newBufferedReader(Paths.get(input), charset);
+			BufferedReader reader2 = Files.newBufferedReader(Paths.get(input2), charset);
+			BufferedWriter writer1 = Files.newBufferedWriter(Paths.get(output), charset);
+			BufferedWriter writer2 = Files.newBufferedWriter(Paths.get(output2), charset);
+			BufferedWriter writer3 = Files.newBufferedWriter(Paths.get(output3), charset);
+			BufferedWriter writer4 = Files.newBufferedWriter(Paths.get(output4), charset);
+			BufferedWriter writer5 = Files.newBufferedWriter(Paths.get(output5), charset);
+			BufferedWriter writer6 = Files.newBufferedWriter(Paths.get(output6), charset);
+			
+			ArrayList<BufferedWriter> writerList = new ArrayList<BufferedWriter>();
+			
+			String line2 = null;
+			String line = null;
+			
+			writerList.add(writer1);writerList.add(writer2);writerList.add(writer3);writerList.add(writer4);
+			writerList.add(writer5);writerList.add(writer6);
+			
+			while ((line2 = reader2.readLine()) != null){
+				line = reader1.readLine();
+				String[] tokens1 = line.split("\t");
+				String[] tokens2 = line2.split(",");
+				
+				for (int i = 1; i < 7; i++){
+					if (tokens2[i].equals("1")){
+						BufferedWriter w = writerList.get(i-1);
+						//w.write(tokens1[0]+",");
+						w.write(tokens1[1]);
+						w.newLine();
+					}
+				}
+				
+			}
+			
+			for (BufferedWriter b : writerList){
+				b.close();
+			}
+			
+			
+		}
+		catch(IOException e){
+			System.err.println(e);
+			
+		}
+		
+		
+		// pick max vote for each tweet topic answers and assign max vote answer value 1, assign the other answers value 0
+		// input csvY, output csvY_2
 		/*try{
 			BufferedReader reader = Files.newBufferedReader(Paths.get(input), charset);
 			BufferedWriter writer = Files.newBufferedWriter(Paths.get(output), charset);
@@ -54,16 +122,11 @@ public class TweetPreProcessing {
 				for(int i = 1; i < 7;i++){
 					
 					Integer a = Integer.parseInt(tokens[i]);
+					
+					// if there are more than one max vote answers, pick the first one
 					if (a > max){
 						max = a;
-						j = i;
-						tokens[i] = "1";
-						if (i > 1){
-							tokens[1] = "0";
-						}
-					}
-					else {
-						tokens[i] = "0";
+						j = i;	
 					}
 				}
 				
@@ -75,8 +138,9 @@ public class TweetPreProcessing {
 						tokens[i] = "0";
 				}
 				
-				for (String s : tokens){
-					writer.write(s + ",");
+				writer.write(tokens[0]);
+				for (int i = 1; i < 7; i++){
+					writer.write("," + tokens[i]);
 				}
 				writer.newLine();
 			}
