@@ -1,7 +1,12 @@
 package PreProcessing;
 
+// this file will generate the topic specific dictionary
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -29,11 +34,11 @@ public class WordsPreProcessing {
 	// file is encoded in ASCII
 	private static final Charset charset = Charset.forName("US-ASCII");
 	// path of the input file
-	private static final String input = "data_preprocess/apache_mahout/culture.txt";
+	private static final String input = "data_preprocess/apache_mahout/science.txt";
 	// path of the intermediary file
 	private static final String temp = "data_preprocess/words/bag_temp.csv";
 	// path of the output file
-	private static final String output = "data_preprocess/words/bag_culture.txt";
+	private static final String output = "data_preprocess/words/bag_science.txt";
 	
 	// speical characters , we want to keep in the words
 	private static final String[] sp_characters = {"'","%","$","+","-","&","."};
@@ -68,12 +73,17 @@ public class WordsPreProcessing {
 		
 	}
 	
+	public static void Url(String url){
+		
+	}
+	
 	public static void main(String[] args){
 		
 		try {
 			// reader and writer
-			BufferedReader reader1 = Files.newBufferedReader(Paths.get(input),charset);
-			BufferedWriter writer1 = Files.newBufferedWriter(Paths.get(temp),charset);
+			
+			BufferedReader reader1 = new BufferedReader(new FileReader(new File(input)));
+			BufferedWriter writer1 = new BufferedWriter(new FileWriter(new File(temp)));
 				
 			String line = null;
 			// tokenization
@@ -91,6 +101,9 @@ public class WordsPreProcessing {
 					
 					String word = t2[i];
 					
+					// remove non-ascii letters
+					word = word.replaceAll("[^\\x00-\\x7F]","");
+					
 					// extract hashtags, leave hashtag label
 					if (word.contains("#")){
 						hashtag(word);
@@ -102,16 +115,18 @@ public class WordsPreProcessing {
 						username(word);
 						continue;
 					}
-					//remove url
-					String url = "http://.*|www\\..*|.*\\.com";
 					
-					String[] words_url = word.split(url);
-					if (words_url.length > 0 ){
-						word = words_url[0];
+					
+					//remove url
+					//String url = "http://.*|www\\..*|.*\\.com";
+					
+					if (word.contains("http://") || word.contains("www.") || word.contains(".com")
+							|| word.equals("http") || word.equals("www") || word.equals("com")){
+						Url(word);
+						continue;
 					}
-					else if (word.matches(url)){
-						word = word.replaceAll(url, "");
-					}
+					
+				
 					// same char sequence with a length more than 3, combine them into one
 					/*String same_char_sequence = "(.)\1\1\1+";
 					
@@ -147,8 +162,8 @@ public class WordsPreProcessing {
 			}
 			writer1.close();	
 			
-			BufferedReader reader2 = Files.newBufferedReader(Paths.get(temp),charset);
-			BufferedWriter writer2 = Files.newBufferedWriter(Paths.get(output),charset);
+			BufferedReader reader2 = new BufferedReader(new FileReader(new File(temp)));
+			BufferedWriter writer2 = new BufferedWriter(new FileWriter(new File(output)));
 			
 			// tokenizer by token
 			PTBTokenizer ptbt = new PTBTokenizer(reader2,new CoreLabelTokenFactory(),"");
@@ -238,6 +253,7 @@ public class WordsPreProcessing {
 					writer2.write(word + " ");
 				}
 				writer2.close();
+				System.out.println(output + " done");
 		
 		}
 		catch (IOException e){
