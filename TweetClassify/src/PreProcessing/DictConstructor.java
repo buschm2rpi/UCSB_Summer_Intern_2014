@@ -31,14 +31,13 @@ import edu.stanford.nlp.process.PTBTokenizer;
  */
 
 public class DictConstructor {
-	// file is encoded in ASCII
-	private static final Charset charset = Charset.forName("US-ASCII");
+	
 	// path of the input file
-	private static final String input = "data_preprocess/apache_mahout/science.txt";
+	private static final String input = "data_preprocess/apache_mahout/culture.txt";
 	// path of the intermediary file
 	private static final String temp = "data_preprocess/words/bag_temp.csv";
 	// path of the output file
-	private static final String output = "data_preprocess/words/bag_science.txt";
+	private static final String output = "data_preprocess/words/bag_culture.txt";
 	
 	// speical characters , we want to keep in the words
 	private static final String[] sp_characters = {"'","%","$","+","-","&","."};
@@ -100,14 +99,20 @@ public class DictConstructor {
 			BufferedReader reader2 = new BufferedReader(new FileReader(new File(temp)));
 			BufferedWriter writer2 = new BufferedWriter(new FileWriter(new File(output)));
 			
+			
 			pp.cleanToken(reader2,writer2);
 			writer2.close();
 			System.out.println(output + " done");
+			
+			
 		
 		}
 		catch (IOException e){
 			System.err.print(e);
 		}
+		
+		
+		
 		
 		
 	}

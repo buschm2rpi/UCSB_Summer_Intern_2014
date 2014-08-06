@@ -4,7 +4,12 @@ import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
 import java.util.NoSuchElementException;
+import java.util.Set;
 
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.process.CoreLabelTokenFactory;
@@ -33,6 +38,8 @@ public class PreProcessor {
 		
 	// end of sentence symbols
 	private static final String[] eos = {".","!","?","\n"};
+	
+	private ArrayList<String> list = new ArrayList<String>();
 	
 	public static void username(String username){
 		
@@ -295,7 +302,12 @@ public class PreProcessor {
 				}
 				
 				writer.write(word + " ");
+				
+				
+				
 			}
+			
+		
 		
 		return true;
 		
