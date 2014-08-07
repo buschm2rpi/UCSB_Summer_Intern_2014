@@ -22,7 +22,7 @@ public class Classificer {
 	private static final String input0 = "data_preprocess/words/bag_total.txt";
 	
 	private static final String tweet = 
-			"Governor Palin as VP Pick just proves again  Republicans do what Democrats only talk about";
+			"The beach was fun";
 	
 	private static final double CultureSize = 5516333;
 	private static final double CultureVocabulary = 244896;
