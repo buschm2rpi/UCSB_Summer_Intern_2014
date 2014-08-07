@@ -3,6 +3,7 @@ package NaiveBayes;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -16,39 +17,74 @@ public class Test {
 	
 	private long total_words;
 	
-	// culture words : 	5516333
-	// business words: 	2314802
-	// politics words: 	2338477
-	// science words : 	7864152
-	// sports words : 	979192
+	// business words: 	2314802 hashset size: 109764
+	// culture words : 	5516333	hashset size: 244896
+	// politics words: 	2338477	hashset size: 115319
+	// science words : 	7864152	hashset size: 268368
+	// sports words : 	979192	hashset size: 52810
 	
-	private long topic_words;
 	
-	private double pck;
+	private static final String input1 = "data_preprocess/words/bag_culture.txt";
+	private static final String input2 = "data_preprocess/words/bag_business.txt";
+	private static final String input3 = "data_preprocess/words/bag_politics.txt";
+	private static final String input4 = "data_preprocess/words/bag_sports.txt";
+	private static final String input5 = "data_preprocess/words/bag_science.txt";
 	
-	private double pxck;
+	private static final String output = "data_preprocess/words/bag_total.txt";
 	
-	private Map<String,Integer> mp;
 	
-	public Test(String input, String output,String flag){
+	
+	public static void main(String[] args){
 		
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader(new File(input)));
+			
 			BufferedWriter writer = new BufferedWriter(new FileWriter(new File(output)));
 			
-			DataStructure ds = new DataStructure(reader, writer, flag);
+			String line = null;
 			
-			mp = ds.getWordCount();
+			BufferedReader reader = new BufferedReader(new FileReader(new File(input1)));
 			
-			topic_words = ds.getTotal();
+			while ((line = reader.readLine()) != null){
+				writer.write(line);
+				writer.newLine();
+			}
 			
+			reader = new BufferedReader(new FileReader(new File(input2)));
 			
+			while ((line = reader.readLine()) != null){
+				writer.write(line);
+				writer.newLine();
+			}
+			
+			reader = new BufferedReader(new FileReader(new File(input3)));
+			
+			while ((line = reader.readLine()) != null){
+				writer.write(line);
+				writer.newLine();
+			}
+			
+			reader = new BufferedReader(new FileReader(new File(input4)));
+			
+			while ((line = reader.readLine()) != null){
+				writer.write(line);
+				writer.newLine();
+			}
+			
+			reader = new BufferedReader(new FileReader(new File(input5)));
+			
+			while ((line = reader.readLine()) != null){
+				writer.write(line);
+				writer.newLine();
+			}
+			
+			writer.close();
 			
 		} 
 		catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 		
 		
 	}

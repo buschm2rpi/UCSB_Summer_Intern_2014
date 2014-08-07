@@ -17,25 +17,13 @@ public class DataStructure {
 	private Long total;
 	
 	
-	public DataStructure(String doc){
+	public DataStructure(String tweet){
 		
-		String[] wordArray = doc.split(" ");
+		String[] wordArray = tweet.split(" ");
 		
 		total = (long) wordArray.length;
 		
 		wordSet = new HashSet<String>(Arrays.asList(wordArray));
-		wordCount = new HashMap<String,Integer>();
-		
-		for(String s : wordSet){
-			Integer count = 0;
-			for(String a : wordArray){
-				if (s.equalsIgnoreCase(a)){
-					count++;
-				}
-			}
-			wordCount.put(s, count);
-			
-		}
 		
 	}
 	
