@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.Map;
 
 import PreProcessing.DataStructure;
+import PreProcessing.PreProcessor;
 
 public class Test {
 	
@@ -32,13 +33,16 @@ public class Test {
 	
 	private static final String output = "data_preprocess/words/bag_total.txt";
 	
+	private static final String input6 = "data_preprocess/test05_p";
+	
+	private static final String output6 = "data_preprocess/test08";
 	
 	
 	public static void main(String[] args){
 		
 		try {
 			
-			BufferedWriter writer = new BufferedWriter(new FileWriter(new File(output)));
+			/*BufferedWriter writer = new BufferedWriter(new FileWriter(new File(output)));
 			
 			String line = null;
 			
@@ -75,6 +79,31 @@ public class Test {
 			while ((line = reader.readLine()) != null){
 				writer.write(line);
 				writer.newLine();
+			}
+			
+			writer.close();*/
+			
+			BufferedReader reader = new BufferedReader(new FileReader(new File(input6)));
+			
+			BufferedWriter writer = new BufferedWriter(new FileWriter(new File(output6)));
+			
+			String line = null;
+			
+			PreProcessor p = new PreProcessor();
+			
+			while ((line = reader.readLine()) != null){
+				String tweet = line.split("\t")[1];
+				
+				String[] tokens = tweet.split(" ");
+				for (String t : tokens){
+					if(p.cleanSkip(t)){
+						writer.write(t + " ");
+					}
+					
+				}
+				
+				writer.newLine();
+				
 			}
 			
 			writer.close();

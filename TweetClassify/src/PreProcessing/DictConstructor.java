@@ -51,7 +51,7 @@ public class DictConstructor {
 		,"they","them","their","theirs","our","ours"
 		,"what","when","where","how","why","which","while"
 		,"whatever","whenever","wherever","however","whether","either","neither","too","to"
-		,"can","could","should","have","has","had","must"
+		,"can","could","should","have","has","had","must","let"
 		,"would","were","was","am","is","are","be","do","done","did","does"
 		,"in","on"
 		,"until","til","let","with","by","about","for","if","from"};

@@ -31,10 +31,11 @@ public class PreProcessor {
 			,"they","them","their","theirs","our","ours"
 			,"what","when","where","how","why","which","while"
 			,"whatever","whenever","wherever","however","whether","either","neither","too","to"
-			,"can","could","should","have","has","had","must"
+			,"can","could","should","have","has","had","must","let"
 			,"would","were","was","am","is","are","be","do","done","did","does"
 			,"in","on"
-			,"until","til","let","with","by","about","for","if","from"};
+			,"until","til","let","with","by","about","for","if","from"
+			,"tcot"};
 		
 	// end of sentence symbols
 	private static final String[] eos = {".","!","?","\n"};
@@ -57,6 +58,7 @@ public class PreProcessor {
 		
 	}
 	
+	//******
 	public String clean(String word){
 		
 		
@@ -213,6 +215,25 @@ public class PreProcessor {
 		return tokens;
 		
 		
+	}
+	
+	//*****
+	public boolean cleanSkip(String word){
+		
+		// skip words
+		for (String s : skip_words){
+			if (word.equalsIgnoreCase(s)){
+				return false;
+			}
+		}
+		
+		// remove words length less than 3
+		if ( word.length() < 3){
+			return false;
+		}
+		
+		
+		return true;
 	}
 	
 	public boolean cleanToken(Reader reader, Writer writer) throws IOException{

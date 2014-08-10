@@ -18,7 +18,7 @@ public class DataConstruct {
 	
 	public static void main(String[] args){
 		
-		try {
+		/*try {
 			BufferedReader reader = new BufferedReader(new FileReader(new File(input)));
 		
 			BufferedWriter writer = new BufferedWriter(new FileWriter(new File(output)));
@@ -48,7 +48,7 @@ public class DataConstruct {
 		catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 	}
 	
 

@@ -12,24 +12,25 @@ import java.util.Map;
 import java.util.Set;
 
 public class DataStructure {
+	// set of words in a tweet (not count duplicates)
 	private Set<String> wordSet;
-	private Map<String,Integer> wordCount;
-	private Long total;
+
+	// number of words in a tweet (not count duplicates)
+	private int total;
 	
 	
 	public DataStructure(String tweet){
 		
 		String[] wordArray = tweet.split(" ");
 		
-		total = (long) wordArray.length;
-		
 		wordSet = new HashSet<String>(Arrays.asList(wordArray));
 		
+		total = wordSet.size();
 	}
 	
 	
 	// can not construct HashMap for bog of words , <word, count> , need time around 18 days
-	public DataStructure(BufferedReader reader , BufferedWriter writer, String flag){
+	/*public DataStructure(BufferedReader reader , BufferedWriter writer, String flag){
 		
 		String line = null;
 		ArrayList<String> doc = new ArrayList<String>();
@@ -77,7 +78,7 @@ public class DataStructure {
 			e.printStackTrace();
 		}
 		
-	}
+	}*/
 
 	public Set<String> getWordSet() {
 		return wordSet;
@@ -86,20 +87,12 @@ public class DataStructure {
 	public void setWordSet(Set<String> wordSet) {
 		this.wordSet = wordSet;
 	}
-
-	public Map<String,Integer> getWordCount() {
-		return wordCount;
-	}
-
-	public void setWordCount(Map<String,Integer> wordCount) {
-		this.wordCount = wordCount;
-	}
-
-	public Long getTotal() {
+	
+	public int getTotal() {
 		return total;
 	}
 
-	public void setTotal(Long total) {
+	public void setTotal(int total) {
 		this.total = total;
 	}
 	
