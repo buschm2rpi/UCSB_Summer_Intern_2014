@@ -9,11 +9,11 @@ import java.io.IOException;
 
 public class Test {
 	
-	private static final String input = "data_preprocess/test09_4.csv";
+	private static final String input = "data_preprocess/test09_9.csv";
 	
-	private static final String output = "data_preprocess/new4";
+	private static final String output = "data_preprocess/new9";
 	
-	public static void main(String[] args){
+	/*public static void main(String[] args){
 		
 		try{
 			BufferedReader reader = new BufferedReader(new FileReader(new File(input)));
@@ -61,6 +61,6 @@ public class Test {
 		
 		
 		
-	}
+	}*/
 
 }

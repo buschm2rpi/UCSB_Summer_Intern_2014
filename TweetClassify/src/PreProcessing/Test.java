@@ -56,7 +56,7 @@ public class Test {
 		
 	}
 	
-	public static void main(String[] args){
+	/*public static void main(String[] args){
 		
 		// extract tweets contents related to each topic into seperated files
 		// input test05, csvY_2
@@ -419,6 +419,6 @@ public class Test {
 	}*/
 		
 		
-	}
+	//}
 
 }

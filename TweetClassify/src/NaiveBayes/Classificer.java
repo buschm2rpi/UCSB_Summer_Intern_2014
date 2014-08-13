@@ -43,6 +43,13 @@ public class Classificer {
 	private static final double ScienceSize = 7864152;
 	private static final double ScienceVocabulary = 268368;
 	private static final double total = 19012956;
+	private static final double mean = 3802591;
+	
+	private static final double mt1 = 740;
+	private static final double mt2 = 783;
+	private static final double mt3 = 1144;
+	private static final double mt4 = 1808;
+	private static final double mt5 = 498;
 	
 
 	// Array for each input path, input0 to input5
@@ -203,11 +210,11 @@ public class Classificer {
 		// 09_3 s1 + (-0.8), s3 - (-0.4), s5 + (-1.5)
 		
 		// five topic scores for five topics classification
-		double s1 = classify(wordSet, countAllList, t1, topicWordSizes[0], topicVocabularySizes[0]) + (-1.2);
-		double s2 = classify(wordSet, countAllList, t2, topicWordSizes[1], topicVocabularySizes[1]) + (-0.1);
-		double s3 = classify(wordSet, countAllList, t3, topicWordSizes[2], topicVocabularySizes[2]) - (-0.5);
+		double s1 = classify(wordSet, countAllList, t1, topicWordSizes[0], topicVocabularySizes[0]) - 1.5;
+		double s2 = classify(wordSet, countAllList, t2, topicWordSizes[1], topicVocabularySizes[1]) - 0.5;
+		double s3 = classify(wordSet, countAllList, t3, topicWordSizes[2], topicVocabularySizes[2]) + 0.5;
 		double s4 = classify(wordSet, countAllList, t4, topicWordSizes[3], topicVocabularySizes[3]);
-		double s5 = classify(wordSet, countAllList, t5, topicWordSizes[4], topicVocabularySizes[4]) + (-1.8);
+		double s5 = classify(wordSet, countAllList, t5, topicWordSizes[4], topicVocabularySizes[4]) - 3.5;
 		
 		// console log
 		System.out.println("Culture score: " + s1
@@ -217,7 +224,37 @@ public class Classificer {
 				+ "\nScience score: " + s5);
 		
 		// console log
-		System.out.println("classification for \""+ tweet + "\"" + " is done.");
+		double[] pick = {s1,s2,s3,s4,s5};
+		int flag = 0;
+		
+		double max = -999;
+		
+		for (int i = 0; i < pick.length; i++){
+			if (pick[i] > max){
+				max = pick[i];
+				flag = i+1;
+			}
+		}
+		
+		String label = "";
+		if (flag == 1){
+			label = "Culture";
+		}
+		else if (flag == 2){
+			label = "Business";	
+		}
+		else if (flag == 3){
+			label = "Sports";
+		}
+		else if (flag == 4){
+			label = "Politics";
+		}
+		else if (flag == 5){
+			label = "Science";
+		}
+		
+		
+		System.out.println("tweet: \""+ tweet + "\"" + " is related to " + label);
 				
 		// return tweet,culture score,business score,sports score, science score
 		// using return string to writer into csv file in outer function call
@@ -253,6 +290,8 @@ public class Classificer {
 		// probability for choosing a certain topic ck among all topics in out system
 		// calculate the number of words in topic ck over the number of words in all topics (count duplicates)
 		// make sure that both WordSize and total parameter are type double
+		//int WordNum = wordSet.size();
+		
 		double pck = WordSize / total;
 		//System.out.println("pck: " + pck);
 		
@@ -311,6 +350,15 @@ public class Classificer {
 		// init score
 		// avoid under flow problem, solution: using summation of log(likelyhood) instead of product of likelyhood
 		double score = Math.log(pck);
+		
+		/*double score = 0;
+		if (WordSize > mean){
+			score = -1 * pck * WordNum;
+		}
+		else{
+			score = pck * WordNum;
+		}*/
+		
 		
 		for (Double d: likelyList){
 			

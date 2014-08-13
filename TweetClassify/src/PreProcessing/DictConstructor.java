@@ -59,7 +59,7 @@ public class DictConstructor {
 	// end of sentence symbols
 	private static final String[] eos = {".","!","?","\n"};
 	
-	public static void main(String[] args){
+	/*public static void main(String[] args){
 		
 		PreProcessor pp = new PreProcessor();
 		
@@ -115,6 +115,6 @@ public class DictConstructor {
 		
 		
 		
-	}
+	}*/
 
 }

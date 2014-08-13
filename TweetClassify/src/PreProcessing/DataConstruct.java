@@ -16,7 +16,7 @@ public class DataConstruct {
 	// path of the output file
 	private static final String output = "data_preprocess/words/bag_culture_d.txt";
 	
-	public static void main(String[] args){
+	/*public static void main(String[] args){
 		
 		/*try {
 			BufferedReader reader = new BufferedReader(new FileReader(new File(input)));
@@ -49,7 +49,7 @@ public class DataConstruct {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}*/
-	}
+	//}
 	
 
 }

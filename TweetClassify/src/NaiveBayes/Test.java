@@ -38,7 +38,7 @@ public class Test {
 	private static final String output6 = "data_preprocess/test08";
 	
 	
-	public static void main(String[] args){
+	/*public static void main(String[] args){
 		
 		try {
 			
@@ -83,7 +83,7 @@ public class Test {
 			
 			writer.close();*/
 			
-			BufferedReader reader = new BufferedReader(new FileReader(new File(input6)));
+		/*	BufferedReader reader = new BufferedReader(new FileReader(new File(input6)));
 			
 			BufferedWriter writer = new BufferedWriter(new FileWriter(new File(output6)));
 			
@@ -116,7 +116,7 @@ public class Test {
 		
 		
 		
-	}
+	}*/
 	
 	
 	

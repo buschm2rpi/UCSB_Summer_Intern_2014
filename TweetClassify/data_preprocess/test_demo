@@ -10,7 +10,29 @@ test05_p: all preprocessed tweets with index and remove duplicates (prepocess qu
 test06: all answers with index
 test07: count each tweet's answers,format as: index,ArtsCulture#,Business#,Sports#,Politics#,ScienceTechnology#,OtherUnknown# (csv format for y values)
 
+test08: all preprocessed and clean skip words tweets without index (new system tweets input file)
+test08_temp : part of test08
+
+test09.csv: new system (Naive Bayes' results) format: tweet,culture score,business score, politics score, sports score, science score
+
 csvY: Mechanical Turk topic answers, (number of votes for each topic)
 csvY_2: mechanical Turk topic answers (the max vote topic)
 
 csvY_t1 ~ csvY_t6: tweet index and tweet contents for each topic
+
+//test09_2, test09_3 to new2, new3
+new1: naive bayes answer for each tweet (max value) (no extra weights after classifier)
+new2 : extra weights s1 culture + (-0.4), s2 business + (-0.1), s3 sports - (-0.5), s4 politics, s5 science + (-1.2)
+new3: extra weights s1 +(-0.8), s2, s3 - (-0.4),s4, s5 + (-1.5)
+new4 : s1 + (-1.2),s2 + (-0.1),s3 - (-0.5),s4,s5 + (-1.8)
+new5: s1 + (-1.2), s2,s3 - (-0.5),s4,s5 + (-2.5)
+*new6: s1 + (-1.5),s2 + (-0.5),s3 - (-0.5),s4,s5 + (-3.5)
+new7: s1 + (-2.0),s2 ,s3 - (-0.5),s4,s5 + (-5.0)
+new8: revise pck with number of words in a tweet, no extra weights
+new9: s1 - 4, s2 - 3,s3 + 0.5, s4 +0.5,s5 - 6
+
+
+
+csvY_n1: Mechanical Turk answers pick the max votes (if max votes is more than one, keep both of them)
+
+csvX : Business 8, science 13, culture, 18, politics 19, 

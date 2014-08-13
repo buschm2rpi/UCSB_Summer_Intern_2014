@@ -13,12 +13,12 @@ import java.util.Arrays;
 public class Run {
 	
 	// test
-	private static final String tweet = 
-			"loan shouldnt hurting score long isnt being reported late Its most likely helping score";
+	//private static final String tweet = 
+		//	"College Baseball JSU Splits JAMU jsu";
 		
 	private static final String input = "data_preprocess/test08";
 	
-	private static final String output = "data_preprocess/test09_4.csv";
+	private static final String output = "data_preprocess/test09_9.csv";
 	
 	
 	public static void main(String[] args){
@@ -27,9 +27,11 @@ public class Run {
 		
 		ArrayList<String> tweets = new ArrayList<String>();
 		
-		//c.process(tweet);
+		String tweet = args[0];
 		
-		try {
+		c.process(tweet);
+		
+		/*try {
 			BufferedReader reader = new BufferedReader(new FileReader(new File(input)));
 			BufferedWriter writer = new BufferedWriter(new FileWriter(new File(output)));
 			
@@ -46,7 +48,7 @@ public class Run {
 		catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 		
 		
 		
