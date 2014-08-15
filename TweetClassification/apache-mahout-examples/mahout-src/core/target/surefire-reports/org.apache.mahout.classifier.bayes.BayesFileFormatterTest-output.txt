@@ -1,0 +1,5 @@
+Line: animal	cat 
+Line: animal	dog 
+Line: animal	fish 
+Line: animal	snake 
+Line: animal	zebra 

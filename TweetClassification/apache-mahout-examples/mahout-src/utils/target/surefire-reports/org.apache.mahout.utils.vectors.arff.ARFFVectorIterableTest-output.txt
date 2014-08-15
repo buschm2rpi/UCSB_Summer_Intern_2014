@@ -1,0 +1,2 @@
+Words: {esposito=5, howe=8, chelios=6, bossy=3, orr=2, gretzky=1, roy=10, richard=7, lefleur=4, messier=9}
+Words: {esposito=5, howe=8, chelios=6, bossy=3, orr=2, gretzky=1, roy=10, richard=7, lefleur=4, messier=9}

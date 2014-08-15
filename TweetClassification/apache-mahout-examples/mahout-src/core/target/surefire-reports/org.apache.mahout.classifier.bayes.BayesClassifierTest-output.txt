@@ -1,0 +1,3 @@
+09/08/17 10:45:24 INFO common.Model: 5
+Result: ClassifierResult{category='e', score=-2.1400661634962708}
+09/08/17 10:45:24 INFO common.Model: 5

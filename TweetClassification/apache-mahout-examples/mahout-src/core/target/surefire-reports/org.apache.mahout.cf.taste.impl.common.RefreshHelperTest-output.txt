@@ -1,0 +1,6 @@
+09/08/17 10:46:14 INFO common.RefreshHelper: Added refreshable: org.apache.mahout.cf.taste.impl.common.MockRefreshable@7a9b777a
+09/08/17 10:46:14 INFO common.RefreshHelper: Refreshed: [org.apache.mahout.cf.taste.impl.common.MockRefreshable@7a9b777a]
+09/08/17 10:46:14 INFO common.RefreshHelper: Added refreshable: org.apache.mahout.cf.taste.impl.common.MockRefreshable@15384ed5
+09/08/17 10:46:14 INFO common.RefreshHelper: Refreshed: [org.apache.mahout.cf.taste.impl.common.MockRefreshable@7a9b777a, org.apache.mahout.cf.taste.impl.common.MockRefreshable@15384ed5]
+09/08/17 10:46:14 INFO common.RefreshHelper: Added refreshable: org.apache.mahout.cf.taste.impl.common.MockRefreshable@5a749436
+09/08/17 10:46:14 INFO common.RefreshHelper: Refreshed: [org.apache.mahout.cf.taste.impl.common.MockRefreshable@5a749436, org.apache.mahout.cf.taste.impl.common.MockRefreshable@299481b2]

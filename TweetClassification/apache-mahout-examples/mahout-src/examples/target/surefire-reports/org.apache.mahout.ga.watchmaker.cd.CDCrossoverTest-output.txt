@@ -1,0 +1,4 @@
+16 bytes of seed data acquired from /dev/random
+Mersenne Twister RNG created with seed 55336B5E19E893BEC32EB16148EEE298
+16 bytes of seed data acquired from /dev/random
+Mersenne Twister RNG created with seed 5533E44B86260B9FCE7C22B27E580374

@@ -1,0 +1,43 @@
+09/08/17 10:46:04 INFO jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+09/08/17 10:46:04 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:46:04 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:46:04 INFO mapred.FileInputFormat: Total input paths to process : 1
+09/08/17 10:46:05 INFO mapred.JobClient: Running job: job_local_0001
+09/08/17 10:46:05 INFO mapred.FileInputFormat: Total input paths to process : 1
+09/08/17 10:46:06 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:46:06 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:46:06 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:46:06 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:46:06 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:46:06 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:46:06 INFO mapred.TaskRunner: Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:46:06 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/input/population:0+12890
+09/08/17 10:46:06 INFO mapred.TaskRunner: Task 'attempt_local_0001_m_000000_0' done.
+09/08/17 10:46:06 INFO mapred.LocalJobRunner: 
+09/08/17 10:46:06 INFO mapred.Merger: Merging 1 sorted segments
+09/08/17 10:46:06 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 1802 bytes
+09/08/17 10:46:06 INFO mapred.LocalJobRunner: 
+09/08/17 10:46:06 INFO mapred.TaskRunner: Task:attempt_local_0001_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:46:06 INFO mapred.LocalJobRunner: 
+09/08/17 10:46:06 INFO mapred.TaskRunner: Task attempt_local_0001_r_000000_0 is allowed to commit now
+09/08/17 10:46:06 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0001_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output
+09/08/17 10:46:06 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:46:06 INFO mapred.TaskRunner: Task 'attempt_local_0001_r_000000_0' done.
+09/08/17 10:46:06 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:46:06 INFO mapred.JobClient: Job complete: job_local_0001
+09/08/17 10:46:06 INFO mapred.JobClient: Counters: 13
+09/08/17 10:46:06 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:46:06 INFO mapred.JobClient:     FILE_BYTES_READ=56170
+09/08/17 10:46:06 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=90170
+09/08/17 10:46:06 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:46:06 INFO mapred.JobClient:     Reduce input groups=100
+09/08/17 10:46:06 INFO mapred.JobClient:     Combine output records=0
+09/08/17 10:46:06 INFO mapred.JobClient:     Map input records=100
+09/08/17 10:46:06 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:46:06 INFO mapred.JobClient:     Reduce output records=100
+09/08/17 10:46:06 INFO mapred.JobClient:     Spilled Records=200
+09/08/17 10:46:06 INFO mapred.JobClient:     Map output bytes=1600
+09/08/17 10:46:06 INFO mapred.JobClient:     Map input bytes=12890
+09/08/17 10:46:06 INFO mapred.JobClient:     Combine input records=0
+09/08/17 10:46:06 INFO mapred.JobClient:     Map output records=100
+09/08/17 10:46:06 INFO mapred.JobClient:     Reduce input records=100

@@ -1,0 +1,23 @@
+09/08/17 10:51:11 INFO file.FileDataModel: Creating FileDataModel for file /var/folders/3x/3xFVg3xW2RW7Yk+1YwUrt++++TI/-Tmp-/fileDataModel/test2076215507026492550.txt
+09/08/17 10:51:11 INFO file.FileDataModel: Reading file info...
+09/08/17 10:51:11 INFO file.FileDataModel: Read lines: 10
+09/08/17 10:51:11 INFO file.FileDataModel: Creating FileDataModel for file /var/folders/3x/3xFVg3xW2RW7Yk+1YwUrt++++TI/-Tmp-/fileDataModel/test5919953323636702020.txt
+09/08/17 10:51:11 INFO file.FileDataModel: Creating FileDataModel for file /var/folders/3x/3xFVg3xW2RW7Yk+1YwUrt++++TI/-Tmp-/fileDataModel/test5919953323636702020.txt
+09/08/17 10:51:11 INFO file.FileDataModel: Reading file info...
+09/08/17 10:51:11 INFO file.FileDataModel: Read lines: 10
+09/08/17 10:51:11 INFO file.FileDataModel: Creating FileDataModel for file /var/folders/3x/3xFVg3xW2RW7Yk+1YwUrt++++TI/-Tmp-/fileDataModel/test4693997352182734332.txt
+09/08/17 10:51:11 INFO file.FileDataModel: Reading file info...
+09/08/17 10:51:11 INFO file.FileDataModel: Read lines: 10
+09/08/17 10:51:11 INFO file.FileDataModel: Creating FileDataModel for file /var/folders/3x/3xFVg3xW2RW7Yk+1YwUrt++++TI/-Tmp-/fileDataModel/test5006186739956170636.txt
+09/08/17 10:51:11 INFO file.FileDataModel: Reading file info...
+09/08/17 10:51:11 INFO file.FileDataModel: Read lines: 10
+09/08/17 10:51:11 INFO file.FileDataModel: Creating FileDataModel for file /var/folders/3x/3xFVg3xW2RW7Yk+1YwUrt++++TI/-Tmp-/fileDataModel/test254122208238300408.txt
+09/08/17 10:51:11 INFO file.FileDataModel: Reading file info...
+09/08/17 10:51:11 INFO file.FileDataModel: Read lines: 10
+09/08/17 10:51:11 INFO file.FileDataModel: Creating FileDataModel for file /var/folders/3x/3xFVg3xW2RW7Yk+1YwUrt++++TI/-Tmp-/fileDataModel/test7142632043088690671.txt
+09/08/17 10:51:11 INFO file.FileDataModel: Reading file info...
+09/08/17 10:51:11 INFO file.FileDataModel: Read lines: 10
+09/08/17 10:51:11 INFO file.FileDataModel: Creating FileDataModel for file /var/folders/3x/3xFVg3xW2RW7Yk+1YwUrt++++TI/-Tmp-/fileDataModel/test1622513007413344249.txt
+09/08/17 10:51:11 INFO file.FileDataModel: Reading file info...
+09/08/17 10:51:11 INFO file.FileDataModel: Read lines: 10
+09/08/17 10:51:12 INFO file.FileDataModel: Creating FileDataModel for file /var/folders/3x/3xFVg3xW2RW7Yk+1YwUrt++++TI/-Tmp-/fileDataModel/test1291719771531817801.txt

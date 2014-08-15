@@ -1,0 +1,88 @@
+09/08/17 10:45:32 INFO slopeone.MemoryDiffStorage: Building average diffs...
+09/08/17 10:45:34 INFO common.RefreshHelper: Added refreshable: SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]
+09/08/17 10:45:34 INFO common.RefreshHelper: Added refreshable: MemoryDiffStorage
+09/08/17 10:45:34 INFO common.RefreshHelper: Added refreshable: GenericDataModel[users:0,1,2...]
+09/08/17 10:45:34 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], MemoryDiffStorage, SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]]
+09/08/17 10:45:34 INFO slopeone.MemoryDiffStorage: Building average diffs...
+09/08/17 10:45:34 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], MemoryDiffStorage, SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]]
+09/08/17 10:45:34 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], MemoryDiffStorage, SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]]
+09/08/17 10:45:34 INFO common.RefreshHelper: Added refreshable: SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]
+09/08/17 10:45:34 INFO common.RefreshHelper: Added refreshable: MemoryDiffStorage
+09/08/17 10:45:34 INFO common.RefreshHelper: Added refreshable: GenericDataModel[users:0,1,2...]
+09/08/17 10:45:34 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], MemoryDiffStorage, SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]]
+09/08/17 10:45:34 INFO slopeone.MemoryDiffStorage: Building average diffs...
+09/08/17 10:45:35 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], MemoryDiffStorage, SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]]
+09/08/17 10:45:35 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], MemoryDiffStorage, SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]]
+09/08/17 10:45:35 INFO common.RefreshHelper: Added refreshable: SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]
+09/08/17 10:45:35 INFO common.RefreshHelper: Added refreshable: MemoryDiffStorage
+09/08/17 10:45:35 INFO common.RefreshHelper: Added refreshable: GenericDataModel[users:0,1,2...]
+09/08/17 10:45:35 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], MemoryDiffStorage, SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]]
+09/08/17 10:45:35 INFO slopeone.MemoryDiffStorage: Building average diffs...
+09/08/17 10:45:35 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], MemoryDiffStorage, SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]]
+09/08/17 10:45:35 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], MemoryDiffStorage, SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]]
+09/08/17 10:45:35 INFO common.RefreshHelper: Added refreshable: SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]
+09/08/17 10:45:35 INFO common.RefreshHelper: Added refreshable: MemoryDiffStorage
+09/08/17 10:45:35 INFO common.RefreshHelper: Added refreshable: GenericDataModel[users:0,1,2...]
+09/08/17 10:45:35 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], MemoryDiffStorage, SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]]
+09/08/17 10:45:35 INFO slopeone.MemoryDiffStorage: Building average diffs...
+09/08/17 10:45:35 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], MemoryDiffStorage, SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]]
+09/08/17 10:45:35 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], MemoryDiffStorage, SlopeOneRecommender[weighted:true, stdDevWeighted:true, diffStorage:MemoryDiffStorage]]
+09/08/17 10:45:36 INFO impl.LoadTest: Load test completed in 3026ms
+09/08/17 10:45:43 INFO common.RefreshHelper: Added refreshable: GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]
+09/08/17 10:45:43 INFO common.RefreshHelper: Added refreshable: GenericDataModel[users:0,1,2...]
+09/08/17 10:45:43 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]]
+09/08/17 10:45:43 INFO common.RefreshHelper: Added refreshable: PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]
+09/08/17 10:45:43 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]]
+09/08/17 10:45:43 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]]
+09/08/17 10:45:44 INFO common.RefreshHelper: Added refreshable: GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]
+09/08/17 10:45:44 INFO common.RefreshHelper: Added refreshable: GenericDataModel[users:0,1,2...]
+09/08/17 10:45:44 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]]
+09/08/17 10:45:44 INFO common.RefreshHelper: Added refreshable: PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]
+09/08/17 10:45:44 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]]
+09/08/17 10:45:44 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]]
+09/08/17 10:45:44 INFO common.RefreshHelper: Added refreshable: GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]
+09/08/17 10:45:44 INFO common.RefreshHelper: Added refreshable: GenericDataModel[users:0,1,2...]
+09/08/17 10:45:44 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]]
+09/08/17 10:45:44 INFO common.RefreshHelper: Added refreshable: PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]
+09/08/17 10:45:44 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]]
+09/08/17 10:45:44 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]]
+09/08/17 10:45:44 INFO common.RefreshHelper: Added refreshable: GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]
+09/08/17 10:45:44 INFO common.RefreshHelper: Added refreshable: GenericDataModel[users:0,1,2...]
+09/08/17 10:45:44 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]]
+09/08/17 10:45:44 INFO common.RefreshHelper: Added refreshable: PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]
+09/08/17 10:45:44 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]]
+09/08/17 10:45:44 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:0,1,2...], PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericItemBasedRecommender[similarity:PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]]]
+09/08/17 10:45:51 INFO impl.LoadTest: Load test completed in 15388ms
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: GenericDataModel[users:0,1,2...]
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], GenericDataModel[users:0,1,2...]]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericDataModel[users:0,1,2...]]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: NearestNUserNeighborhood
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], GenericDataModel[users:0,1,2...], NearestNUserNeighborhood]
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], GenericDataModel[users:0,1,2...], NearestNUserNeighborhood]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: GenericDataModel[users:0,1,2...]
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], GenericDataModel[users:0,1,2...]]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericDataModel[users:0,1,2...]]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: NearestNUserNeighborhood
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], GenericDataModel[users:0,1,2...], NearestNUserNeighborhood]
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], GenericDataModel[users:0,1,2...], NearestNUserNeighborhood]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: GenericDataModel[users:0,1,2...]
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], GenericDataModel[users:0,1,2...]]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericDataModel[users:0,1,2...]]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: NearestNUserNeighborhood
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], GenericDataModel[users:0,1,2...], NearestNUserNeighborhood]
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], GenericDataModel[users:0,1,2...], NearestNUserNeighborhood]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: GenericDataModel[users:0,1,2...]
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], GenericDataModel[users:0,1,2...]]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null]
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericDataModel[users:0,1,2...]]
+09/08/17 10:45:52 INFO common.RefreshHelper: Added refreshable: NearestNUserNeighborhood
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], GenericDataModel[users:0,1,2...], NearestNUserNeighborhood]
+09/08/17 10:45:52 INFO common.RefreshHelper: Refreshed: [PearsonCorrelationSimilarity[dataModel:GenericDataModel[users:0,1,2...],inferrer:null], GenericUserBasedRecommender[neighborhood:NearestNUserNeighborhood], GenericDataModel[users:0,1,2...], NearestNUserNeighborhood]
+09/08/17 10:45:53 INFO impl.LoadTest: Load test completed in 2176ms

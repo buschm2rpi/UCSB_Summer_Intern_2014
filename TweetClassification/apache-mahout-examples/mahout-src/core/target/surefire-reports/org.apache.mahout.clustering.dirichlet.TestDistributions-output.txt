@@ -1,0 +1,432 @@
+16 bytes of seed data acquired from /dev/random
+Mersenne Twister RNG created with seed 0E6BFC532C2257BAEF626830A72D2D9C
+Mersenne Twister RNG created with seed 4D61686F75743D4861646F6F702B4D4C
+rBeta(6,1,0.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[1.0,1.0,1.0,1.0,0.9999999999999982,1.0],\"lengthSquared\":-1.0}"}
+rBeta(6,1,0.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.1349157480184835,0.3232001537695855,0.27378994775275267,0.90904910789532,0.3555736110862028,0.9968376003849361],\"lengthSquared\":-1.0}"}
+rBeta(6,1,0.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.5650345484454695,0.2309938620923543,0.6820993931479994,0.7176531270009043,0.9621392504924617,0.8520589478825946],\"lengthSquared\":-1.0}"}
+rBeta(6,1,0.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.6602820993451437,0.4388026665221935,0.5943659619692209,0.4979730980844919,0.33668375332947115,0.7273009400876114],\"lengthSquared\":-1.0}"}
+rBeta(6,1,1.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.6166867191988267,0.2075605064466796,0.47209286312323123,0.29880740082176943,0.028611894187317233,0.09424234532392545],\"lengthSquared\":-1.0}"}
+rBeta(6,1,1.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.34400973803072205,0.41222916283511823,0.23975889125993977,0.8020880753560204,0.2693970841095113,0.5068365491060348],\"lengthSquared\":-1.0}"}
+rBeta(6,1,1.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.3673842518051964,0.7053772868477649,0.17517049579295896,0.5045093381594626,0.3007594298129334,0.7376730982528087],\"lengthSquared\":-1.0}"}
+rBeta(6,1,1.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.5759928634979611,0.03836885745377628,0.3125954713504608,0.5694939633198206,0.02708807521256149,0.09164465600390662],\"lengthSquared\":-1.0}"}
+rBeta(6,1,2.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.46680377624394737,0.34384235350500997,0.1492705700304214,0.08548877595474431,0.5372303252520901,0.3604953119479616],\"lengthSquared\":-1.0}"}
+rBeta(6,1,2.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.036533001297541494,0.1088416859427635,0.029872990558936368,0.5363612970604921,0.31213363318967413,0.33256443983751544],\"lengthSquared\":-1.0}"}
+rBeta(6,1,2.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.022306799198190314,0.35737404675553314,0.6089652310564971,0.0078064330354150994,0.6922441482426014,0.5224203228998805],\"lengthSquared\":-1.0}"}
+rBeta(6,1,2.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.1933773211590173,0.07456684108100049,0.18939207951972828,0.019111338032305247,0.11157139430223212,0.0968349207719676],\"lengthSquared\":-1.0}"}
+rBeta(6,1,3.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.16148223024443314,0.24673383992184675,0.0070698428257729914,0.5720375185249731,0.2671688145543574,0.711219845412751],\"lengthSquared\":-1.0}"}
+rBeta(6,1,3.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.020729257842605445,0.07875453218278117,0.13316732359808792,0.024869119261437866,0.26858347776353675,0.14762744299704347],\"lengthSquared\":-1.0}"}
+rBeta(6,1,3.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.31560194744361,0.8187829884335812,0.04724977688652434,0.04133966736264321,0.3185532575740119,0.36774299267780897],\"lengthSquared\":-1.0}"}
+rBeta(6,1,3.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.08740292325625003,0.13388490302580613,0.49456760141456846,0.6018011405353365,0.05022374556357079,0.04542355846433434],\"lengthSquared\":-1.0}"}
+rBeta(6,1,4.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.0038385655069803175,0.03926797941658249,0.052502107892137564,0.08829415912964628,0.011200488195006873,0.09721018033284283],\"lengthSquared\":-1.0}"}
+rBeta(6,1,4.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.12516572342621182,0.42949191629762823,0.002312366009308127,0.1859639824530907,0.4935062813211623,0.011844686678724153],\"lengthSquared\":-1.0}"}
+rBeta(6,1,4.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.20268919397693339,0.24081589505444767,0.07200346838402837,0.2332935518295657,0.1658081628747795,0.03554986267826528],\"lengthSquared\":-1.0}"}
+rBeta(6,1,4.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.05940215682846903,0.0018849899414804365,0.10411282170870582,0.17119097798776559,0.5148268835706322,0.010647310842287441],\"lengthSquared\":-1.0}"}
+rBeta(6,1,5.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.00484726302490342,0.09787788877171147,0.1961391543958934,0.040000305851787966,0.07105735401961681,0.052473937858597205],\"lengthSquared\":-1.0}"}
+rBeta(6,1,5.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.41253750752186497,0.09964746956332528,0.005240404208094731,0.011796686134251742,0.20242815202072997,0.14792056548102261],\"lengthSquared\":-1.0}"}
+rBeta(6,1,5.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.03238141954505964,0.1611714577229241,0.025132843296817777,0.15377245982401572,0.19923483587222293,0.0980332697406942],\"lengthSquared\":-1.0}"}
+rBeta(6,1,5.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.13805751742800204,0.02163543312044019,0.068429265944688,0.18526198648734576,0.10521645680088086,0.0786566322994948],\"lengthSquared\":-1.0}"}
+rBeta(6,1,6.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.08717021443986814,0.05701866970462173,0.10006202815538,0.61280439530281,0.1370432844257965,0.3872588125409076],\"lengthSquared\":-1.0}"}
+rBeta(6,1,6.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.17959914174992808,0.11864899378434607,0.21199110438412186,0.0664631584016129,0.028807906758513906,0.10276035658184658],\"lengthSquared\":-1.0}"}
+rBeta(6,1,6.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.39981026237131245,0.0936652553707133,0.07211799705249694,0.2560688818460416,0.10838438992028587,0.0740260625646394],\"lengthSquared\":-1.0}"}
+rBeta(6,1,6.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.4386065813343354,0.03606444390364871,0.13154158596895943,0.05773041471777826,0.03550542324934881,0.2874677175146348],\"lengthSquared\":-1.0}"}
+rBeta(6,1,7.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.3204369806965136,0.10002727650991163,0.034608428633716666,0.04922084648573074,0.04679123717486778,0.09685361614211757],\"lengthSquared\":-1.0}"}
+rBeta(6,1,7.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.15695990634311768,0.011718373181905536,0.20242429804791354,0.33249575873559484,0.019557775228081452,0.05736639619994256],\"lengthSquared\":-1.0}"}
+rBeta(6,1,7.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.002046087706397065,0.04464428142142392,0.0877404385631682,0.028465748606083446,0.3543632787852154,0.1321081675986878],\"lengthSquared\":-1.0}"}
+rBeta(6,1,7.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.3508583170400055,0.045538644486346966,0.11549717938982385,0.19386799634105664,0.14375223484680275,0.06871206322179514],\"lengthSquared\":-1.0}"}
+rBeta(6,1,8.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[2.1152977374230828E-4,0.09998802841458417,0.1296974242550281,0.03259505151524615,0.20437336838953418,0.08099881666087366],\"lengthSquared\":-1.0}"}
+rBeta(6,1,8.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.042461520046760556,0.030882147052254363,0.0996743041586723,0.48046505408238194,0.08025042735376371,0.14929161998176413],\"lengthSquared\":-1.0}"}
+rBeta(6,1,8.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.15092888101438756,0.0018318558680843666,0.07133321690948778,0.04248823919885614,0.2743844287283204,0.08056094874782166],\"lengthSquared\":-1.0}"}
+rBeta(6,1,8.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.24973884541397795,0.004244615665643833,0.11372067217052888,0.12371280910454854,0.032639065213293156,0.270799749150132],\"lengthSquared\":-1.0}"}
+rBeta(6,1,9.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.061355543773965265,0.01728733316796945,0.07616145188576194,0.18094546816285093,0.0220122128466696,0.1116249258100077],\"lengthSquared\":-1.0}"}
+rBeta(6,1,9.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.3119071421125717,0.05592277254560523,0.007765844366511765,0.10874767862470236,0.26274081084773965,0.03034694770120186],\"lengthSquared\":-1.0}"}
+rBeta(6,1,9.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.047771426100805536,0.02048061099840712,0.04279572857219729,0.2602373218617964,0.008208402922492909,0.1126432713946602],\"lengthSquared\":-1.0}"}
+rBeta(6,1,9.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.06304915839627846,0.03885867303827741,0.0201910830503144,0.035784070143585735,0.025969058827171477,0.11808456934037254],\"lengthSquared\":-1.0}"}
+rBeta(6,1,10.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.20447915363773048,0.22626383802270603,0.03144638478865129,0.304879327527092,0.19701060703694426,0.07128706426202873],\"lengthSquared\":-1.0}"}
+rBeta(6,1,10.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.06484890970921416,0.010537707534686786,0.052469583351596634,0.029327577660907992,0.0014752974001508235,0.2729337433001324],\"lengthSquared\":-1.0}"}
+rBeta(6,1,10.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.05818598781300892,0.076838685427473,0.03623346526842947,0.03735700315075372,0.009314414174772957,0.21159241944547402],\"lengthSquared\":-1.0}"}
+rBeta(6,1,10.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.18402542386351056,0.012552230078745768,0.02608763827244447,0.2489143608845273,0.05086306988909828,0.05251628409148719],\"lengthSquared\":-1.0}"}
+rBeta(6,1,11.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.18205751556991082,0.045939067063641884,0.039723041058132146,0.036569514938294655,0.12268481805370336,0.006114440069167806],\"lengthSquared\":-1.0}"}
+rBeta(6,1,11.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.004898298331707594,0.03546738006795476,0.05906642201361441,0.2258733515058886,0.023608742240711526,0.015838480001685157],\"lengthSquared\":-1.0}"}
+rBeta(6,1,11.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.019251996141898202,0.015574503006013209,0.00849419614327026,0.046741518609783254,0.030654301259307716,0.07037635013915684],\"lengthSquared\":-1.0}"}
+rBeta(6,1,11.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.1536474012135432,0.05855485802350581,0.24564864902674077,0.003984375228921119,0.007077443086689292,0.10348039900041239],\"lengthSquared\":-1.0}"}
+rBeta(6,1,12.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.05261482628199756,0.15903700992486666,0.015729164587243192,0.2164583520757288,0.08152473458809248,0.04934502352514722],\"lengthSquared\":-1.0}"}
+rBeta(6,1,12.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.024841886626351426,0.038404096833984394,0.010912107364031863,0.009877777520996299,0.2094613729550413,0.036736322335926],\"lengthSquared\":-1.0}"}
+rBeta(6,1,12.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.07180918312692781,0.13058157143296126,0.16610132716088996,0.027472850805564775,3.6014159722050836E-4,0.057142930471880765],\"lengthSquared\":-1.0}"}
+rBeta(6,1,12.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.06808915767897815,0.030902044882440385,0.026010492880554844,0.048904717121831004,0.0717428138979669,0.04992857325467399],\"lengthSquared\":-1.0}"}
+rBeta(6,1,13.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.02759572815937104,0.08464894365204625,0.08842590558920213,0.10918970403899457,0.022011188103769203,0.1830463413641328],\"lengthSquared\":-1.0}"}
+rBeta(6,1,13.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.023873438283520496,0.016817078253585013,0.030864283637500538,0.015533456662056437,0.2264101718210605,0.06903428339314682],\"lengthSquared\":-1.0}"}
+rBeta(6,1,13.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.05036762497030237,0.1839903386373898,0.026376534332915456,0.05796399716252032,0.05203960785511687,0.037654561981315574],\"lengthSquared\":-1.0}"}
+rBeta(6,1,13.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.052934504684322564,0.012048908433863383,0.034501069377375286,0.020393653323995748,0.1337649665953037,0.02674655459626639],\"lengthSquared\":-1.0}"}
+rBeta(6,1,14.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.19817305324536655,0.027289846707956922,0.03329315145457068,0.006257722586166303,0.04099751090756457,0.04223345698074942],\"lengthSquared\":-1.0}"}
+rBeta(6,1,14.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.04314266470753245,0.08033462268975286,0.013771106947634186,0.0947920417600759,0.003994334282085009,0.16061086749188747],\"lengthSquared\":-1.0}"}
+rBeta(6,1,14.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.007569080061030241,0.015355984571325709,0.050351381431994004,0.16402060981373637,0.1630959981901408,0.26796232182305657],\"lengthSquared\":-1.0}"}
+rBeta(6,1,14.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.01654502396694901,0.00867998234418024,0.053184634381725555,0.07465585345679697,0.019747357650226154,0.10173550455904667],\"lengthSquared\":-1.0}"}
+rBeta(6,1,15.01)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.04992086430781545,0.028286244623667887,0.057172950864856,0.24590754585868974,0.07141100628388819,0.012220327615914224],\"lengthSquared\":-1.0}"}
+rBeta(6,1,15.26)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.06171862093663552,0.006996013921976472,0.009627961619937373,0.07334767502030186,0.007467124728905861,0.003880263593407898],\"lengthSquared\":-1.0}"}
+rBeta(6,1,15.51)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.048698430304282815,0.0458096381079166,0.08951769219484261,8.821298189917414E-4,0.1555488352062546,0.02048239982418356],\"lengthSquared\":-1.0}"}
+rBeta(6,1,15.76)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.06076270854868671,0.057707164977182375,0.0011449748046091868,0.009382343693618022,0.1757338722501238,0.09440383059744609],\"lengthSquared\":-1.0}"}
+rBeta(6,1,16.009999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.008354407850564932,0.08397119299189149,0.21636239902258678,0.00599370058772085,0.10242025934582362,0.01311081425625471],\"lengthSquared\":-1.0}"}
+rBeta(6,1,16.259999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.042628608633074876,0.005961321847367675,0.026812450680512946,0.1795759047323326,0.029025239213506034,0.17468960373232037],\"lengthSquared\":-1.0}"}
+rBeta(6,1,16.509999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.06708559780679679,0.25107153075145483,0.08008689308981387,0.013414177949424552,0.0038259438922296773,0.0802546639529137],\"lengthSquared\":-1.0}"}
+rBeta(6,1,16.759999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.002173956819537397,0.05152406225305203,0.03235090714245169,0.04286317846989264,0.03391503876908328,0.018712115009304444],\"lengthSquared\":-1.0}"}
+rBeta(6,1,17.009999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.024570908693814716,0.001602391214491372,0.011453527079451005,0.15302004159760554,0.038373926943008424,0.07319527732559339],\"lengthSquared\":-1.0}"}
+rBeta(6,1,17.259999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.09376230344243718,0.17795957104414875,0.0035161343784314947,0.06145639889064496,0.0020690863320390568,0.03810719437948874],\"lengthSquared\":-1.0}"}
+rBeta(6,1,17.509999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.05395345741731432,0.007186850797477801,0.19839212510545004,0.1623684792618469,0.03297941029415421,0.04382694750333541],\"lengthSquared\":-1.0}"}
+rBeta(6,1,17.759999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.03068833735572982,0.04030264144768299,0.00332347370380519,0.09688314093629882,0.05066820053044428,0.006189992934814167],\"lengthSquared\":-1.0}"}
+rBeta(6,1,18.009999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.010645627889694706,0.036839119318265216,0.007908511122296099,0.08797949322278835,0.03120971142139355,0.0027454763601428363],\"lengthSquared\":-1.0}"}
+rBeta(6,1,18.259999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.02380969399115492,0.13966855207738532,0.03565135532082952,0.06671371618637588,0.01297494462805666,0.03675125857601727],\"lengthSquared\":-1.0}"}
+rBeta(6,1,18.509999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.01674470165979619,0.005487779331695778,0.021478044596550488,0.014755318717126943,0.039662134463771176,0.017983172624073857],\"lengthSquared\":-1.0}"}
+rBeta(6,1,18.759999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.07812529399314487,0.008985608465167034,0.08176745329739413,0.05976650720562857,0.1185600405194471,0.08524528650508378],\"lengthSquared\":-1.0}"}
+rBeta(6,1,19.009999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.01414398151187289,0.18600481100355193,0.011706405744757507,3.235778243287398E-4,0.09716818727065246,0.20015612468960067],\"lengthSquared\":-1.0}"}
+rBeta(6,1,19.259999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.055613842089755526,0.0376204086373196,0.02741747341036014,0.025977341455205128,0.016536920796868273,0.07637310224427499],\"lengthSquared\":-1.0}"}
+rBeta(6,1,19.509999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.05272737967802114,0.013307472092586587,0.061231879832701355,0.11586294426551795,0.07234169920050053,0.05610242341072368],\"lengthSquared\":-1.0}"}
+rBeta(6,1,19.759999999999998)={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[0.01128891696234439,0.06229566133756449,0.058955249033088804,0.04865456567805737,0.006462458942215202,0.11937906891511077],\"lengthSquared\":-1.0}"}
+Mersenne Twister RNG created with seed 4D61686F75743D4861646F6F702B4D4C
+rChisq(0)=0.0
+rChisq(1)=0.18600828578749515
+rChisq(2)=0.7142268955915492
+rChisq(3)=2.128813813823634
+rChisq(4)=1.5153470463305168
+rChisq(5)=7.817914922359128
+rChisq(6)=1.7577571210992526
+rChisq(7)=18.51104871242734
+rChisq(8)=3.3580260924363547
+rChisq(9)=6.962292073294048
+rChisq(10)=11.308763573082762
+rChisq(11)=12.3929430411592
+rChisq(12)=13.18850488500636
+rChisq(13)=14.071077542542467
+rChisq(14)=11.083157727635426
+rChisq(15)=8.494759426794523
+rChisq(16)=32.08151164716992
+rChisq(17)=16.336213322791394
+rChisq(18)=40.96937741006426
+rChisq(19)=9.411343681572935
+rChisq(20)=15.112707233280988
+rChisq(21)=39.276913589476344
+rChisq(22)=26.012766282594693
+rChisq(23)=22.598388697654052
+rChisq(24)=15.598896110858819
+rChisq(25)=13.91178628383342
+rChisq(26)=18.998042517911387
+rChisq(27)=22.019661629429653
+rChisq(28)=19.952456347211452
+rChisq(29)=26.641474394936804
+rChisq(30)=25.141454830524232
+rChisq(31)=35.60079638697135
+rChisq(32)=17.463647353908875
+rChisq(33)=24.679427329880706
+rChisq(34)=35.8942320424868
+rChisq(35)=35.783572358799645
+rChisq(36)=31.99037896364923
+rChisq(37)=46.88268105112882
+rChisq(38)=38.68750568558014
+rChisq(39)=31.671395427636885
+rChisq(40)=55.824671821478006
+rChisq(41)=34.47803609227479
+rChisq(42)=46.38717530098049
+rChisq(43)=32.67038350574942
+rChisq(44)=40.9688595752306
+rChisq(45)=45.47289302339395
+rChisq(46)=50.5691991776557
+rChisq(47)=56.15106692779025
+rChisq(48)=48.57132621503218
+rChisq(49)=51.73663521534459
+Mersenne Twister RNG created with seed 4D61686F75743D4861646F6F702B4D4C
+rNorm(6,1,1)=1.4312867790548363
+rNorm(6,1,2)=-0.6632669446336588
+rNorm(6,1,3)=1.451125226322163
+rNorm(6,1,4)=-3.2313353029607157
+rNorm(6,1,5)=5.93123658054296
+rNorm(6,1,6)=2.1559563689156613
+rNorm(6,1,7)=4.689891384142498
+rNorm(6,1,8)=-7.810458362991094
+rNorm(6,1,9)=0.547882078116715
+rNorm(6,1,10)=-0.48601704042520666
+rNorm(6,1,11)=-15.459209201116273
+rNorm(6,1,12)=1.5157864447738114
+rNorm(6,1,13)=-14.558991510550017
+rNorm(6,1,14)=2.924856170102478
+rNorm(6,1,15)=-29.468230578394206
+rNorm(6,1,16)=-17.52575494689105
+rNorm(6,1,17)=-8.525470152369888
+rNorm(6,1,18)=6.5546275146684945
+rNorm(6,1,19)=1.4475001829455754
+rNorm(6,1,20)=-0.7175292249582239
+rNorm(6,1,21)=0.9956183362012385
+rNorm(6,1,22)=56.85968209079361
+rNorm(6,1,23)=-34.28618561117436
+rNorm(6,1,24)=12.505119032751825
+rNorm(6,1,25)=-7.043618844755294
+rNorm(6,1,26)=-67.04869127211697
+rNorm(6,1,27)=5.34347372633883
+rNorm(6,1,28)=-43.28238043789626
+rNorm(6,1,29)=23.18823548304451
+rNorm(6,1,30)=-22.490493225004375
+rNorm(6,1,31)=-0.32416696915942134
+rNorm(6,1,32)=22.2403276185627
+rNorm(6,1,33)=11.783179160431493
+rNorm(6,1,34)=36.54892708859319
+rNorm(6,1,35)=19.77055807573736
+rNorm(6,1,36)=-16.247385590170488
+rNorm(6,1,37)=-17.11667146350213
+rNorm(6,1,38)=-33.58042544470563
+rNorm(6,1,39)=-5.796754353165319
+rNorm(6,1,40)=25.76892363264094
+rNorm(6,1,41)=-10.861575100517873
+rNorm(6,1,42)=58.678407979739134
+rNorm(6,1,43)=-24.899331007281237
+rNorm(6,1,44)=-73.60107464512569
+rNorm(6,1,45)=-22.535916945842597
+rNorm(6,1,46)=-51.641695399744044
+rNorm(6,1,47)=-75.7640276437244
+rNorm(6,1,48)=-19.04678544801272
+rNorm(6,1,49)=6.551337507454856
+Mersenne Twister RNG created with seed 4D61686F75743D4861646F6F702B4D4C
+
+
+
+*
+*
+*
+**
+**
+***
+****
+*****
+******
+*******
+*********
+***********
+************
+**************
+*****************
+*******************
+*********************
+************************
+**************************
+****************************
+*******************************
+*********************************
+***********************************
+************************************
+**************************************
+***************************************
+***************************************
+***************************************
+***************************************
+***************************************
+**************************************
+************************************
+***********************************
+*********************************
+*******************************
+****************************
+**************************
+************************
+*********************
+*******************
+*****************
+**************
+************
+***********
+*********
+*******
+******
+*****
+****
+***
+**
+**
+*
+*
+*
+
+
+Mersenne Twister RNG created with seed 4D61686F75743D4861646F6F702B4D4C
+******
+******
+*******
+********
+********
+*********
+*********
+**********
+**********
+***********
+************
+************
+*************
+*************
+**************
+***************
+***************
+****************
+****************
+*****************
+*****************
+******************
+******************
+******************
+*******************
+*******************
+*******************
+*******************
+*******************
+*******************
+*******************
+*******************
+*******************
+*******************
+*******************
+*******************
+*******************
+******************
+******************
+******************
+*****************
+*****************
+****************
+****************
+***************
+***************
+**************
+*************
+*************
+************
+************
+***********
+**********
+**********
+*********
+*********
+********
+********
+*******
+******
+Mersenne Twister RNG created with seed 4D61686F75743D4861646F6F702B4D4C
+
+
+
+
+**
+********
+**************************
+****************************************************************
+************************************************************************************************************************
+********************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************************************
+********************************************************************************************************************************************************************************
+************************************************************************************************************************
+****************************************************************
+**************************
+********
+**
+
+
+
+Mersenne Twister RNG created with seed 4D61686F75743D4861646F6F702B4D4C
+sum(rMultinom(100, [0.4, 0.6]))/100={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[40.23,59.77],\"lengthSquared\":-1.0}"}
+Mersenne Twister RNG created with seed 4D61686F75743D4861646F6F702B4D4C
+sum(rMultinom(100, [ 0.1, 0.2, 0.7 ]))/100={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[9.93,20.28,69.79],\"lengthSquared\":-1.0}"}
+Mersenne Twister RNG created with seed 4D61686F75743D4861646F6F702B4D4C
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[5.0,20.0,75.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,20.0,72.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[11.0,16.0,73.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[9.0,22.0,69.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[13.0,19.0,68.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[9.0,11.0,80.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[9.0,21.0,70.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[13.0,22.0,65.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,20.0,72.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[16.0,17.0,67.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[10.0,17.0,73.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,19.0,73.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[7.0,14.0,79.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[5.0,21.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[12.0,14.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[11.0,16.0,73.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[7.0,20.0,73.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[12.0,21.0,67.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[6.0,17.0,77.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[6.0,14.0,80.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[9.0,20.0,71.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[7.0,13.0,80.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[6.0,18.0,76.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[9.0,17.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[6.0,23.0,71.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,19.0,73.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[12.0,17.0,71.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[6.0,16.0,78.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,17.0,75.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[12.0,14.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,19.0,73.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[7.0,19.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[11.0,15.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[9.0,19.0,72.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[9.0,17.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[7.0,18.0,75.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[14.0,18.0,68.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[6.0,14.0,80.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[6.0,22.0,72.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[9.0,22.0,69.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,17.0,75.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[6.0,17.0,77.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,21.0,71.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[11.0,15.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[9.0,20.0,71.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[9.0,16.0,75.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[9.0,14.0,77.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[10.0,20.0,70.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[13.0,16.0,71.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[5.0,17.0,78.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,24.0,68.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[19.0,17.0,64.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[11.0,22.0,67.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[11.0,23.0,66.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[10.0,22.0,68.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[5.0,21.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[7.0,22.0,71.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[11.0,20.0,69.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[12.0,19.0,69.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[16.0,14.0,70.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[4.0,21.0,75.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[7.0,21.0,72.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[9.0,18.0,73.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[12.0,14.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[6.0,17.0,77.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[3.0,24.0,73.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[11.0,15.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,17.0,75.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[11.0,14.0,75.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,26.0,66.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,18.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,18.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[12.0,15.0,73.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,24.0,68.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[7.0,24.0,69.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,20.0,72.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[10.0,24.0,66.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[5.0,19.0,76.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[13.0,21.0,66.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[11.0,21.0,68.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[11.0,18.0,71.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[3.0,23.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[7.0,23.0,70.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[12.0,16.0,72.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,23.0,69.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[13.0,21.0,66.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[10.0,20.0,70.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[12.0,17.0,71.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,18.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[6.0,17.0,77.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[12.0,17.0,71.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[11.0,24.0,65.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[13.0,19.0,68.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[13.0,11.0,76.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[8.0,14.0,78.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[12.0,14.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[6.0,20.0,74.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[9.0,18.0,73.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[3.0,26.0,71.0],\"lengthSquared\":-1.0}"}
+rMultinom(100, [0.1, 0.2, 0.8])={"class":"org.apache.mahout.matrix.DenseVector","vector":"{\"values\":[10.0,15.0,75.0],\"lengthSquared\":-1.0}"}

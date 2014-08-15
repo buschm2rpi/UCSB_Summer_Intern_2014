@@ -1,0 +1,2 @@
+16 bytes of seed data acquired from /dev/random
+Mersenne Twister RNG created with seed 7E1938D72805332B7C7D3AC172641747

@@ -1,0 +1,419 @@
+<?xml version="1.0"?>
+
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+ -->
+
+<project name="intro-mahout" basedir=".">
+  <property name="dest.dir" value="target/"/>
+  <property name="classes.dir" value="${dest.dir}/classes"/>
+
+  <target name="clean">
+    <delete dir="${dest.dir}/"/>
+  </target>
+
+  <path id="compile.classpath">
+    <fileset dir="lib">
+      <include name="*.jar"/>
+    </fileset>
+    <!-- GSI: I've prebuilt Mahout -->
+    <fileset dir="mahout-src/core/target/dependency/">
+      <include name="*.jar"/>
+    </fileset>
+    <fileset dir="mahout-src/utils/target/dependency/">
+      <include name="*.jar"/>
+    </fileset>
+    <fileset dir="mahout-src/examples/target/dependency/">
+      <include name="*.jar"/>
+    </fileset>
+  </path>
+
+  <path id="runtime.classpath">
+    <path refid="compile.classpath"/>
+    <path path="${classes.dir}"/>
+    <fileset dir="src/main/resources"/>
+  </path>
+
+  <target name="compile"
+          description="Compile the source code."
+          >
+    <mkdir dir="${classes.dir}"/>
+    <javac classpathref="compile.classpath"
+           destdir="${classes.dir}"
+           target="1.6"
+           source="1.6"
+           debug="on"
+           encoding="utf8"
+           sourcepath=""
+            >
+      <src path="src/main/java"/>
+    </javac>
+  </target>
+
+  <target name="init">
+    <mkdir dir="${wiki.dir}"/>
+    <mkdir dir="${wiki.dir}/tmp"/>
+  </target>
+
+  <property name="wiki.dir" value="wikipedia"/>
+  <property name="num.chunks" value="150"/>
+
+  <target name="check-files">
+    <available file="${wiki.dir}/enwiki-latest-pages-articles.xml.bz2" property="enwiki.exists"/>
+    <available file="${wiki.dir}/enwiki-latest-pages-articles.xml" property="enwiki.expanded"/>
+    <available file="${wiki.dir}/chunks-all/chunk-0001.xml" property="enwiki.split"/>
+    <available file="${wiki.dir}/n2/part-full.txt" property="n2.expanded"/>
+    <echo > Exists: ${enwiki.exists}  Expanded: ${enwiki.expanded} Split: ${enwiki.split} N2: ${n2.expanded}</echo>
+  </target>
+
+  <target name="get-enwiki" depends="check-files" unless="enwiki.exists">
+    <echo>Downloading Wikipedia Data - (~11GB)</echo>
+    <get src="http://download.wikimedia.org/enwiki/latest/enwiki-latest-pages-articles.xml.bz2"
+    dest="${wiki.dir}/enwiki-latest-pages-articles.xml.bz2"/>
+  </target>
+
+  <target name="expand-enwiki" depends="check-files" unless="enwiki.expanded">
+    <bunzip2 src="${wiki.dir}/enwiki-latest-pages-articles.xml.bz2" dest="${wiki.dir}/"/>
+  </target>
+  <target name="enwiki-files" depends="check-files">
+    <antcall target="get-enwiki"/>
+    <antcall target="expand-enwiki"/>
+    <antcall target="split-enwiki"/>
+  </target>
+
+  <target name="split-enwiki" unless="enwiki.split">
+    <echo>Split Wikipedia articles up for training and testing</echo>
+    <java classname="org.apache.mahout.classifier.bayes.WikipediaXmlSplitter"
+          fork="true" maxmemory="738m">
+      <classpath refid="runtime.classpath"/>
+      <arg line="--dumpFile ${wiki.dir}/enwiki-latest-pages-articles.xml --outputDir ${wiki.dir}/chunks-all -c 64 --numChunks ${num.chunks}"/>
+    </java>
+    <mkdir dir="${wiki.dir}/chunks-classification"/>
+    <mkdir dir="${wiki.dir}/chunks-classification-test"/>
+    <copy todir="${wiki.dir}/chunks-classification">
+      <fileset dir="${wiki.dir}/chunks-all">
+        <include name="chunk-000*"/>
+        <include name="chunk-001*"/>
+        <include name="chunk-002*"/>
+        <include name="chunk-003*"/>
+      </fileset>
+    </copy>
+    <copy todir="${wiki.dir}/chunks-classification-test">
+      <fileset dir="${wiki.dir}/chunks-all">
+        <include name="chunk-0101.xml"/>
+        <include name="chunk-0102.xml"/>
+        <include name="chunk-0103.xml"/>
+        <include name="chunk-0104.xml"/>
+        <include name="chunk-0105.xml"/>
+        <include name="chunk-0107.xml"/>
+        <include name="chunk-0108.xml"/>
+        <include name="chunk-0109.xml"/>
+        <include name="chunk-0130.xml"/>
+        <include name="chunk-0131.xml"/>
+        <include name="chunk-0132.xml"/>
+        <include name="chunk-0133.xml"/>
+        <include name="chunk-0134.xml"/>
+        <include name="chunk-0135.xml"/>
+        <include name="chunk-0137.xml"/>
+        <include name="chunk-0139.xml"/>
+      </fileset>
+    </copy>
+  </target>
+
+
+  <target name="n2-files" unless="n2.expanded">
+    <echo>Downloading Clustering data (9.2M)</echo>
+    <get src="http://people.apache.org/~gsingers/wikipedia/n2.tar.gz"
+         dest="${wiki.dir}/n2.tar.gz"/>
+    <gunzip src="${wiki.dir}/n2.tar.gz" dest="${wiki.dir}/tmp/n2.tar"/>
+    <untar src="${wiki.dir}/tmp/n2.tar" dest="${wiki.dir}/"/>
+  </target>
+  <target name="install" depends="init,compile, enwiki-files, n2-files"
+          description="Get the necessary pieces to run the examples">
+
+
+    
+  </target>
+
+  <!-- Taste Demos -->
+  <property name="neighbor.size" value="5"/>
+  <property name="user.id" value="995"/>
+  <property name="item.id" value="3135415"/>
+  <property name="item2.id" value="2954818"/>
+  <property name="common" value="false"/>
+  <property name="num.recs" value="5"/>
+
+  <target name="user-demo" depends="compile"
+          description="Given a user and a neighborhood size, get recommendedations of Wikipedia articles">
+    <echo>Getting similar items for user: ${user.id} with a neighborhood of ${neighbor.size}</echo>
+    <java classname="cf.wikipedia.WikipediaTasteUserDemo"
+          fork="true" maxmemory="738m">
+      <classpath refid="runtime.classpath"/>
+      <arg line="src/main/resources/recommendations.txt src/main/resources/docIdsTitles.xml ${neighbor.size} ${user.id} ${common}"/>
+    </java>
+  </target>
+
+
+  <target name="item-demo" depends="compile"
+          description="Given a user, get recommendedations of Wikipedia articles based on item-item similarity">
+    <echo>Getting similar items for user: ${user.id}</echo>
+    <java classname="cf.wikipedia.WikipediaTasteItemItemDemo"
+          fork="true" maxmemory="738m">
+      <classpath refid="runtime.classpath"/>
+      <arg line="src/main/resources/recommendations.txt src/main/resources/docIdsTitles.xml ${user.id}"/>
+    </java>
+  </target>
+
+  <target name="sim-item-demo" depends="compile"
+          description="Given an item, get recommendedations of Wikipedia articles based on item-item similarity">
+    <echo>Getting similar items for item: ${item.id}</echo>
+    <java classname="cf.wikipedia.WikipediaTasteItemRecDemo"
+          fork="true" maxmemory="738m">
+      <classpath refid="runtime.classpath"/>
+      <arg line="src/main/resources/recommendations.txt src/main/resources/docIdsTitles.xml ${item.id} ${num.recs}"/>
+    </java>
+  </target>
+
+
+  <target name="compare-items" depends="compile"
+          description="Given two items, compare their similarity">
+    <echo>Getting similar items for item: ${item.id}</echo>
+    <java classname="cf.wikipedia.WikipediaTasteItemSimilarity"
+          fork="true" maxmemory="738m">
+      <classpath refid="runtime.classpath"/>
+      <arg line="src/main/resources/recommendations.txt src/main/resources/docIdsTitles.xml ${item.id} ${item2.id}"/>
+    </java>
+  </target>
+
+
+  <property name="k" value="10"/>
+  <target name="k-means" depends="compile" description="Run k-Means on Wikipedia data">
+    <echo>Running k-Means clustring</echo>
+    <java classname="org.apache.mahout.clustering.kmeans.KMeansDriver"
+          fork="true" maxmemory="738m">
+      <classpath refid="runtime.classpath"/>
+      <arg value="--input"/>
+      <arg value="${wiki.dir}/n2/part-full.txt"/>
+      <arg value="--clusters"/>
+      <arg value="${wiki.dir}/n2/k-output/clusters-in"/>
+      <arg value="--k"/>
+      <arg value="${k}"/>
+      <arg value="--output"/>
+      <arg value="${wiki.dir}/n2/k-output"/>
+      <arg value="--distance"/>
+      <arg value="org.apache.mahout.utils.CosineDistanceMeasure"/>
+      <arg value="--convergence"/>
+      <arg value="0.01"/>
+      <arg value="--overwrite"/>
+    </java>
+  </target>
+
+  <!-- Classification -->
+  <!-- The categories file to use.  Must  -->
+  <property name="categories.file" value="mahout-src/examples/src/test/resources/subjects.txt"/>
+  <property name="cat.dir" value="subjects"/>
+  <target name="prepare-docs" depends="compile"
+          description="Prepare the Wikipedia Classification docs for training">
+    <java classname="org.apache.mahout.classifier.bayes.WikipediaDatasetCreatorDriver" fork="true" maxmemory="738m">
+      <classpath refid="runtime.classpath"/>
+      <arg value="--input"/>
+      <arg value="${wiki.dir}/chunks-classification"/>
+      <arg value="--output"/>
+      <arg value="${wiki.dir}/${cat.dir}/prepared"/>
+      <arg value="--categories"/>
+      <arg value="${categories.file}"/>
+    </java>
+  </target>
+  <target name="prepare-test-docs" depends="compile"
+          description="Prepare the Wikipedia Classification docs for testing">
+    <java classname="org.apache.mahout.classifier.bayes.WikipediaDatasetCreatorDriver" fork="true" maxmemory="738m">
+      <classpath refid="runtime.classpath"/>
+      <arg value="--input"/>
+      <arg value="${wiki.dir}/chunks-classification-test"/>
+      <arg value="--output"/>
+      <arg value="${wiki.dir}/${cat.dir}/prepared-test"/>
+      <arg value="--categories"/>
+      <arg value="${categories.file}"/>
+    </java>
+  </target>
+
+  <property name="gram.size" value="1"/>
+  <!-- Can be bayes or cbayes -->
+  <property name="classifier.type" value="bayes"/>
+  <target name="train" depends="compile" description="Run the Bayes Trainer">
+    <java classname="org.apache.mahout.classifier.bayes.TrainClassifier" fork="true" maxmemory="728M">
+      <classpath refid="runtime.classpath"/>
+      <arg value="--input"/>
+      <arg value="${wiki.dir}/${cat.dir}/prepared"/>
+      <arg value="--output"/>
+      <arg value="${wiki.dir}/${cat.dir}/model"/>
+      <arg value="--gramSize"/>
+      <arg value="${gram.size}"/>
+      <arg value="--classifierType"/>
+      <arg value="${classifier.type}"/>
+    </java>
+  </target>
+  <target name="test-internal" depends="compile" unless="verbose">
+    <java classname="org.apache.mahout.classifier.bayes.TestClassifier" fork="true" maxmemory="728M">
+      <classpath refid="runtime.classpath"/>
+      <arg value="--model"/>
+      <arg value="${wiki.dir}/${cat.dir}/model"/>
+      <arg value="--testDir"/>
+      <arg value="${wiki.dir}/${cat.dir}/prepared-test"/>
+      <arg value="--gramSize"/>
+      <arg value="${gram.size}"/>
+      <arg value="--classifierType"/>
+      <arg value="${classifier.type}"/>
+    </java>
+  </target>
+  <target name="test-internal-vb" depends="compile" if="verbose">
+    <java classname="org.apache.mahout.classifier.bayes.TestClassifier" fork="true" maxmemory="728M">
+      <classpath refid="runtime.classpath"/>
+      <arg value="--model"/>
+      <arg value="${wiki.dir}/${cat.dir}/model"/>
+      <arg value="--testDir"/>
+      <arg value="${wiki.dir}/${cat.dir}/prepared-test"/>
+      <arg value="--gramSize"/>
+      <arg value="${gram.size}"/>
+      <arg value="--classifierType"/>
+      <arg value="${classifier.type}"/>
+      <arg value="--verbose"/>
+    </java>
+  </target>
+  <target name="test" depends="compile,test-internal,test-internal-vb"
+          description="Run the Bayes Classifier on the test docs">
+
+  </target>
+
+  <target name="classifier-example" depends="prepare-docs, prepare-test-docs, train, test"
+          description="Run all the classifer steps"/>
+
+  <!-- Helper Targets -->
+
+  <property name="seq.file" value="${wiki.dir}/n2/k-output/points/part-00000"/>
+  <target name="dump" description="Dumps out the values of a Hadoop SequenceFile specified by the seq.file property">
+    <java classname="org.apache.mahout.utils.SequenceFileDumper"
+          fork="true" maxmemory="738m">
+      <classpath refid="runtime.classpath"/>
+      <arg value="-s"/>
+      <arg value="${seq.file}"/>
+
+    </java>
+  </target>
+
+  <!--
+   All targets below this line are for internal use only
+
+   -->
+  <!-- Packaging Targets for Grant -->
+  <path id="dw.classpath">
+    <fileset dir="tools">
+      <include name="*.jar"/>
+    </fileset>
+  </path>
+  <target name="article">
+    <!--
+    schemaFile="${dwDir}/schema/${dwVersion}/dw-document-${dwVersion}.xsd"
+            xslFile="${dwDir}/xsl/${dwVersion}/dw-document-html-${dwVersion}.xsl"
+
+     `$javapgm "$forceFactory" -cp "$mycp" DeveloperWorksXML "$xmlFile" "$schemaFile" "$xslFile"`
+     -->
+    <java dir="manuscript" classname="DeveloperWorksXML" fork="true">
+      <classpath refid="dw.classpath"/>
+      <jvmarg line="-Djavax.xml.transform.TransformerFactory=org.apache.xalan.processor.TransformerFactoryImpl"/>
+      <arg line="index.xml ../schema/5.12/dw-document-5.12.xsd ../xsl/5.12/dw-document-html-5.12.xsl"/>
+    </java>
+    <zip zipfile="${dest.dir}/article.zip">
+      <zipfileset dir="manuscript" prefix="intro-to-mahout"/>
+    </zip>
+  </target>
+
+  <target name="svn-up" unless="offline">
+    <exec command="svn" failonerror="false">
+      <arg value="update"/>
+      <arg value="mahout-src"/>
+    </exec>
+  </target>
+  <target name="mvn-install-off" if="offline">
+    <exec command="mvn" dir="mahout-src" failonerror="true">
+      <arg value="-o"/>
+      <arg value="-DskipTests=true"/>
+      <arg value="install"/>
+    </exec>
+  </target>
+  <target name="mvn-install" unless="offline">
+    <exec command="mvn" dir="mahout-src" failonerror="true">
+      <arg value="-DskipTests=true"/>
+      <arg value="install"/>
+    </exec>
+  </target>
+  <target name="update-mahout-libs">
+    <copy todir="lib">
+      <fileset dir="mahout-src/core/target">
+        <include name="mahout-core-0.2-SNAPSHOT.jar"/>
+      </fileset>
+      <fileset dir="mahout-src/utils/target">
+        <include name="mahout-utils-0.2-SNAPSHOT.jar"/>
+      </fileset>
+      <fileset dir="mahout-src/examples/target">
+        <include name="mahout-examples-0.2-SNAPSHOT.jar"/>
+      </fileset>
+    </copy>
+    <copy todir="hadoop">
+      <fileset dir="mahout-src/core/target">
+        <include name="*.job"/>
+      </fileset>
+      <fileset dir="mahout-src/examples/target">
+        <include name="*.job"/>
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="update-mahout" depends="svn-up, mvn-install-off,mvn-install,update-mahout-libs"/>
+
+  <property name="pack.dir" value="${dest.dir}/package"/>
+
+  <target name="prepare-src" depends="compile">
+    <mkdir dir="${pack.dir}"/>
+    <copy todir="${pack.dir}/">
+      <fileset dir="${basedir}">
+        <include name="build.xml"/>
+      </fileset>
+    </copy>
+    <copy todir="${pack.dir}/mahout-src">
+      <fileset dir="mahout-src"/>
+    </copy>
+    <copy todir="${pack.dir}/hadoop">
+      <fileset dir="hadoop"/>
+    </copy>
+    <copy todir="${pack.dir}/lib">
+      <fileset dir="lib">
+        <include name="*.jar"/>
+        <exclude name="junit*.jar"/>
+      </fileset>
+    </copy>
+
+    <copy todir="${pack.dir}/src">
+      <fileset dir="src"/>
+    </copy>
+  </target>
+  <target name="package" depends="clean,prepare-src,article">
+    <zip zipfile="${dest.dir}/sample.zip">
+      <zipfileset dir="${pack.dir}" prefix="apache-mahout-examples"/>
+    </zip>
+  </target>
+
+</project>

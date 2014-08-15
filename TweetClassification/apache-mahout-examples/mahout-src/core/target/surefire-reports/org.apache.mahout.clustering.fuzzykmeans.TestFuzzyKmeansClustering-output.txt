@@ -1,0 +1,1782 @@
+test k= 0
+test k= 1
+test k= 2
+test k= 3
+test k= 4
+test k= 5
+test k= 6
+test k= 7
+test k= 8
+testKFuzzyKMeansMRJob k= 0
+09/08/17 10:50:25 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {0}
+09/08/17 10:50:25 INFO jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+09/08/17 10:50:25 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:25 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:25 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:25 INFO mapred.JobClient: Running job: job_local_0001
+09/08/17 10:50:25 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:25 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:25 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:26 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:26 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:26 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:26 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:26 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:26 INFO mapred.TaskRunner: Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:26 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:26 INFO mapred.TaskRunner: Task 'attempt_local_0001_m_000000_0' done.
+09/08/17 10:50:26 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:26 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:26 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:26 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:26 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:26 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:26 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:26 INFO mapred.TaskRunner: Task:attempt_local_0001_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:26 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:26 INFO mapred.TaskRunner: Task 'attempt_local_0001_m_000001_0' done.
+09/08/17 10:50:26 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:26 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:26 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 178 bytes
+09/08/17 10:50:26 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:26 INFO mapred.TaskRunner: Task:attempt_local_0001_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:26 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:26 INFO mapred.TaskRunner: Task attempt_local_0001_r_000000_0 is allowed to commit now
+09/08/17 10:50:26 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0001_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-0
+09/08/17 10:50:26 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:26 INFO mapred.TaskRunner: Task 'attempt_local_0001_r_000000_0' done.
+09/08/17 10:50:26 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:26 INFO mapred.JobClient: Job complete: job_local_0001
+09/08/17 10:50:26 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:26 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:26 INFO mapred.JobClient:     FILE_BYTES_READ=48513
+09/08/17 10:50:26 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=95621
+09/08/17 10:50:26 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:26 INFO mapred.JobClient:     Reduce input groups=1
+09/08/17 10:50:26 INFO mapred.JobClient:     Combine output records=2
+09/08/17 10:50:26 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:26 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:26 INFO mapred.JobClient:     Reduce output records=1
+09/08/17 10:50:26 INFO mapred.JobClient:     Spilled Records=4
+09/08/17 10:50:26 INFO mapred.JobClient:     Map output bytes=1530
+09/08/17 10:50:26 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:26 INFO mapred.JobClient:     Combine input records=18
+09/08/17 10:50:26 INFO mapred.JobClient:     Map output records=18
+09/08/17 10:50:26 INFO mapred.JobClient:     Reduce input records=2
+09/08/17 10:50:26 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {1}
+09/08/17 10:50:26 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:26 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:27 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:27 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:27 INFO mapred.JobClient: Running job: job_local_0002
+09/08/17 10:50:27 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:27 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:27 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:27 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:27 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:27 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:27 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:27 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:27 INFO mapred.TaskRunner: Task:attempt_local_0002_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:27 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:27 INFO mapred.TaskRunner: Task 'attempt_local_0002_m_000000_0' done.
+09/08/17 10:50:28 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:28 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:28 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:28 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:28 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:28 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:28 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:28 INFO mapred.TaskRunner: Task:attempt_local_0002_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:28 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:28 INFO mapred.TaskRunner: Task 'attempt_local_0002_m_000001_0' done.
+09/08/17 10:50:28 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:28 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:28 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 178 bytes
+09/08/17 10:50:28 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:28 INFO mapred.TaskRunner: Task:attempt_local_0002_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:28 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:28 INFO mapred.TaskRunner: Task attempt_local_0002_r_000000_0 is allowed to commit now
+09/08/17 10:50:28 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0002_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-1
+09/08/17 10:50:28 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:28 INFO mapred.TaskRunner: Task 'attempt_local_0002_r_000000_0' done.
+09/08/17 10:50:28 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:28 INFO mapred.JobClient: Job complete: job_local_0002
+09/08/17 10:50:28 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:28 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:28 INFO mapred.JobClient:     FILE_BYTES_READ=99207
+09/08/17 10:50:28 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=187922
+09/08/17 10:50:28 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:28 INFO mapred.JobClient:     Reduce input groups=1
+09/08/17 10:50:28 INFO mapred.JobClient:     Combine output records=2
+09/08/17 10:50:28 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:28 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:28 INFO mapred.JobClient:     Reduce output records=1
+09/08/17 10:50:28 INFO mapred.JobClient:     Spilled Records=4
+09/08/17 10:50:28 INFO mapred.JobClient:     Map output bytes=1530
+09/08/17 10:50:28 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:28 INFO mapred.JobClient:     Combine input records=18
+09/08/17 10:50:28 INFO mapred.JobClient:     Map output records=18
+09/08/17 10:50:28 INFO mapred.JobClient:     Reduce input records=2
+09/08/17 10:50:28 INFO fuzzykmeans.FuzzyKMeansDriver: Clustering 
+09/08/17 10:50:28 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:28 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:28 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:28 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:29 INFO mapred.JobClient: Running job: job_local_0003
+09/08/17 10:50:29 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:29 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:50:29 INFO mapred.TaskRunner: Task:attempt_local_0003_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:29 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:29 INFO mapred.TaskRunner: Task attempt_local_0003_m_000000_0 is allowed to commit now
+09/08/17 10:50:29 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0003_m_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:50:29 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:29 INFO mapred.TaskRunner: Task 'attempt_local_0003_m_000000_0' done.
+09/08/17 10:50:29 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:50:29 INFO mapred.TaskRunner: Task:attempt_local_0003_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:29 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:29 INFO mapred.TaskRunner: Task attempt_local_0003_m_000001_0 is allowed to commit now
+09/08/17 10:50:29 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0003_m_000001_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:50:29 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:29 INFO mapred.TaskRunner: Task 'attempt_local_0003_m_000001_0' done.
+09/08/17 10:50:30 INFO mapred.JobClient:  map 100% reduce 0%
+09/08/17 10:50:30 INFO mapred.JobClient: Job complete: job_local_0003
+09/08/17 10:50:30 INFO mapred.JobClient: Counters: 6
+09/08/17 10:50:30 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:30 INFO mapred.JobClient:     FILE_BYTES_READ=98889
+09/08/17 10:50:30 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=187688
+09/08/17 10:50:30 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:30 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:30 INFO mapred.JobClient:     Spilled Records=0
+09/08/17 10:50:30 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:30 INFO mapred.JobClient:     Map output records=18
+testKFuzzyKMeansMRJob k= 1
+09/08/17 10:50:30 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {0}
+09/08/17 10:50:30 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:30 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:30 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:30 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:30 INFO mapred.JobClient: Running job: job_local_0004
+09/08/17 10:50:30 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:30 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:30 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:31 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:31 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:31 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:31 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:31 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:31 INFO mapred.TaskRunner: Task:attempt_local_0004_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:31 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:31 INFO mapred.TaskRunner: Task 'attempt_local_0004_m_000000_0' done.
+09/08/17 10:50:31 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:31 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:31 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:31 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:31 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:31 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:31 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:31 INFO mapred.TaskRunner: Task:attempt_local_0004_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:31 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:31 INFO mapred.TaskRunner: Task 'attempt_local_0004_m_000001_0' done.
+09/08/17 10:50:31 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:31 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:31 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 352 bytes
+09/08/17 10:50:31 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:31 INFO mapred.TaskRunner: Task:attempt_local_0004_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:31 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:31 INFO mapred.TaskRunner: Task attempt_local_0004_r_000000_0 is allowed to commit now
+09/08/17 10:50:31 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0004_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-0
+09/08/17 10:50:31 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:31 INFO mapred.TaskRunner: Task 'attempt_local_0004_r_000000_0' done.
+09/08/17 10:50:31 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:31 INFO mapred.JobClient: Job complete: job_local_0004
+09/08/17 10:50:31 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:31 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:31 INFO mapred.JobClient:     FILE_BYTES_READ=201264
+09/08/17 10:50:31 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=376075
+09/08/17 10:50:31 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:31 INFO mapred.JobClient:     Reduce input groups=2
+09/08/17 10:50:31 INFO mapred.JobClient:     Combine output records=4
+09/08/17 10:50:31 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:31 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:31 INFO mapred.JobClient:     Reduce output records=2
+09/08/17 10:50:31 INFO mapred.JobClient:     Spilled Records=8
+09/08/17 10:50:31 INFO mapred.JobClient:     Map output bytes=3060
+09/08/17 10:50:31 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:31 INFO mapred.JobClient:     Combine input records=36
+09/08/17 10:50:31 INFO mapred.JobClient:     Map output records=36
+09/08/17 10:50:31 INFO mapred.JobClient:     Reduce input records=4
+09/08/17 10:50:31 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {1}
+09/08/17 10:50:31 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:31 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:32 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:32 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:32 INFO mapred.JobClient: Running job: job_local_0005
+09/08/17 10:50:32 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:32 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:32 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:32 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:32 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:32 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:32 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:32 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:32 INFO mapred.TaskRunner: Task:attempt_local_0005_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:32 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:32 INFO mapred.TaskRunner: Task 'attempt_local_0005_m_000000_0' done.
+09/08/17 10:50:32 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:32 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:32 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:32 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:32 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:32 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:32 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:32 INFO mapred.TaskRunner: Task:attempt_local_0005_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:32 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:32 INFO mapred.TaskRunner: Task 'attempt_local_0005_m_000001_0' done.
+09/08/17 10:50:32 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:32 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:32 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 352 bytes
+09/08/17 10:50:32 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:33 INFO mapred.TaskRunner: Task:attempt_local_0005_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:33 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:33 INFO mapred.TaskRunner: Task attempt_local_0005_r_000000_0 is allowed to commit now
+09/08/17 10:50:33 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0005_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-1
+09/08/17 10:50:33 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:33 INFO mapred.TaskRunner: Task 'attempt_local_0005_r_000000_0' done.
+09/08/17 10:50:33 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:33 INFO mapred.JobClient: Job complete: job_local_0005
+09/08/17 10:50:33 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:33 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:33 INFO mapred.JobClient:     FILE_BYTES_READ=253548
+09/08/17 10:50:33 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=469165
+09/08/17 10:50:33 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:33 INFO mapred.JobClient:     Reduce input groups=2
+09/08/17 10:50:33 INFO mapred.JobClient:     Combine output records=4
+09/08/17 10:50:33 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:33 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:33 INFO mapred.JobClient:     Reduce output records=2
+09/08/17 10:50:33 INFO mapred.JobClient:     Spilled Records=8
+09/08/17 10:50:33 INFO mapred.JobClient:     Map output bytes=3060
+09/08/17 10:50:33 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:33 INFO mapred.JobClient:     Combine input records=36
+09/08/17 10:50:33 INFO mapred.JobClient:     Map output records=36
+09/08/17 10:50:33 INFO mapred.JobClient:     Reduce input records=4
+09/08/17 10:50:33 INFO fuzzykmeans.FuzzyKMeansDriver: Clustering 
+09/08/17 10:50:33 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:33 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:33 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:33 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:33 INFO mapred.JobClient: Running job: job_local_0006
+09/08/17 10:50:33 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:34 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:50:34 INFO mapred.TaskRunner: Task:attempt_local_0006_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:34 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:34 INFO mapred.TaskRunner: Task attempt_local_0006_m_000000_0 is allowed to commit now
+09/08/17 10:50:34 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0006_m_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:50:34 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:34 INFO mapred.TaskRunner: Task 'attempt_local_0006_m_000000_0' done.
+09/08/17 10:50:34 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:50:34 INFO mapred.TaskRunner: Task:attempt_local_0006_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:34 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:34 INFO mapred.TaskRunner: Task attempt_local_0006_m_000001_0 is allowed to commit now
+09/08/17 10:50:34 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0006_m_000001_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:50:34 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:34 INFO mapred.TaskRunner: Task 'attempt_local_0006_m_000001_0' done.
+09/08/17 10:50:34 INFO mapred.JobClient:  map 100% reduce 0%
+09/08/17 10:50:34 INFO mapred.JobClient: Job complete: job_local_0006
+09/08/17 10:50:34 INFO mapred.JobClient: Counters: 6
+09/08/17 10:50:34 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:34 INFO mapred.JobClient:     FILE_BYTES_READ=202638
+09/08/17 10:50:34 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=377046
+09/08/17 10:50:34 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:34 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:34 INFO mapred.JobClient:     Spilled Records=0
+09/08/17 10:50:34 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:34 INFO mapred.JobClient:     Map output records=18
+testKFuzzyKMeansMRJob k= 2
+09/08/17 10:50:35 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {0}
+09/08/17 10:50:35 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:35 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:35 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:35 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:35 INFO mapred.JobClient: Running job: job_local_0007
+09/08/17 10:50:35 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:35 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:35 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:35 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:35 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:35 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:35 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:35 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:35 INFO mapred.TaskRunner: Task:attempt_local_0007_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:35 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:35 INFO mapred.TaskRunner: Task 'attempt_local_0007_m_000000_0' done.
+09/08/17 10:50:35 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:35 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:36 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:36 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:36 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:36 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:36 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:36 INFO mapred.TaskRunner: Task:attempt_local_0007_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:36 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:36 INFO mapred.TaskRunner: Task 'attempt_local_0007_m_000001_0' done.
+09/08/17 10:50:36 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:36 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:36 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 526 bytes
+09/08/17 10:50:36 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:36 INFO mapred.TaskRunner: Task:attempt_local_0007_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:36 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:36 INFO mapred.TaskRunner: Task attempt_local_0007_r_000000_0 is allowed to commit now
+09/08/17 10:50:36 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0007_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-0
+09/08/17 10:50:36 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:36 INFO mapred.TaskRunner: Task 'attempt_local_0007_r_000000_0' done.
+09/08/17 10:50:36 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:36 INFO mapred.JobClient: Job complete: job_local_0007
+09/08/17 10:50:36 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:36 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:36 INFO mapred.JobClient:     FILE_BYTES_READ=359415
+09/08/17 10:50:36 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=661746
+09/08/17 10:50:36 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:36 INFO mapred.JobClient:     Reduce input groups=3
+09/08/17 10:50:36 INFO mapred.JobClient:     Combine output records=6
+09/08/17 10:50:36 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:36 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:36 INFO mapred.JobClient:     Reduce output records=3
+09/08/17 10:50:36 INFO mapred.JobClient:     Spilled Records=12
+09/08/17 10:50:36 INFO mapred.JobClient:     Map output bytes=4590
+09/08/17 10:50:36 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:36 INFO mapred.JobClient:     Combine input records=54
+09/08/17 10:50:36 INFO mapred.JobClient:     Map output records=54
+09/08/17 10:50:36 INFO mapred.JobClient:     Reduce input records=6
+09/08/17 10:50:36 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {1}
+09/08/17 10:50:36 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:36 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:36 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:36 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:37 INFO mapred.JobClient: Running job: job_local_0008
+09/08/17 10:50:37 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:37 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:37 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:37 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:37 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:37 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:37 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:37 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:37 INFO mapred.TaskRunner: Task:attempt_local_0008_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:37 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:37 INFO mapred.TaskRunner: Task 'attempt_local_0008_m_000000_0' done.
+09/08/17 10:50:37 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:37 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:37 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:37 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:37 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:37 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:37 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:37 INFO mapred.TaskRunner: Task:attempt_local_0008_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:37 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:37 INFO mapred.TaskRunner: Task 'attempt_local_0008_m_000001_0' done.
+09/08/17 10:50:37 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:37 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:37 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 526 bytes
+09/08/17 10:50:37 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:37 INFO mapred.TaskRunner: Task:attempt_local_0008_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:37 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:37 INFO mapred.TaskRunner: Task attempt_local_0008_r_000000_0 is allowed to commit now
+09/08/17 10:50:37 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0008_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-1
+09/08/17 10:50:37 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:37 INFO mapred.TaskRunner: Task 'attempt_local_0008_r_000000_0' done.
+09/08/17 10:50:38 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:38 INFO mapred.JobClient: Job complete: job_local_0008
+09/08/17 10:50:38 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:38 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:38 INFO mapred.JobClient:     FILE_BYTES_READ=413289
+09/08/17 10:50:38 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=755625
+09/08/17 10:50:38 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:38 INFO mapred.JobClient:     Reduce input groups=3
+09/08/17 10:50:38 INFO mapred.JobClient:     Combine output records=6
+09/08/17 10:50:38 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:38 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:38 INFO mapred.JobClient:     Reduce output records=3
+09/08/17 10:50:38 INFO mapred.JobClient:     Spilled Records=12
+09/08/17 10:50:38 INFO mapred.JobClient:     Map output bytes=4590
+09/08/17 10:50:38 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:38 INFO mapred.JobClient:     Combine input records=54
+09/08/17 10:50:38 INFO mapred.JobClient:     Map output records=54
+09/08/17 10:50:38 INFO mapred.JobClient:     Reduce input records=6
+09/08/17 10:50:38 INFO fuzzykmeans.FuzzyKMeansDriver: Clustering 
+09/08/17 10:50:38 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:38 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:38 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:38 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:38 INFO mapred.JobClient: Running job: job_local_0009
+09/08/17 10:50:38 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:38 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:50:38 INFO mapred.TaskRunner: Task:attempt_local_0009_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:38 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:38 INFO mapred.TaskRunner: Task attempt_local_0009_m_000000_0 is allowed to commit now
+09/08/17 10:50:38 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0009_m_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:50:38 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:38 INFO mapred.TaskRunner: Task 'attempt_local_0009_m_000000_0' done.
+09/08/17 10:50:38 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:50:38 INFO mapred.TaskRunner: Task:attempt_local_0009_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:38 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:38 INFO mapred.TaskRunner: Task attempt_local_0009_m_000001_0 is allowed to commit now
+09/08/17 10:50:38 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0009_m_000001_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:50:38 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:38 INFO mapred.TaskRunner: Task 'attempt_local_0009_m_000001_0' done.
+09/08/17 10:50:39 INFO mapred.JobClient:  map 100% reduce 0%
+09/08/17 10:50:39 INFO mapred.JobClient: Job complete: job_local_0009
+09/08/17 10:50:39 INFO mapred.JobClient: Counters: 6
+09/08/17 10:50:39 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:39 INFO mapred.JobClient:     FILE_BYTES_READ=309987
+09/08/17 10:50:39 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=569882
+09/08/17 10:50:39 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:39 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:39 INFO mapred.JobClient:     Spilled Records=0
+09/08/17 10:50:39 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:39 INFO mapred.JobClient:     Map output records=18
+testKFuzzyKMeansMRJob k= 3
+09/08/17 10:50:39 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {0}
+09/08/17 10:50:39 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:39 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:39 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:39 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:40 INFO mapred.JobClient: Running job: job_local_0010
+09/08/17 10:50:40 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:40 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:40 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:40 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:40 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:40 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:40 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:40 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:40 INFO mapred.TaskRunner: Task:attempt_local_0010_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:40 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:40 INFO mapred.TaskRunner: Task 'attempt_local_0010_m_000000_0' done.
+09/08/17 10:50:40 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:40 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:40 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:40 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:40 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:40 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:40 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:40 INFO mapred.TaskRunner: Task:attempt_local_0010_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:40 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:40 INFO mapred.TaskRunner: Task 'attempt_local_0010_m_000001_0' done.
+09/08/17 10:50:40 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:40 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:40 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 700 bytes
+09/08/17 10:50:40 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:40 INFO mapred.TaskRunner: Task:attempt_local_0010_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:40 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:40 INFO mapred.TaskRunner: Task attempt_local_0010_r_000000_0 is allowed to commit now
+09/08/17 10:50:40 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0010_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-0
+09/08/17 10:50:40 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:40 INFO mapred.TaskRunner: Task 'attempt_local_0010_r_000000_0' done.
+09/08/17 10:50:41 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:41 INFO mapred.JobClient: Job complete: job_local_0010
+09/08/17 10:50:41 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:41 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:41 INFO mapred.JobClient:     FILE_BYTES_READ=522966
+09/08/17 10:50:41 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=952634
+09/08/17 10:50:41 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:41 INFO mapred.JobClient:     Reduce input groups=4
+09/08/17 10:50:41 INFO mapred.JobClient:     Combine output records=8
+09/08/17 10:50:41 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:41 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:41 INFO mapred.JobClient:     Reduce output records=4
+09/08/17 10:50:41 INFO mapred.JobClient:     Spilled Records=16
+09/08/17 10:50:41 INFO mapred.JobClient:     Map output bytes=6120
+09/08/17 10:50:41 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:41 INFO mapred.JobClient:     Combine input records=72
+09/08/17 10:50:41 INFO mapred.JobClient:     Map output records=72
+09/08/17 10:50:41 INFO mapred.JobClient:     Reduce input records=8
+09/08/17 10:50:41 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {1}
+09/08/17 10:50:41 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:41 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:41 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:41 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:41 INFO mapred.JobClient: Running job: job_local_0011
+09/08/17 10:50:41 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:41 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:41 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:41 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:41 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:41 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:41 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:41 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:41 INFO mapred.TaskRunner: Task:attempt_local_0011_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:41 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:41 INFO mapred.TaskRunner: Task 'attempt_local_0011_m_000000_0' done.
+09/08/17 10:50:41 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:41 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:42 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:42 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:42 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:42 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:42 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:42 INFO mapred.TaskRunner: Task:attempt_local_0011_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:42 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:42 INFO mapred.TaskRunner: Task 'attempt_local_0011_m_000001_0' done.
+09/08/17 10:50:42 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:42 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:42 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 700 bytes
+09/08/17 10:50:42 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:42 INFO mapred.TaskRunner: Task:attempt_local_0011_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:42 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:42 INFO mapred.TaskRunner: Task attempt_local_0011_r_000000_0 is allowed to commit now
+09/08/17 10:50:42 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0011_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-1
+09/08/17 10:50:42 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:42 INFO mapred.TaskRunner: Task 'attempt_local_0011_r_000000_0' done.
+09/08/17 10:50:42 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:42 INFO mapred.JobClient: Job complete: job_local_0011
+09/08/17 10:50:42 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:42 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:42 INFO mapred.JobClient:     FILE_BYTES_READ=578430
+09/08/17 10:50:42 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=1047302
+09/08/17 10:50:42 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:42 INFO mapred.JobClient:     Reduce input groups=4
+09/08/17 10:50:42 INFO mapred.JobClient:     Combine output records=8
+09/08/17 10:50:42 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:42 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:42 INFO mapred.JobClient:     Reduce output records=4
+09/08/17 10:50:42 INFO mapred.JobClient:     Spilled Records=16
+09/08/17 10:50:42 INFO mapred.JobClient:     Map output bytes=6120
+09/08/17 10:50:42 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:42 INFO mapred.JobClient:     Combine input records=72
+09/08/17 10:50:42 INFO mapred.JobClient:     Map output records=72
+09/08/17 10:50:42 INFO mapred.JobClient:     Reduce input records=8
+09/08/17 10:50:42 INFO fuzzykmeans.FuzzyKMeansDriver: Clustering 
+09/08/17 10:50:42 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:42 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:42 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:42 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:43 INFO mapred.JobClient: Running job: job_local_0012
+09/08/17 10:50:43 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:43 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:50:43 INFO mapred.TaskRunner: Task:attempt_local_0012_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:43 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:43 INFO mapred.TaskRunner: Task attempt_local_0012_m_000000_0 is allowed to commit now
+09/08/17 10:50:43 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0012_m_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:50:43 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:43 INFO mapred.TaskRunner: Task 'attempt_local_0012_m_000000_0' done.
+09/08/17 10:50:43 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:50:43 INFO mapred.TaskRunner: Task:attempt_local_0012_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:43 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:43 INFO mapred.TaskRunner: Task attempt_local_0012_m_000001_0 is allowed to commit now
+09/08/17 10:50:43 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0012_m_000001_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:50:43 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:43 INFO mapred.TaskRunner: Task 'attempt_local_0012_m_000001_0' done.
+09/08/17 10:50:44 INFO mapred.JobClient:  map 100% reduce 0%
+09/08/17 10:50:44 INFO mapred.JobClient: Job complete: job_local_0012
+09/08/17 10:50:44 INFO mapred.JobClient: Counters: 6
+09/08/17 10:50:44 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:44 INFO mapred.JobClient:     FILE_BYTES_READ=420936
+09/08/17 10:50:44 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=766256
+09/08/17 10:50:44 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:44 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:44 INFO mapred.JobClient:     Spilled Records=0
+09/08/17 10:50:44 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:44 INFO mapred.JobClient:     Map output records=18
+testKFuzzyKMeansMRJob k= 4
+09/08/17 10:50:44 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {0}
+09/08/17 10:50:44 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:44 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:44 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:44 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:44 INFO mapred.JobClient: Running job: job_local_0013
+09/08/17 10:50:44 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:44 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:44 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:44 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:44 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:44 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:45 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:45 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:45 INFO mapred.TaskRunner: Task:attempt_local_0013_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:45 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:45 INFO mapred.TaskRunner: Task 'attempt_local_0013_m_000000_0' done.
+09/08/17 10:50:45 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:45 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:45 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:45 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:45 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:45 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:45 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:45 INFO mapred.TaskRunner: Task:attempt_local_0013_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:45 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:45 INFO mapred.TaskRunner: Task 'attempt_local_0013_m_000001_0' done.
+09/08/17 10:50:45 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:45 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:45 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 874 bytes
+09/08/17 10:50:45 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:45 INFO mapred.TaskRunner: Task:attempt_local_0013_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:45 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:45 INFO mapred.TaskRunner: Task attempt_local_0013_r_000000_0 is allowed to commit now
+09/08/17 10:50:45 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0013_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-0
+09/08/17 10:50:45 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:45 INFO mapred.TaskRunner: Task 'attempt_local_0013_r_000000_0' done.
+09/08/17 10:50:45 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:45 INFO mapred.JobClient: Job complete: job_local_0013
+09/08/17 10:50:45 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:45 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:45 INFO mapred.JobClient:     FILE_BYTES_READ=692001
+09/08/17 10:50:45 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=1248875
+09/08/17 10:50:45 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:45 INFO mapred.JobClient:     Reduce input groups=5
+09/08/17 10:50:45 INFO mapred.JobClient:     Combine output records=10
+09/08/17 10:50:45 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:45 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:45 INFO mapred.JobClient:     Reduce output records=5
+09/08/17 10:50:45 INFO mapred.JobClient:     Spilled Records=20
+09/08/17 10:50:45 INFO mapred.JobClient:     Map output bytes=7650
+09/08/17 10:50:45 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:45 INFO mapred.JobClient:     Combine input records=90
+09/08/17 10:50:45 INFO mapred.JobClient:     Map output records=90
+09/08/17 10:50:45 INFO mapred.JobClient:     Reduce input records=10
+09/08/17 10:50:45 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {1}
+09/08/17 10:50:45 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:45 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:45 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:45 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:46 INFO mapred.JobClient: Running job: job_local_0014
+09/08/17 10:50:46 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:46 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:46 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:46 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:46 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:46 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:46 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:46 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:46 INFO mapred.TaskRunner: Task:attempt_local_0014_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:46 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:46 INFO mapred.TaskRunner: Task 'attempt_local_0014_m_000000_0' done.
+09/08/17 10:50:46 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:46 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:46 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:46 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:46 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:46 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:46 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:46 INFO mapred.TaskRunner: Task:attempt_local_0014_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:46 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:46 INFO mapred.TaskRunner: Task 'attempt_local_0014_m_000001_0' done.
+09/08/17 10:50:46 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:46 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:46 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 874 bytes
+09/08/17 10:50:46 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:46 INFO mapred.TaskRunner: Task:attempt_local_0014_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:46 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:46 INFO mapred.TaskRunner: Task attempt_local_0014_r_000000_0 is allowed to commit now
+09/08/17 10:50:46 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0014_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-1
+09/08/17 10:50:46 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:46 INFO mapred.TaskRunner: Task 'attempt_local_0014_r_000000_0' done.
+09/08/17 10:50:47 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:47 INFO mapred.JobClient: Job complete: job_local_0014
+09/08/17 10:50:47 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:47 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:47 INFO mapred.JobClient:     FILE_BYTES_READ=749103
+09/08/17 10:50:47 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=1344344
+09/08/17 10:50:47 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:47 INFO mapred.JobClient:     Reduce input groups=5
+09/08/17 10:50:47 INFO mapred.JobClient:     Combine output records=10
+09/08/17 10:50:47 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:47 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:47 INFO mapred.JobClient:     Reduce output records=5
+09/08/17 10:50:47 INFO mapred.JobClient:     Spilled Records=20
+09/08/17 10:50:47 INFO mapred.JobClient:     Map output bytes=7650
+09/08/17 10:50:47 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:47 INFO mapred.JobClient:     Combine input records=90
+09/08/17 10:50:47 INFO mapred.JobClient:     Map output records=90
+09/08/17 10:50:47 INFO mapred.JobClient:     Reduce input records=10
+09/08/17 10:50:47 INFO fuzzykmeans.FuzzyKMeansDriver: Clustering 
+09/08/17 10:50:47 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:47 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:47 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:47 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:47 INFO mapred.JobClient: Running job: job_local_0015
+09/08/17 10:50:47 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:47 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:50:48 INFO mapred.TaskRunner: Task:attempt_local_0015_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:48 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:48 INFO mapred.TaskRunner: Task attempt_local_0015_m_000000_0 is allowed to commit now
+09/08/17 10:50:48 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0015_m_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:50:48 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:48 INFO mapred.TaskRunner: Task 'attempt_local_0015_m_000000_0' done.
+09/08/17 10:50:48 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:50:48 INFO mapred.TaskRunner: Task:attempt_local_0015_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:48 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:48 INFO mapred.TaskRunner: Task attempt_local_0015_m_000001_0 is allowed to commit now
+09/08/17 10:50:48 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0015_m_000001_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:50:48 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:48 INFO mapred.TaskRunner: Task 'attempt_local_0015_m_000001_0' done.
+09/08/17 10:50:48 INFO mapred.JobClient:  map 100% reduce 0%
+09/08/17 10:50:48 INFO mapred.JobClient: Job complete: job_local_0015
+09/08/17 10:50:48 INFO mapred.JobClient: Counters: 6
+09/08/17 10:50:48 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:48 INFO mapred.JobClient:     FILE_BYTES_READ=535601
+09/08/17 10:50:48 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=966164
+09/08/17 10:50:48 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:48 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:48 INFO mapred.JobClient:     Spilled Records=0
+09/08/17 10:50:48 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:48 INFO mapred.JobClient:     Map output records=18
+testKFuzzyKMeansMRJob k= 5
+09/08/17 10:50:48 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {0}
+09/08/17 10:50:48 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:48 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:49 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:49 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:49 INFO mapred.JobClient: Running job: job_local_0016
+09/08/17 10:50:49 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:49 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:49 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:49 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:49 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:49 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:49 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:49 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:49 INFO mapred.TaskRunner: Task:attempt_local_0016_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:49 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:49 INFO mapred.TaskRunner: Task 'attempt_local_0016_m_000000_0' done.
+09/08/17 10:50:49 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:49 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:50 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:50 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:50 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:50 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:50 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:50 INFO mapred.TaskRunner: Task:attempt_local_0016_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:50 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:50 INFO mapred.TaskRunner: Task 'attempt_local_0016_m_000001_0' done.
+09/08/17 10:50:50 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:50 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:50 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 1048 bytes
+09/08/17 10:50:50 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:50 INFO mapred.TaskRunner: Task:attempt_local_0016_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:50 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:50 INFO mapred.TaskRunner: Task attempt_local_0016_r_000000_0 is allowed to commit now
+09/08/17 10:50:50 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0016_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-0
+09/08/17 10:50:50 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:50 INFO mapred.TaskRunner: Task 'attempt_local_0016_r_000000_0' done.
+09/08/17 10:50:50 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:50 INFO mapred.JobClient: Job complete: job_local_0016
+09/08/17 10:50:50 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:50 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:50 INFO mapred.JobClient:     FILE_BYTES_READ=866544
+09/08/17 10:50:50 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=1550377
+09/08/17 10:50:50 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:50 INFO mapred.JobClient:     Reduce input groups=6
+09/08/17 10:50:50 INFO mapred.JobClient:     Combine output records=12
+09/08/17 10:50:50 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:50 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:50 INFO mapred.JobClient:     Reduce output records=6
+09/08/17 10:50:50 INFO mapred.JobClient:     Spilled Records=24
+09/08/17 10:50:50 INFO mapred.JobClient:     Map output bytes=9180
+09/08/17 10:50:50 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:50 INFO mapred.JobClient:     Combine input records=108
+09/08/17 10:50:50 INFO mapred.JobClient:     Map output records=108
+09/08/17 10:50:50 INFO mapred.JobClient:     Reduce input records=12
+09/08/17 10:50:50 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {1}
+09/08/17 10:50:50 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:50 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:50 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:50 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:50 INFO mapred.JobClient: Running job: job_local_0017
+09/08/17 10:50:50 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:51 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:51 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:51 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:51 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:51 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:51 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:51 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:51 INFO mapred.TaskRunner: Task:attempt_local_0017_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:51 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:51 INFO mapred.TaskRunner: Task 'attempt_local_0017_m_000000_0' done.
+09/08/17 10:50:51 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:51 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:51 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:51 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:51 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:51 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:51 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:51 INFO mapred.TaskRunner: Task:attempt_local_0017_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:51 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:51 INFO mapred.TaskRunner: Task 'attempt_local_0017_m_000001_0' done.
+09/08/17 10:50:51 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:51 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:51 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 1048 bytes
+09/08/17 10:50:51 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:51 INFO mapred.TaskRunner: Task:attempt_local_0017_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:51 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:51 INFO mapred.TaskRunner: Task attempt_local_0017_r_000000_0 is allowed to commit now
+09/08/17 10:50:51 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0017_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-1
+09/08/17 10:50:51 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:51 INFO mapred.TaskRunner: Task 'attempt_local_0017_r_000000_0' done.
+09/08/17 10:50:51 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:51 INFO mapred.JobClient: Job complete: job_local_0017
+09/08/17 10:50:51 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:51 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:51 INFO mapred.JobClient:     FILE_BYTES_READ=925236
+09/08/17 10:50:51 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=1646635
+09/08/17 10:50:51 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:51 INFO mapred.JobClient:     Reduce input groups=6
+09/08/17 10:50:51 INFO mapred.JobClient:     Combine output records=12
+09/08/17 10:50:51 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:51 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:51 INFO mapred.JobClient:     Reduce output records=6
+09/08/17 10:50:51 INFO mapred.JobClient:     Spilled Records=24
+09/08/17 10:50:51 INFO mapred.JobClient:     Map output bytes=9180
+09/08/17 10:50:51 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:51 INFO mapred.JobClient:     Combine input records=108
+09/08/17 10:50:51 INFO mapred.JobClient:     Map output records=108
+09/08/17 10:50:51 INFO mapred.JobClient:     Reduce input records=12
+09/08/17 10:50:51 INFO fuzzykmeans.FuzzyKMeansDriver: Clustering 
+09/08/17 10:50:51 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:51 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:52 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:52 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:52 INFO mapred.JobClient: Running job: job_local_0018
+09/08/17 10:50:52 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:52 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:50:52 INFO mapred.TaskRunner: Task:attempt_local_0018_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:52 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:52 INFO mapred.TaskRunner: Task attempt_local_0018_m_000000_0 is allowed to commit now
+09/08/17 10:50:52 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0018_m_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:50:52 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:52 INFO mapred.TaskRunner: Task 'attempt_local_0018_m_000000_0' done.
+09/08/17 10:50:52 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:50:52 INFO mapred.TaskRunner: Task:attempt_local_0018_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:52 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:52 INFO mapred.TaskRunner: Task attempt_local_0018_m_000001_0 is allowed to commit now
+09/08/17 10:50:52 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0018_m_000001_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:50:52 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:52 INFO mapred.TaskRunner: Task 'attempt_local_0018_m_000001_0' done.
+09/08/17 10:50:53 INFO mapred.JobClient:  map 100% reduce 0%
+09/08/17 10:50:53 INFO mapred.JobClient: Job complete: job_local_0018
+09/08/17 10:50:53 INFO mapred.JobClient: Counters: 6
+09/08/17 10:50:53 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:53 INFO mapred.JobClient:     FILE_BYTES_READ=653878
+09/08/17 10:50:53 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=1169554
+09/08/17 10:50:53 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:53 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:53 INFO mapred.JobClient:     Spilled Records=0
+09/08/17 10:50:53 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:53 INFO mapred.JobClient:     Map output records=18
+testKFuzzyKMeansMRJob k= 6
+09/08/17 10:50:53 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {0}
+09/08/17 10:50:53 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:53 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:53 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:53 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:54 INFO mapred.JobClient: Running job: job_local_0019
+09/08/17 10:50:54 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:54 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:54 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:54 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:54 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:54 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:54 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:54 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:54 INFO mapred.TaskRunner: Task:attempt_local_0019_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:54 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:54 INFO mapred.TaskRunner: Task 'attempt_local_0019_m_000000_0' done.
+09/08/17 10:50:54 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:54 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:54 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:54 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:54 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:54 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:54 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:54 INFO mapred.TaskRunner: Task:attempt_local_0019_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:54 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:54 INFO mapred.TaskRunner: Task 'attempt_local_0019_m_000001_0' done.
+09/08/17 10:50:54 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:54 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:54 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 1222 bytes
+09/08/17 10:50:54 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:54 INFO mapred.TaskRunner: Task:attempt_local_0019_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:54 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:54 INFO mapred.TaskRunner: Task attempt_local_0019_r_000000_0 is allowed to commit now
+09/08/17 10:50:54 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0019_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-0
+09/08/17 10:50:54 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:54 INFO mapred.TaskRunner: Task 'attempt_local_0019_r_000000_0' done.
+09/08/17 10:50:55 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:55 INFO mapred.JobClient: Job complete: job_local_0019
+09/08/17 10:50:55 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:55 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:55 INFO mapred.JobClient:     FILE_BYTES_READ=1046487
+09/08/17 10:50:55 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=1857096
+09/08/17 10:50:55 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:55 INFO mapred.JobClient:     Reduce input groups=7
+09/08/17 10:50:55 INFO mapred.JobClient:     Combine output records=14
+09/08/17 10:50:55 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:55 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:55 INFO mapred.JobClient:     Reduce output records=7
+09/08/17 10:50:55 INFO mapred.JobClient:     Spilled Records=28
+09/08/17 10:50:55 INFO mapred.JobClient:     Map output bytes=10710
+09/08/17 10:50:55 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:55 INFO mapred.JobClient:     Combine input records=126
+09/08/17 10:50:55 INFO mapred.JobClient:     Map output records=126
+09/08/17 10:50:55 INFO mapred.JobClient:     Reduce input records=14
+09/08/17 10:50:55 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {1}
+09/08/17 10:50:55 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:55 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:55 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:55 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:55 INFO mapred.JobClient: Running job: job_local_0020
+09/08/17 10:50:55 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:55 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:55 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:55 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:55 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:55 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:55 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:55 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:55 INFO mapred.TaskRunner: Task:attempt_local_0020_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:55 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:55 INFO mapred.TaskRunner: Task 'attempt_local_0020_m_000000_0' done.
+09/08/17 10:50:55 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:55 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:56 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:56 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:56 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:56 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:56 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:56 INFO mapred.TaskRunner: Task:attempt_local_0020_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:56 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:56 INFO mapred.TaskRunner: Task 'attempt_local_0020_m_000001_0' done.
+09/08/17 10:50:56 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:56 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:56 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 1222 bytes
+09/08/17 10:50:56 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:56 INFO mapred.TaskRunner: Task:attempt_local_0020_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:56 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:56 INFO mapred.TaskRunner: Task attempt_local_0020_r_000000_0 is allowed to commit now
+09/08/17 10:50:56 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0020_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-1
+09/08/17 10:50:56 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:56 INFO mapred.TaskRunner: Task 'attempt_local_0020_r_000000_0' done.
+09/08/17 10:50:56 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:56 INFO mapred.JobClient: Job complete: job_local_0020
+09/08/17 10:50:56 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:56 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:56 INFO mapred.JobClient:     FILE_BYTES_READ=1106769
+09/08/17 10:50:56 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=1954143
+09/08/17 10:50:56 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:56 INFO mapred.JobClient:     Reduce input groups=7
+09/08/17 10:50:56 INFO mapred.JobClient:     Combine output records=14
+09/08/17 10:50:56 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:56 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:56 INFO mapred.JobClient:     Reduce output records=7
+09/08/17 10:50:56 INFO mapred.JobClient:     Spilled Records=28
+09/08/17 10:50:56 INFO mapred.JobClient:     Map output bytes=10710
+09/08/17 10:50:56 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:56 INFO mapred.JobClient:     Combine input records=126
+09/08/17 10:50:56 INFO mapred.JobClient:     Map output records=126
+09/08/17 10:50:56 INFO mapred.JobClient:     Reduce input records=14
+09/08/17 10:50:56 INFO fuzzykmeans.FuzzyKMeansDriver: Clustering 
+09/08/17 10:50:56 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:56 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:56 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:56 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:57 INFO mapred.JobClient: Running job: job_local_0021
+09/08/17 10:50:57 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:57 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:50:57 INFO mapred.TaskRunner: Task:attempt_local_0021_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:57 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:57 INFO mapred.TaskRunner: Task attempt_local_0021_m_000000_0 is allowed to commit now
+09/08/17 10:50:57 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0021_m_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:50:57 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:57 INFO mapred.TaskRunner: Task 'attempt_local_0021_m_000000_0' done.
+09/08/17 10:50:57 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:50:57 INFO mapred.TaskRunner: Task:attempt_local_0021_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:57 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:57 INFO mapred.TaskRunner: Task attempt_local_0021_m_000001_0 is allowed to commit now
+09/08/17 10:50:57 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0021_m_000001_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:50:57 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:57 INFO mapred.TaskRunner: Task 'attempt_local_0021_m_000001_0' done.
+09/08/17 10:50:58 INFO mapred.JobClient:  map 100% reduce 0%
+09/08/17 10:50:58 INFO mapred.JobClient: Job complete: job_local_0021
+09/08/17 10:50:58 INFO mapred.JobClient: Counters: 6
+09/08/17 10:50:58 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:58 INFO mapred.JobClient:     FILE_BYTES_READ=775755
+09/08/17 10:50:58 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=1376422
+09/08/17 10:50:58 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:58 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:58 INFO mapred.JobClient:     Spilled Records=0
+09/08/17 10:50:58 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:58 INFO mapred.JobClient:     Map output records=18
+testKFuzzyKMeansMRJob k= 7
+09/08/17 10:50:58 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {0}
+09/08/17 10:50:58 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:58 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:58 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:58 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:58 INFO mapred.JobClient: Running job: job_local_0022
+09/08/17 10:50:58 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:58 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:58 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:58 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:58 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:58 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:58 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:59 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:59 INFO mapred.TaskRunner: Task:attempt_local_0022_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:59 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:50:59 INFO mapred.TaskRunner: Task 'attempt_local_0022_m_000000_0' done.
+09/08/17 10:50:59 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:59 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:59 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:59 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:59 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:50:59 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:59 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:59 INFO mapred.TaskRunner: Task:attempt_local_0022_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:59 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:50:59 INFO mapred.TaskRunner: Task 'attempt_local_0022_m_000001_0' done.
+09/08/17 10:50:59 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:59 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:59 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 1396 bytes
+09/08/17 10:50:59 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:59 INFO mapred.TaskRunner: Task:attempt_local_0022_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:59 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:59 INFO mapred.TaskRunner: Task attempt_local_0022_r_000000_0 is allowed to commit now
+09/08/17 10:50:59 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0022_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-0
+09/08/17 10:50:59 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:59 INFO mapred.TaskRunner: Task 'attempt_local_0022_r_000000_0' done.
+09/08/17 10:50:59 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:59 INFO mapred.JobClient: Job complete: job_local_0022
+09/08/17 10:50:59 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:59 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:59 INFO mapred.JobClient:     FILE_BYTES_READ=1231830
+09/08/17 10:50:59 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=2169032
+09/08/17 10:50:59 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:59 INFO mapred.JobClient:     Reduce input groups=8
+09/08/17 10:50:59 INFO mapred.JobClient:     Combine output records=16
+09/08/17 10:50:59 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:59 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:59 INFO mapred.JobClient:     Reduce output records=8
+09/08/17 10:50:59 INFO mapred.JobClient:     Spilled Records=32
+09/08/17 10:50:59 INFO mapred.JobClient:     Map output bytes=12240
+09/08/17 10:50:59 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:59 INFO mapred.JobClient:     Combine input records=144
+09/08/17 10:50:59 INFO mapred.JobClient:     Map output records=144
+09/08/17 10:50:59 INFO mapred.JobClient:     Reduce input records=16
+09/08/17 10:50:59 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {1}
+09/08/17 10:50:59 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:59 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:59 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:59 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:51:00 INFO mapred.JobClient: Running job: job_local_0023
+09/08/17 10:51:00 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:51:00 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:51:00 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:51:00 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:51:00 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:51:00 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:51:00 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:51:00 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:51:00 INFO mapred.TaskRunner: Task:attempt_local_0023_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:51:00 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:51:00 INFO mapred.TaskRunner: Task 'attempt_local_0023_m_000000_0' done.
+09/08/17 10:51:00 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:51:00 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:51:00 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:51:00 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:51:00 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:51:00 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:51:00 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:51:00 INFO mapred.TaskRunner: Task:attempt_local_0023_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:51:00 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:51:00 INFO mapred.TaskRunner: Task 'attempt_local_0023_m_000001_0' done.
+09/08/17 10:51:00 INFO mapred.LocalJobRunner: 
+09/08/17 10:51:00 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:51:00 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 1396 bytes
+09/08/17 10:51:00 INFO mapred.LocalJobRunner: 
+09/08/17 10:51:00 INFO mapred.TaskRunner: Task:attempt_local_0023_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:51:00 INFO mapred.LocalJobRunner: 
+09/08/17 10:51:00 INFO mapred.TaskRunner: Task attempt_local_0023_r_000000_0 is allowed to commit now
+09/08/17 10:51:00 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0023_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-1
+09/08/17 10:51:00 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:51:00 INFO mapred.TaskRunner: Task 'attempt_local_0023_r_000000_0' done.
+09/08/17 10:51:01 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:51:01 INFO mapred.JobClient: Job complete: job_local_0023
+09/08/17 10:51:01 INFO mapred.JobClient: Counters: 13
+09/08/17 10:51:01 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:51:01 INFO mapred.JobClient:     FILE_BYTES_READ=1293702
+09/08/17 10:51:01 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=2266868
+09/08/17 10:51:01 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:51:01 INFO mapred.JobClient:     Reduce input groups=8
+09/08/17 10:51:01 INFO mapred.JobClient:     Combine output records=16
+09/08/17 10:51:01 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:51:01 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:51:01 INFO mapred.JobClient:     Reduce output records=8
+09/08/17 10:51:01 INFO mapred.JobClient:     Spilled Records=32
+09/08/17 10:51:01 INFO mapred.JobClient:     Map output bytes=12240
+09/08/17 10:51:01 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:51:01 INFO mapred.JobClient:     Combine input records=144
+09/08/17 10:51:01 INFO mapred.JobClient:     Map output records=144
+09/08/17 10:51:01 INFO mapred.JobClient:     Reduce input records=16
+09/08/17 10:51:01 INFO fuzzykmeans.FuzzyKMeansDriver: Clustering 
+09/08/17 10:51:01 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:51:01 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:51:01 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:51:01 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:51:01 INFO mapred.JobClient: Running job: job_local_0024
+09/08/17 10:51:01 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:51:01 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:51:01 INFO mapred.TaskRunner: Task:attempt_local_0024_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:51:01 INFO mapred.LocalJobRunner: 
+09/08/17 10:51:01 INFO mapred.TaskRunner: Task attempt_local_0024_m_000000_0 is allowed to commit now
+09/08/17 10:51:01 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0024_m_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:51:01 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:51:01 INFO mapred.TaskRunner: Task 'attempt_local_0024_m_000000_0' done.
+09/08/17 10:51:02 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:51:02 INFO mapred.TaskRunner: Task:attempt_local_0024_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:51:02 INFO mapred.LocalJobRunner: 
+09/08/17 10:51:02 INFO mapred.TaskRunner: Task attempt_local_0024_m_000001_0 is allowed to commit now
+09/08/17 10:51:02 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0024_m_000001_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:51:02 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:51:02 INFO mapred.TaskRunner: Task 'attempt_local_0024_m_000001_0' done.
+09/08/17 10:51:02 INFO mapred.JobClient:  map 100% reduce 0%
+09/08/17 10:51:02 INFO mapred.JobClient: Job complete: job_local_0024
+09/08/17 10:51:02 INFO mapred.JobClient: Counters: 6
+09/08/17 10:51:02 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:51:02 INFO mapred.JobClient:     FILE_BYTES_READ=901232
+09/08/17 10:51:02 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=1586828
+09/08/17 10:51:02 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:51:02 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:51:02 INFO mapred.JobClient:     Spilled Records=0
+09/08/17 10:51:02 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:51:02 INFO mapred.JobClient:     Map output records=18
+testKFuzzyKMeansMRJob k= 8
+09/08/17 10:51:02 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {0}
+09/08/17 10:51:02 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:51:02 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:51:03 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:51:03 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:51:03 INFO mapred.JobClient: Running job: job_local_0025
+09/08/17 10:51:03 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:51:03 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:51:03 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:51:03 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:51:03 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:51:03 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:51:03 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:51:03 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:51:03 INFO mapred.TaskRunner: Task:attempt_local_0025_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:51:03 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:51:03 INFO mapred.TaskRunner: Task 'attempt_local_0025_m_000000_0' done.
+09/08/17 10:51:03 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:51:03 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:51:03 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:51:03 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:51:03 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:51:03 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:51:03 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:51:03 INFO mapred.TaskRunner: Task:attempt_local_0025_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:51:03 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:51:03 INFO mapred.TaskRunner: Task 'attempt_local_0025_m_000001_0' done.
+09/08/17 10:51:03 INFO mapred.LocalJobRunner: 
+09/08/17 10:51:03 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:51:03 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 1570 bytes
+09/08/17 10:51:03 INFO mapred.LocalJobRunner: 
+09/08/17 10:51:04 INFO mapred.TaskRunner: Task:attempt_local_0025_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:51:04 INFO mapred.LocalJobRunner: 
+09/08/17 10:51:04 INFO mapred.TaskRunner: Task attempt_local_0025_r_000000_0 is allowed to commit now
+09/08/17 10:51:04 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0025_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-0
+09/08/17 10:51:04 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:51:04 INFO mapred.TaskRunner: Task 'attempt_local_0025_r_000000_0' done.
+09/08/17 10:51:04 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:51:04 INFO mapred.JobClient: Job complete: job_local_0025
+09/08/17 10:51:04 INFO mapred.JobClient: Counters: 13
+09/08/17 10:51:04 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:51:04 INFO mapred.JobClient:     FILE_BYTES_READ=1422633
+09/08/17 10:51:04 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=2486305
+09/08/17 10:51:04 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:51:04 INFO mapred.JobClient:     Reduce input groups=9
+09/08/17 10:51:04 INFO mapred.JobClient:     Combine output records=18
+09/08/17 10:51:04 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:51:04 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:51:04 INFO mapred.JobClient:     Reduce output records=9
+09/08/17 10:51:04 INFO mapred.JobClient:     Spilled Records=36
+09/08/17 10:51:04 INFO mapred.JobClient:     Map output bytes=13770
+09/08/17 10:51:04 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:51:04 INFO mapred.JobClient:     Combine input records=162
+09/08/17 10:51:04 INFO mapred.JobClient:     Map output records=162
+09/08/17 10:51:04 INFO mapred.JobClient:     Reduce input records=18
+09/08/17 10:51:04 INFO fuzzykmeans.FuzzyKMeansDriver: Iteration {1}
+09/08/17 10:51:04 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:51:04 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:51:04 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:51:04 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:51:04 INFO mapred.JobClient: Running job: job_local_0026
+09/08/17 10:51:04 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:51:04 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:51:04 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:51:05 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:51:05 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:51:05 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:51:05 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:51:05 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:51:05 INFO mapred.TaskRunner: Task:attempt_local_0026_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:51:05 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:51:05 INFO mapred.TaskRunner: Task 'attempt_local_0026_m_000000_0' done.
+09/08/17 10:51:05 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:51:05 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:51:05 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:51:05 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:51:05 INFO fuzzykmeans.FuzzyKMeansMapper: In Mapper Configure:
+09/08/17 10:51:05 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:51:05 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:51:05 INFO mapred.TaskRunner: Task:attempt_local_0026_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:51:05 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:51:05 INFO mapred.TaskRunner: Task 'attempt_local_0026_m_000001_0' done.
+09/08/17 10:51:05 INFO mapred.LocalJobRunner: 
+09/08/17 10:51:05 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:51:05 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 1570 bytes
+09/08/17 10:51:05 INFO mapred.LocalJobRunner: 
+09/08/17 10:51:05 INFO mapred.TaskRunner: Task:attempt_local_0026_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:51:05 INFO mapred.LocalJobRunner: 
+09/08/17 10:51:05 INFO mapred.TaskRunner: Task attempt_local_0026_r_000000_0 is allowed to commit now
+09/08/17 10:51:05 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0026_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters-1
+09/08/17 10:51:05 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:51:05 INFO mapred.TaskRunner: Task 'attempt_local_0026_r_000000_0' done.
+09/08/17 10:51:05 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:51:05 INFO mapred.JobClient: Job complete: job_local_0026
+09/08/17 10:51:05 INFO mapred.JobClient: Counters: 13
+09/08/17 10:51:05 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:51:05 INFO mapred.JobClient:     FILE_BYTES_READ=1486095
+09/08/17 10:51:05 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=2584930
+09/08/17 10:51:05 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:51:05 INFO mapred.JobClient:     Reduce input groups=9
+09/08/17 10:51:05 INFO mapred.JobClient:     Combine output records=18
+09/08/17 10:51:05 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:51:05 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:51:05 INFO mapred.JobClient:     Reduce output records=9
+09/08/17 10:51:05 INFO mapred.JobClient:     Spilled Records=36
+09/08/17 10:51:05 INFO mapred.JobClient:     Map output bytes=13770
+09/08/17 10:51:05 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:51:05 INFO mapred.JobClient:     Combine input records=162
+09/08/17 10:51:05 INFO mapred.JobClient:     Map output records=162
+09/08/17 10:51:05 INFO mapred.JobClient:     Reduce input records=18
+09/08/17 10:51:05 INFO fuzzykmeans.FuzzyKMeansDriver: Clustering 
+09/08/17 10:51:05 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:51:05 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:51:06 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:51:06 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:51:06 INFO mapred.JobClient: Running job: job_local_0027
+09/08/17 10:51:06 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:51:06 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:51:06 INFO mapred.TaskRunner: Task:attempt_local_0027_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:51:06 INFO mapred.LocalJobRunner: 
+09/08/17 10:51:06 INFO mapred.TaskRunner: Task attempt_local_0027_m_000000_0 is allowed to commit now
+09/08/17 10:51:06 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0027_m_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:51:06 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file1:0+557
+09/08/17 10:51:06 INFO mapred.TaskRunner: Task 'attempt_local_0027_m_000000_0' done.
+09/08/17 10:51:06 INFO mapred.MapTask: numReduceTasks: 0
+09/08/17 10:51:06 INFO mapred.TaskRunner: Task:attempt_local_0027_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:51:06 INFO mapred.LocalJobRunner: 
+09/08/17 10:51:06 INFO mapred.TaskRunner: Task attempt_local_0027_m_000001_0 is allowed to commit now
+09/08/17 10:51:06 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0027_m_000001_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/points
+09/08/17 10:51:06 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/points/file2:0+557
+09/08/17 10:51:06 INFO mapred.TaskRunner: Task 'attempt_local_0027_m_000001_0' done.
+09/08/17 10:51:07 INFO mapred.JobClient:  map 100% reduce 0%
+09/08/17 10:51:07 INFO mapred.JobClient: Job complete: job_local_0027
+09/08/17 10:51:07 INFO mapred.JobClient: Counters: 6
+09/08/17 10:51:07 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:51:07 INFO mapred.JobClient:     FILE_BYTES_READ=1030349
+09/08/17 10:51:07 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=1800732
+09/08/17 10:51:07 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:51:07 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:51:07 INFO mapred.JobClient:     Spilled Records=0
+09/08/17 10:51:07 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:51:07 INFO mapred.JobClient:     Map output records=18
+testKFuzzyKMeansMRJob k= 0
+testKFuzzyKMeansMRJob k= 1
+testKFuzzyKMeansMRJob k= 2
+testKFuzzyKMeansMRJob k= 3
+testKFuzzyKMeansMRJob k= 4
+testKFuzzyKMeansMRJob k= 5
+testKFuzzyKMeansMRJob k= 6
+testKFuzzyKMeansMRJob k= 7
+testKFuzzyKMeansMRJob k= 8
+testKFuzzyKMeansMRJob k= 0
+testKFuzzyKMeansMRJob k= 1
+testKFuzzyKMeansMRJob k= 2
+testKFuzzyKMeansMRJob k= 3
+testKFuzzyKMeansMRJob k= 4
+testKFuzzyKMeansMRJob k= 5
+testKFuzzyKMeansMRJob k= 6
+testKFuzzyKMeansMRJob k= 7
+testKFuzzyKMeansMRJob k= 8
+testKFuzzyKMeansMRJob k= 0
+ref= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.0,3.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"0\"}"}
+testKFuzzyKMeansMRJob k= 1
+ref= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.2040168967078824,2.4185304502924194],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"0\"}"}
+ref= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.127733238816965,2.843516471190392],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"1\"}"}
+testKFuzzyKMeansMRJob k= 2
+ref= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.8974427688329776,1.8974427688329778],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"0\"}"}
+ref= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.837749408874302,2.2933016480796646],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"1\"}"}
+ref= C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.293301648079665,2.837749408874302],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,2.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"2\"}"}
+testKFuzzyKMeansMRJob k= 3
+ref= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.4391334521704227,1.4391334521704227],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"0\"}"}
+ref= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.5134226393209524,1.7239976026207353],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"1\"}"}
+ref= C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.7239976026207353,2.5134226393209524],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,2.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"2\"}"}
+ref= C3 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.9075752838550866,2.9075752838550866],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C3 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.1,2.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"3\"}"}
+testKFuzzyKMeansMRJob k= 4
+ref= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1191304276264484,1.1191304276264484],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"0\"}"}
+ref= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.150144463644434,1.204932550804655],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"1\"}"}
+ref= C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.2049325508046547,2.150144463644434],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,2.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"2\"}"}
+ref= C3 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.3082942906044597,2.3082942906044597],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C3 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.1,2.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"3\"}"}
+ref= C4 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.7403905272496756,3.7403905272496756],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C4 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.1,3.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"4\"}"}
+testKFuzzyKMeansMRJob k= 5
+ref= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.010947543710466,1.010947543710466],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"0\"}"}
+ref= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.0128550354941277,1.0184104191200276],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"1\"}"}
+ref= C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.0184104191200276,2.012855035494128],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,2.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"2\"}"}
+ref= C3 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.0275407325450563,2.0275407325450563],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C3 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.1,2.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"3\"}"}
+ref= C4 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.0986361545000616,3.0986361545000616],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C4 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.1,3.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"4\"}"}
+ref= C5 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.392976379806132,4.392976379806132],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C5 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.1,4.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"5\"}"}
+testKFuzzyKMeansMRJob k= 6
+ref= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.0029997032364202,1.003410630220379],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"0\"}"}
+ref= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.002278235356673,1.0051043906052108],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"1\"}"}
+ref= C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.004941134823338,2.003438504674043],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,2.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"2\"}"}
+ref= C3 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.0058135465291844,2.0074837096995526],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C3 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.1,2.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"3\"}"}
+ref= C4 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.0202145217760363,3.0315801642391382],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C4 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.1,3.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"4\"}"}
+ref= C5 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.062304394539634,4.297800593332702],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C5 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.1,4.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"5\"}"}
+ref= C6 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.960341119568088,4.284714461109068],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C6 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[5.1,4.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"6\"}"}
+testKFuzzyKMeansMRJob k= 7
+ref= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.0011650980807838,1.0011650980807838],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"0\"}"}
+ref= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.0001894620715075,1.001437949419814],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"1\"}"}
+ref= C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.001437949419814,2.0001894620715075],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,2.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"2\"}"}
+ref= C3 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.0009198440072775,2.0009198440072775],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C3 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.1,2.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"3\"}"}
+ref= C4 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.0037378407785496,3.0037378407785496],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C4 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.1,3.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"4\"}"}
+ref= C5 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.036240823957182,4.036240823957182],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C5 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.1,4.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"5\"}"}
+ref= C6 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.99964783648926,4.124720590983511],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C6 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[5.1,4.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"6\"}"}
+ref= C7 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.124720590983511,4.99964783648926],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C7 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.1,5.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"7\"}"}
+testKFuzzyKMeansMRJob k= 8
+ref= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.0007509967163573,1.0007509967163573],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"0\"}"}
+ref= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.9996626275087757,1.0007354715037187],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.1,1.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"1\"}"}
+ref= C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.0007354715037189,1.9996626275087757],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.1,2.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"2\"}"}
+ref= C3 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.9998472376561365,1.9998472376561365],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C3 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.1,2.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"3\"}"}
+ref= C4 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.000109878353452,3.000109878353452],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C4 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.1,3.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"4\"}"}
+ref= C5 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.000650895607475,4.000650895607475],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C5 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.1,4.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"5\"}"}
+ref= C6 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.9995926590104744,4.000660115782826],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C6 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[5.1,4.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"6\"}"}
+ref= C7 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.000660115782826,4.9995926590104744],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C7 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.1,5.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"7\"}"}
+ref= C8 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.999638959322338,4.999638959322338],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0}"} cluster= C8 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[5.1,5.1],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"8\"}"}
+testKFuzzyKMeansMRJob k= 0
+0 point:0: Cluster: 0 prob: 1.0
+0 point:1: Cluster: 0 prob: 1.0
+0 point:2: Cluster: 0 prob: 1.0
+0 point:3: Cluster: 0 prob: 1.0
+0 point:4: Cluster: 0 prob: 1.0
+0 point:5: Cluster: 0 prob: 1.0
+0 point:6: Cluster: 0 prob: 1.0
+0 point:7: Cluster: 0 prob: 1.0
+0 point:8: Cluster: 0 prob: 1.0
+testKFuzzyKMeansMRJob k= 1
+1 point:0: Cluster: 0 prob: 0.6959975003285607
+1 point:0: Cluster: 1 prob: 0.3040024996714393
+1 point:1: Cluster: 0 prob: 0.6945576316079404
+1 point:1: Cluster: 1 prob: 0.3054423683920595
+1 point:2: Cluster: 0 prob: 0.763269124716477
+1 point:2: Cluster: 1 prob: 0.23673087528352305
+1 point:3: Cluster: 0 prob: 0.901462965815103
+1 point:3: Cluster: 1 prob: 0.0985370341848969
+1 point:4: Cluster: 0 prob: 0.04029918313131026
+1 point:4: Cluster: 1 prob: 0.9597008168686898
+1 point:5: Cluster: 0 prob: 0.2681570620701918
+1 point:5: Cluster: 1 prob: 0.7318429379298081
+1 point:6: Cluster: 0 prob: 0.3194187583638007
+1 point:6: Cluster: 1 prob: 0.6805812416361993
+1 point:7: Cluster: 0 prob: 0.35365906837186517
+1 point:7: Cluster: 1 prob: 0.6463409316281349
+1 point:8: Cluster: 0 prob: 0.36028149211571164
+1 point:8: Cluster: 1 prob: 0.6397185078842884
+testKFuzzyKMeansMRJob k= 2
+2 point:0: Cluster: 0 prob: 0.6105194541967733
+2 point:0: Cluster: 1 prob: 0.19474027290161336
+2 point:0: Cluster: 2 prob: 0.19474027290161328
+2 point:1: Cluster: 0 prob: 0.6332270196320655
+2 point:1: Cluster: 1 prob: 0.2175926398364346
+2 point:1: Cluster: 2 prob: 0.14918034053149984
+2 point:2: Cluster: 0 prob: 0.6332270196320657
+2 point:2: Cluster: 1 prob: 0.1491803405314998
+2 point:2: Cluster: 2 prob: 0.21759263983643437
+2 point:3: Cluster: 0 prob: 0.9493061406095445
+2 point:3: Cluster: 1 prob: 0.025346929695227716
+2 point:3: Cluster: 2 prob: 0.025346929695227706
+2 point:4: Cluster: 0 prob: 0.097572518211038
+2 point:4: Cluster: 1 prob: 0.45121374089448074
+2 point:4: Cluster: 2 prob: 0.45121374089448124
+2 point:5: Cluster: 0 prob: 0.19427333725907003
+2 point:5: Cluster: 1 prob: 0.4028633313704649
+2 point:5: Cluster: 2 prob: 0.40286333137046504
+2 point:6: Cluster: 0 prob: 0.2237161779113768
+2 point:6: Cluster: 1 prob: 0.4141266064075348
+2 point:6: Cluster: 2 prob: 0.3621572156810885
+2 point:7: Cluster: 0 prob: 0.2237161779113768
+2 point:7: Cluster: 1 prob: 0.36215721568108833
+2 point:7: Cluster: 2 prob: 0.4141266064075349
+2 point:8: Cluster: 0 prob: 0.23763085204570666
+2 point:8: Cluster: 1 prob: 0.3811845739771466
+2 point:8: Cluster: 2 prob: 0.3811845739771467
+testKFuzzyKMeansMRJob k= 3
+3 point:0: Cluster: 0 prob: 0.7535531052789355
+3 point:0: Cluster: 1 prob: 0.10325641422863202
+3 point:0: Cluster: 2 prob: 0.10325641422863202
+3 point:0: Cluster: 3 prob: 0.03993406626380052
+3 point:1: Cluster: 0 prob: 0.5070452222929575
+3 point:1: Cluster: 1 prob: 0.32659000312918324
+3 point:1: Cluster: 2 prob: 0.10871156383519467
+3 point:1: Cluster: 3 prob: 0.05765321074266464
+3 point:2: Cluster: 0 prob: 0.5070452222929576
+3 point:2: Cluster: 1 prob: 0.10871156383519467
+3 point:2: Cluster: 2 prob: 0.3265900031291832
+3 point:2: Cluster: 3 prob: 0.05765321074266464
+3 point:3: Cluster: 0 prob: 0.1966515341595677
+3 point:3: Cluster: 1 prob: 0.3641232682312016
+3 point:3: Cluster: 2 prob: 0.3641232682312016
+3 point:3: Cluster: 3 prob: 0.07510192937802908
+3 point:4: Cluster: 0 prob: 0.003431364222911397
+3 point:4: Cluster: 1 prob: 0.008965274242359385
+3 point:4: Cluster: 2 prob: 0.008965274242359385
+3 point:4: Cluster: 3 prob: 0.9786380872923698
+3 point:5: Cluster: 0 prob: 0.09955273511485035
+3 point:5: Cluster: 1 prob: 0.17668790455310987
+3 point:5: Cluster: 2 prob: 0.17668790455310987
+3 point:5: Cluster: 3 prob: 0.5470714557789299
+3 point:6: Cluster: 0 prob: 0.13102298416375877
+3 point:6: Cluster: 1 prob: 0.2218198277498326
+3 point:6: Cluster: 2 prob: 0.19475929319607602
+3 point:6: Cluster: 3 prob: 0.4523978948903325
+3 point:7: Cluster: 0 prob: 0.13102298416375877
+3 point:7: Cluster: 1 prob: 0.19475929319607602
+3 point:7: Cluster: 2 prob: 0.2218198277498326
+3 point:7: Cluster: 3 prob: 0.4523978948903325
+3 point:8: Cluster: 0 prob: 0.14504294759575106
+3 point:8: Cluster: 1 prob: 0.21744997620203496
+3 point:8: Cluster: 2 prob: 0.21744997620203496
+3 point:8: Cluster: 3 prob: 0.42005710000017893
+testKFuzzyKMeansMRJob k= 4
+4 point:0: Cluster: 0 prob: 0.9507737021596186
+4 point:0: Cluster: 1 prob: 0.019773070428172623
+4 point:0: Cluster: 2 prob: 0.019773070428172623
+4 point:0: Cluster: 3 prob: 0.00788336563851211
+4 point:0: Cluster: 4 prob: 0.0017967913455238646
+4 point:1: Cluster: 0 prob: 0.07062787012286986
+4 point:1: Cluster: 1 prob: 0.864643770670675
+4 point:1: Cluster: 2 prob: 0.028545133235895546
+4 point:1: Cluster: 3 prob: 0.030888006809295567
+4 point:1: Cluster: 4 prob: 0.005295219161264011
+4 point:2: Cluster: 0 prob: 0.07062787012286975
+4 point:2: Cluster: 1 prob: 0.02854513323589552
+4 point:2: Cluster: 2 prob: 0.8646437706706753
+4 point:2: Cluster: 3 prob: 0.030888006809295522
+4 point:2: Cluster: 4 prob: 0.005295219161264004
+4 point:3: Cluster: 0 prob: 0.07061733935798048
+4 point:3: Cluster: 1 prob: 0.1673934277906396
+4 point:3: Cluster: 2 prob: 0.1673934277906395
+4 point:3: Cluster: 3 prob: 0.5765056976246979
+4 point:3: Cluster: 4 prob: 0.018090107436042495
+4 point:4: Cluster: 0 prob: 0.054245085390175654
+4 point:4: Cluster: 1 prob: 0.09730012942802047
+4 point:4: Cluster: 2 prob: 0.09730012942802044
+4 point:4: Cluster: 3 prob: 0.4010837232811449
+4 point:4: Cluster: 4 prob: 0.35007093247263854
+4 point:5: Cluster: 0 prob: 0.007692486293492003
+4 point:5: Cluster: 1 prob: 0.011365676524241964
+4 point:5: Cluster: 2 prob: 0.011365676524241964
+4 point:5: Cluster: 3 prob: 0.022308187920234007
+4 point:5: Cluster: 4 prob: 0.9472679727377902
+4 point:6: Cluster: 0 prob: 0.049476744275384885
+4 point:6: Cluster: 1 prob: 0.0725366297021185
+4 point:6: Cluster: 2 prob: 0.0648435693536904
+4 point:6: Cluster: 3 prob: 0.1143551454716116
+4 point:6: Cluster: 4 prob: 0.6987879111971947
+4 point:7: Cluster: 0 prob: 0.049476744275384885
+4 point:7: Cluster: 1 prob: 0.0648435693536904
+4 point:7: Cluster: 2 prob: 0.0725366297021185
+4 point:7: Cluster: 3 prob: 0.1143551454716116
+4 point:7: Cluster: 4 prob: 0.6987879111971947
+4 point:8: Cluster: 0 prob: 0.06559081982017906
+4 point:8: Cluster: 1 prob: 0.08771654429742064
+4 point:8: Cluster: 2 prob: 0.08771654429742064
+4 point:8: Cluster: 3 prob: 0.13634713048772024
+4 point:8: Cluster: 4 prob: 0.6226289610972594
+testKFuzzyKMeansMRJob k= 5
+5 point:0: Cluster: 0 prob: 0.9993821004295153
+5 point:0: Cluster: 1 prob: 2.3343011832705062E-4
+5 point:0: Cluster: 2 prob: 2.3343011832705043E-4
+5 point:0: Cluster: 3 prob: 1.1344016489011052E-4
+5 point:0: Cluster: 4 prob: 2.7195098837755427E-5
+5 point:0: Cluster: 5 prob: 1.0404070102867439E-5
+5 point:1: Cluster: 0 prob: 5.146531520817079E-4
+5 point:1: Cluster: 1 prob: 0.998636774009155
+5 point:1: Cluster: 2 prob: 2.530963107747839E-4
+5 point:1: Cluster: 3 prob: 4.7653688858207896E-4
+5 point:1: Cluster: 4 prob: 8.973150087731521E-5
+5 point:1: Cluster: 5 prob: 2.9208138529138643E-5
+5 point:2: Cluster: 0 prob: 5.146531520817193E-4
+5 point:2: Cluster: 1 prob: 2.5309631077478976E-4
+5 point:2: Cluster: 2 prob: 0.998636774009155
+5 point:2: Cluster: 3 prob: 4.765368885820897E-4
+5 point:2: Cluster: 4 prob: 8.973150087731725E-5
+5 point:2: Cluster: 5 prob: 2.9208138529139307E-5
+5 point:3: Cluster: 0 prob: 7.717605970204681E-4
+5 point:3: Cluster: 1 prob: 0.0015668120034063602
+5 point:3: Cluster: 2 prob: 0.0015668120034063602
+5 point:3: Cluster: 3 prob: 0.9953372961608404
+5 point:3: Cluster: 4 prob: 6.25480074680139E-4
+5 point:3: Cluster: 5 prob: 1.3183916064634E-4
+5 point:4: Cluster: 0 prob: 0.002397501400285174
+5 point:4: Cluster: 1 prob: 0.0038706430921015464
+5 point:4: Cluster: 2 prob: 0.0038706430921015464
+5 point:4: Cluster: 3 prob: 0.010030174852191615
+5 point:4: Cluster: 4 prob: 0.9749426701733038
+5 point:4: Cluster: 5 prob: 0.0048883673900163875
+5 point:5: Cluster: 0 prob: 0.013345620732313294
+5 point:5: Cluster: 1 prob: 0.01857451364047697
+5 point:5: Cluster: 2 prob: 0.01857451364047697
+5 point:5: Cluster: 3 prob: 0.030647126784419415
+5 point:5: Cluster: 4 prob: 0.14675928380912004
+5 point:5: Cluster: 5 prob: 0.7720989413931935
+5 point:6: Cluster: 0 prob: 0.01702684145125115
+5 point:6: Cluster: 1 prob: 0.02375049632183611
+5 point:6: Cluster: 2 prob: 0.021365000824668825
+5 point:6: Cluster: 3 prob: 0.033243897754407725
+5 point:6: Cluster: 4 prob: 0.09555098616536675
+5 point:6: Cluster: 5 prob: 0.8090627774824695
+5 point:7: Cluster: 0 prob: 0.01702684145125115
+5 point:7: Cluster: 1 prob: 0.021365000824668814
+5 point:7: Cluster: 2 prob: 0.023750496321836113
+5 point:7: Cluster: 3 prob: 0.033243897754407725
+5 point:7: Cluster: 4 prob: 0.09555098616536675
+5 point:7: Cluster: 5 prob: 0.8090627774824695
+5 point:8: Cluster: 0 prob: 0.018883560013027496
+5 point:8: Cluster: 1 prob: 0.024256078094199048
+5 point:8: Cluster: 2 prob: 0.024256078094199048
+5 point:8: Cluster: 3 prob: 0.03400881842320257
+5 point:8: Cluster: 4 prob: 0.08311758275017637
+5 point:8: Cluster: 5 prob: 0.8154778826251954
+testKFuzzyKMeansMRJob k= 6
+6 point:0: Cluster: 0 prob: 0.9999444869920676
+6 point:0: Cluster: 1 prob: 2.053526278803882E-5
+6 point:0: Cluster: 2 prob: 2.048783526366893E-5
+6 point:0: Cluster: 3 prob: 1.0178927511979543E-5
+6 point:0: Cluster: 4 prob: 2.5131583030472826E-6
+6 point:0: Cluster: 5 prob: 1.0185785869591258E-6
+6 point:0: Cluster: 6 prob: 7.792454783435148E-7
+6 point:1: Cluster: 0 prob: 3.1430338856719074E-5
+6 point:1: Cluster: 1 prob: 0.9999124381080514
+6 point:1: Cluster: 2 prob: 1.5644436291927267E-5
+6 point:1: Cluster: 3 prob: 3.077897798175899E-5
+6 point:1: Cluster: 4 prob: 6.045178612477076E-6
+6 point:1: Cluster: 5 prob: 2.0651248851771996E-6
+6 point:1: Cluster: 6 prob: 1.5978353204827444E-6
+6 point:2: Cluster: 0 prob: 3.6482546134105645E-5
+6 point:2: Cluster: 1 prob: 1.816828347566961E-5
+6 point:2: Cluster: 2 prob: 0.9998982868820044
+6 point:2: Cluster: 3 prob: 3.581480350445877E-5
+6 point:2: Cluster: 4 prob: 7.042070659956914E-6
+6 point:2: Cluster: 5 prob: 2.472059020294358E-6
+6 point:2: Cluster: 6 prob: 1.7333552009641796E-6
+6 point:3: Cluster: 0 prob: 4.517795820056257E-5
+6 point:3: Cluster: 1 prob: 9.070074701900228E-5
+6 point:3: Cluster: 2 prob: 9.067038031885091E-5
+6 point:3: Cluster: 3 prob: 0.9997149632969797
+6 point:3: Cluster: 4 prob: 4.2649803851597284E-5
+6 point:3: Cluster: 5 prob: 9.417576784863352E-6
+6 point:3: Cluster: 6 prob: 6.420236845531477E-6
+6 point:4: Cluster: 0 prob: 1.7591760710280904E-4
+6 point:4: Cluster: 1 prob: 2.819733852770016E-4
+6 point:4: Cluster: 2 prob: 2.8206764425658704E-4
+6 point:4: Cluster: 3 prob: 7.108371276982147E-4
+6 point:4: Cluster: 4 prob: 0.9977951022423477
+6 point:4: Cluster: 5 prob: 4.98736202931707E-4
+6 point:4: Cluster: 6 prob: 2.5536579038598715E-4
+6 point:5: Cluster: 0 prob: 0.004396816765538431
+6 point:5: Cluster: 1 prob: 0.006093511038344314
+6 point:5: Cluster: 2 prob: 0.006095230715151348
+6 point:5: Cluster: 3 prob: 0.009937670586564085
+6 point:5: Cluster: 4 prob: 0.04161291650393463
+6 point:5: Cluster: 5 prob: 0.853151292560361
+6 point:5: Cluster: 6 prob: 0.07871256183010625
+6 point:6: Cluster: 0 prob: 0.0029543283879653764
+6 point:6: Cluster: 1 prob: 0.004106037154246673
+6 point:6: Cluster: 2 prob: 0.0036961863683109652
+6 point:6: Cluster: 3 prob: 0.00569967971649981
+6 point:6: Cluster: 4 prob: 0.015178306605517241
+6 point:6: Cluster: 5 prob: 0.07616745626069057
+6 point:6: Cluster: 6 prob: 0.8921980055067693
+6 point:7: Cluster: 0 prob: 0.012763212485228383
+6 point:7: Cluster: 1 prob: 0.015964976822562062
+6 point:7: Cluster: 2 prob: 0.017744117131899516
+6 point:7: Cluster: 3 prob: 0.02462915688778223
+6 point:7: Cluster: 4 prob: 0.06587906155042451
+6 point:7: Cluster: 5 prob: 0.6408943777735516
+6 point:7: Cluster: 6 prob: 0.2221250973485517
+6 point:8: Cluster: 0 prob: 0.010528861714836227
+6 point:8: Cluster: 1 prob: 0.01348473607756309
+6 point:8: Cluster: 2 prob: 0.013487791286611907
+6 point:8: Cluster: 3 prob: 0.018771099052943975
+6 point:8: Cluster: 4 prob: 0.04315807530274249
+6 point:8: Cluster: 5 prob: 0.24511393933175638
+6 point:8: Cluster: 6 prob: 0.6554554972335459
+testKFuzzyKMeansMRJob k= 7
+7 point:0: Cluster: 0 prob: 0.9999925212266806
+7 point:0: Cluster: 1 prob: 2.713852718356604E-6
+7 point:0: Cluster: 2 prob: 2.713852718356604E-6
+7 point:0: Cluster: 3 prob: 1.354949554861956E-6
+7 point:0: Cluster: 4 prob: 3.3809591681191665E-7
+7 point:0: Cluster: 5 prob: 1.472479628533242E-7
+7 point:0: Cluster: 6 prob: 1.0538722413594802E-7
+7 point:0: Cluster: 7 prob: 1.0538722413594802E-7
+7 point:1: Cluster: 0 prob: 2.1084891480451077E-6
+7 point:1: Cluster: 1 prob: 0.9999939477850076
+7 point:1: Cluster: 2 prob: 1.0531045195555853E-6
+7 point:1: Cluster: 3 prob: 2.0997153048046843E-6
+7 point:1: Cluster: 4 prob: 4.188353473112702E-7
+7 point:1: Cluster: 5 prob: 1.5739440066506661E-7
+7 point:1: Cluster: 6 prob: 1.1212066543441976E-7
+7 point:1: Cluster: 7 prob: 1.0255560689368826E-7
+7 point:2: Cluster: 0 prob: 2.1084891480451077E-6
+7 point:2: Cluster: 1 prob: 1.0531045195555853E-6
+7 point:2: Cluster: 2 prob: 0.9999939477850074
+7 point:2: Cluster: 3 prob: 2.0997153048046843E-6
+7 point:2: Cluster: 4 prob: 4.188353473112702E-7
+7 point:2: Cluster: 5 prob: 1.5739440066506661E-7
+7 point:2: Cluster: 6 prob: 1.0255560689368826E-7
+7 point:2: Cluster: 7 prob: 1.1212066543441974E-7
+7 point:3: Cluster: 0 prob: 8.480833624771021E-7
+7 point:3: Cluster: 1 prob: 1.6970937261106444E-6
+7 point:3: Cluster: 2 prob: 1.6970937261106444E-6
+7 point:3: Cluster: 3 prob: 0.9999944633761213
+7 point:3: Cluster: 4 prob: 8.398183649692254E-7
+7 point:3: Cluster: 5 prob: 2.0406460439864236E-7
+7 point:3: Cluster: 6 prob: 1.252350472405515E-7
+7 point:3: Cluster: 7 prob: 1.252350472405515E-7
+7 point:4: Cluster: 0 prob: 3.496753580502192E-6
+7 point:4: Cluster: 1 prob: 5.595147234324298E-6
+7 point:4: Cluster: 2 prob: 5.595147234324298E-6
+7 point:4: Cluster: 3 prob: 1.3996460102456685E-5
+7 point:4: Cluster: 4 prob: 0.9999476890052011
+7 point:4: Cluster: 5 prob: 1.3010604665328245E-5
+7 point:4: Cluster: 6 prob: 5.308440991051267E-6
+7 point:4: Cluster: 7 prob: 5.308440991051267E-6
+7 point:5: Cluster: 0 prob: 1.4497665634895642E-4
+7 point:5: Cluster: 1 prob: 2.0072590487063818E-4
+7 point:5: Cluster: 2 prob: 2.0072590487063818E-4
+7 point:5: Cluster: 3 prob: 3.262441826953153E-4
+7 point:5: Cluster: 4 prob: 0.0013135781713077294
+7 point:5: Cluster: 5 prob: 0.9926749589437537
+7 point:5: Cluster: 6 prob: 0.0025693951180765233
+7 point:5: Cluster: 7 prob: 0.0025693951180765233
+7 point:6: Cluster: 0 prob: 6.032423494405657E-4
+7 point:6: Cluster: 1 prob: 8.377443905291187E-4
+7 point:6: Cluster: 2 prob: 7.540232244912835E-4
+7 point:6: Cluster: 3 prob: 0.0011601454021107497
+7 point:6: Cluster: 4 prob: 0.0030278081692029116
+7 point:6: Cluster: 5 prob: 0.016203084772016735
+7 point:6: Cluster: 6 prob: 0.9688769987909552
+7 point:6: Cluster: 7 prob: 0.008536952901253472
+7 point:7: Cluster: 0 prob: 6.032423494405657E-4
+7 point:7: Cluster: 1 prob: 7.540232244912835E-4
+7 point:7: Cluster: 2 prob: 8.377443905291187E-4
+7 point:7: Cluster: 3 prob: 0.0011601454021107497
+7 point:7: Cluster: 4 prob: 0.003027808169202911
+7 point:7: Cluster: 5 prob: 0.016203084772016735
+7 point:7: Cluster: 6 prob: 0.008536952901253472
+7 point:7: Cluster: 7 prob: 0.968876998790955
+7 point:8: Cluster: 0 prob: 0.009086283235012552
+7 point:8: Cluster: 1 prob: 0.011629547316068252
+7 point:8: Cluster: 2 prob: 0.011629547316068252
+7 point:8: Cluster: 3 prob: 0.016153888164495433
+7 point:8: Cluster: 4 prob: 0.03646011796679953
+7 point:8: Cluster: 5 prob: 0.15642860280986703
+7 point:8: Cluster: 6 prob: 0.37930600659584446
+7 point:8: Cluster: 7 prob: 0.37930600659584446
+testKFuzzyKMeansMRJob k= 8
+8 point:0: Cluster: 0 prob: 0.9999968492199458
+8 point:0: Cluster: 1 prob: 1.1287494609030582E-6
+8 point:0: Cluster: 2 prob: 1.1287494609030582E-6
+8 point:0: Cluster: 3 prob: 5.641666446241618E-7
+8 point:0: Cluster: 4 prob: 1.40983081323583E-7
+8 point:0: Cluster: 5 prob: 6.263884847843702E-8
+8 point:0: Cluster: 6 prob: 4.5118275329056285E-8
+8 point:0: Cluster: 7 prob: 4.5118275329056285E-8
+8 point:0: Cluster: 8 prob: 3.525600732364941E-8
+8 point:1: Cluster: 0 prob: 6.557214264517486E-7
+8 point:1: Cluster: 1 prob: 0.9999980850478254
+8 point:1: Cluster: 2 prob: 3.2772012369330033E-7
+8 point:1: Cluster: 3 prob: 6.549373457845191E-7
+8 point:1: Cluster: 4 prob: 1.3093019105995376E-7
+8 point:1: Cluster: 5 prob: 5.0339198349178866E-8
+8 point:1: Cluster: 6 prob: 3.637122736463567E-8
+8 point:1: Cluster: 7 prob: 3.273787489008041E-8
+8 point:1: Cluster: 8 prob: 2.61947869346362E-8
+8 point:2: Cluster: 0 prob: 6.557214264520759E-7
+8 point:2: Cluster: 1 prob: 3.277201236934638E-7
+8 point:2: Cluster: 2 prob: 0.9999980850478254
+8 point:2: Cluster: 3 prob: 6.549373457848458E-7
+8 point:2: Cluster: 4 prob: 1.309301910600191E-7
+8 point:2: Cluster: 5 prob: 5.0339198349203985E-8
+8 point:2: Cluster: 6 prob: 3.273787489009675E-8
+8 point:2: Cluster: 7 prob: 3.637122736465382E-8
+8 point:2: Cluster: 8 prob: 2.6194786934649273E-8
+8 point:3: Cluster: 0 prob: 2.337142060599454E-8
+8 point:3: Cluster: 1 prob: 4.674138344198813E-8
+8 point:3: Cluster: 2 prob: 4.674138344198815E-8
+8 point:3: Cluster: 3 prob: 0.9999998442104726
+8 point:3: Cluster: 4 prob: 2.3331202597186088E-8
+8 point:3: Cluster: 5 prob: 5.8302869910650444E-9
+8 point:3: Cluster: 6 prob: 3.5901502159145423E-9
+8 point:3: Cluster: 7 prob: 3.5901502159145423E-9
+8 point:3: Cluster: 8 prob: 2.5935497767626664E-9
+8 point:4: Cluster: 0 prob: 3.0205810104716932E-9
+8 point:4: Cluster: 1 prob: 4.831490885494676E-9
+8 point:4: Cluster: 2 prob: 4.831490885494676E-9
+8 point:4: Cluster: 3 prob: 1.2069564128330471E-8
+8 point:4: Cluster: 4 prob: 0.9999999505107222
+8 point:4: Cluster: 5 prob: 1.2057550438203687E-8
+8 point:4: Cluster: 6 prob: 4.829598799832634E-9
+8 point:4: Cluster: 7 prob: 4.829598799832634E-9
+8 point:4: Cluster: 8 prob: 3.0194030188672816E-9
+8 point:5: Cluster: 0 prob: 4.7097343022489315E-8
+8 point:5: Cluster: 1 prob: 6.519441985062204E-8
+8 point:5: Cluster: 2 prob: 6.519441985062206E-8
+8 point:5: Cluster: 3 prob: 1.058997953975536E-7
+8 point:5: Cluster: 4 prob: 4.2375701239481163E-7
+8 point:5: Cluster: 5 prob: 0.9999971728507441
+8 point:5: Cluster: 6 prob: 8.480181429945809E-7
+8 point:5: Cluster: 7 prob: 8.480181429945809E-7
+8 point:5: Cluster: 8 prob: 4.2396997961822095E-7
+8 point:6: Cluster: 0 prob: 2.4077263585305926E-8
+8 point:6: Cluster: 1 prob: 3.343101671049956E-8
+8 point:6: Cluster: 2 prob: 3.009074448853074E-8
+8 point:6: Cluster: 3 prob: 4.627752098180791E-8
+8 point:6: Cluster: 4 prob: 1.2035156216639593E-7
+8 point:6: Cluster: 5 prob: 6.024622391149109E-7
+8 point:6: Cluster: 6 prob: 0.9999982400359455
+8 point:6: Cluster: 7 prob: 3.011606201169856E-7
+8 point:6: Cluster: 8 prob: 6.021130872118757E-7
+8 point:7: Cluster: 0 prob: 2.407726358530593E-8
+8 point:7: Cluster: 1 prob: 3.0090744488530725E-8
+8 point:7: Cluster: 2 prob: 3.343101671049957E-8
+8 point:7: Cluster: 3 prob: 4.627752098180791E-8
+8 point:7: Cluster: 4 prob: 1.2035156216639593E-7
+8 point:7: Cluster: 5 prob: 6.024622391149109E-7
+8 point:7: Cluster: 6 prob: 3.011606201169856E-7
+8 point:7: Cluster: 7 prob: 0.9999982400359455
+8 point:7: Cluster: 8 prob: 6.021130872118757E-7
+8 point:8: Cluster: 0 prob: 8.149952252736097E-9
+8 point:8: Cluster: 1 prob: 1.0429631944204608E-8
+8 point:8: Cluster: 2 prob: 1.0429631944204611E-8
+8 point:8: Cluster: 3 prob: 1.4481889097709927E-8
+8 point:8: Cluster: 4 prob: 3.259114994884228E-8
+8 point:8: Cluster: 5 prob: 1.3052013060384738E-7
+8 point:8: Cluster: 6 prob: 2.610450347119827E-7
+8 point:8: Cluster: 7 prob: 2.610450347119827E-7
+8 point:8: Cluster: 8 prob: 0.9999992713075448

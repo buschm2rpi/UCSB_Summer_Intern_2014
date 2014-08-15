@@ -1,0 +1,8 @@
+09/08/17 10:49:59 INFO common.RefreshHelper: Added refreshable: GenericDataModel[users:1,2,3...]
+09/08/17 10:49:59 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:1,2,3...]]
+09/08/17 10:49:59 INFO common.RefreshHelper: Added refreshable: org.apache.mahout.cf.taste.impl.similarity.GenericItemSimilarity@5a388c74
+09/08/17 10:49:59 INFO common.RefreshHelper: Refreshed: [org.apache.mahout.cf.taste.impl.similarity.GenericItemSimilarity@5a388c74, GenericDataModel[users:1,2,3...]]
+09/08/17 10:49:59 INFO common.RefreshHelper: Added refreshable: GenericDataModel[users:1,2,3...]
+09/08/17 10:49:59 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:1,2,3...]]
+09/08/17 10:49:59 INFO common.RefreshHelper: Added refreshable: org.apache.mahout.cf.taste.impl.similarity.GenericItemSimilarity@69a18ee2
+09/08/17 10:49:59 INFO common.RefreshHelper: Refreshed: [GenericDataModel[users:1,2,3...], org.apache.mahout.cf.taste.impl.similarity.GenericItemSimilarity@69a18ee2]

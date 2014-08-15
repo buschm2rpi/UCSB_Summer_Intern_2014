@@ -1,0 +1,1 @@
+Map: {,big=[1.0], ,big brown=[1.0], ,big brown shoe=[1.0], -foo,big=[1.0], -foo,big brown=[1.0], -foo,big brown shoe=[1.0], _foo=[1.0], foo,big=[0.3705027526090929], foo,big brown=[0.29361648464968987], foo,big brown shoe=[0.18525137630454644]}

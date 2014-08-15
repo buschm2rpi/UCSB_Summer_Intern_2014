@@ -1,0 +1,405 @@
+testReferenceManhattan
+{"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.0,2.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"3\"}"}
+{"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.0,5.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"7\"}"}
+{"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[5.0,5.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"8\"}"}
+testReferenceEuclidean()
+{"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.0,3.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"4\"}"}
+{"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[5.0,5.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"8\"}"}
+{"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[5.0,5.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"8\"}"}
+testIterativeManhattan
+C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.0,1.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":2.0,\"name\":\"0\"}"}
+C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.0,3.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":18.0,\"name\":\"4\"}"}
+C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[5.0,4.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":41.0,\"name\":\"6\"}"}
+testIterativeEuclidean
+C0 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.0,1.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":2.0,\"name\":\"0\"}"}
+C1 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.0,3.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":18.0,\"name\":\"4\"}"}
+C2 - {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[5.0,4.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":41.0,\"name\":\"6\"}"}
+09/08/17 10:50:01 INFO canopy.CanopyDriver: Input: testdata Out: output/canopies Measure: org.apache.mahout.utils.ManhattanDistanceMeasure t1: 3.1 t2: 2.1 Vector Class: SparseVector
+09/08/17 10:50:01 INFO jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+09/08/17 10:50:01 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:01 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:01 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:01 INFO mapred.JobClient: Running job: job_local_0001
+09/08/17 10:50:01 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:01 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:01 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:01 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:01 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:01 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:02 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:02 INFO mapred.TaskRunner: Task:attempt_local_0001_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:02 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/file1:0+557
+09/08/17 10:50:02 INFO mapred.TaskRunner: Task 'attempt_local_0001_m_000000_0' done.
+09/08/17 10:50:02 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:02 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:02 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:02 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:02 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:02 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:02 INFO mapred.TaskRunner: Task:attempt_local_0001_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:02 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/file2:0+557
+09/08/17 10:50:02 INFO mapred.TaskRunner: Task 'attempt_local_0001_m_000001_0' done.
+09/08/17 10:50:02 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:02 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:02 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 280 bytes
+09/08/17 10:50:02 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:02 INFO mapred.TaskRunner: Task:attempt_local_0001_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:02 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:02 INFO mapred.TaskRunner: Task attempt_local_0001_r_000000_0 is allowed to commit now
+09/08/17 10:50:02 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0001_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/canopies
+09/08/17 10:50:02 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:02 INFO mapred.TaskRunner: Task 'attempt_local_0001_r_000000_0' done.
+09/08/17 10:50:02 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:02 INFO mapred.JobClient: Job complete: job_local_0001
+09/08/17 10:50:02 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:02 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:02 INFO mapred.JobClient:     FILE_BYTES_READ=46188
+09/08/17 10:50:02 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=92878
+09/08/17 10:50:02 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:02 INFO mapred.JobClient:     Reduce input groups=1
+09/08/17 10:50:02 INFO mapred.JobClient:     Combine output records=0
+09/08/17 10:50:02 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:02 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:02 INFO mapred.JobClient:     Reduce output records=2
+09/08/17 10:50:02 INFO mapred.JobClient:     Spilled Records=12
+09/08/17 10:50:02 INFO mapred.JobClient:     Map output bytes=264
+09/08/17 10:50:02 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:02 INFO mapred.JobClient:     Combine input records=0
+09/08/17 10:50:02 INFO mapred.JobClient:     Map output records=6
+09/08/17 10:50:02 INFO mapred.JobClient:     Reduce input records=6
+09/08/17 10:50:02 INFO canopy.CanopyDriver: Input: testdata Out: output/canopies Measure: org.apache.mahout.utils.EuclideanDistanceMeasure t1: 3.1 t2: 2.1 Vector Class: SparseVector
+09/08/17 10:50:03 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:03 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:03 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:03 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:03 INFO mapred.JobClient: Running job: job_local_0002
+09/08/17 10:50:03 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:03 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:03 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:04 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:04 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:04 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:04 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:04 INFO mapred.TaskRunner: Task:attempt_local_0002_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:04 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/file1:0+557
+09/08/17 10:50:04 INFO mapred.TaskRunner: Task 'attempt_local_0002_m_000000_0' done.
+09/08/17 10:50:04 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:04 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:04 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:04 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:04 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:04 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:04 INFO mapred.TaskRunner: Task:attempt_local_0002_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:04 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/file2:0+557
+09/08/17 10:50:04 INFO mapred.TaskRunner: Task 'attempt_local_0002_m_000001_0' done.
+09/08/17 10:50:04 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:04 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:04 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 280 bytes
+09/08/17 10:50:04 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:04 INFO mapred.TaskRunner: Task:attempt_local_0002_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:04 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:04 INFO mapred.TaskRunner: Task attempt_local_0002_r_000000_0 is allowed to commit now
+09/08/17 10:50:04 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0002_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/canopies
+09/08/17 10:50:04 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:04 INFO mapred.TaskRunner: Task 'attempt_local_0002_r_000000_0' done.
+09/08/17 10:50:04 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:04 INFO mapred.JobClient: Job complete: job_local_0002
+09/08/17 10:50:04 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:04 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:04 INFO mapred.JobClient:     FILE_BYTES_READ=94380
+09/08/17 10:50:04 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=186694
+09/08/17 10:50:04 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:04 INFO mapred.JobClient:     Reduce input groups=1
+09/08/17 10:50:04 INFO mapred.JobClient:     Combine output records=0
+09/08/17 10:50:04 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:04 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:04 INFO mapred.JobClient:     Reduce output records=2
+09/08/17 10:50:04 INFO mapred.JobClient:     Spilled Records=12
+09/08/17 10:50:04 INFO mapred.JobClient:     Map output bytes=264
+09/08/17 10:50:04 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:04 INFO mapred.JobClient:     Combine input records=0
+09/08/17 10:50:04 INFO mapred.JobClient:     Map output records=6
+09/08/17 10:50:04 INFO mapred.JobClient:     Reduce input records=6
+09/08/17 10:50:05 INFO canopy.CanopyDriver: Input: testdata Out: output/canopies Measure: org.apache.mahout.utils.ManhattanDistanceMeasure t1: 3.1 t2: 2.1 Vector Class: SparseVector
+09/08/17 10:50:05 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:05 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:05 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:05 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:06 INFO mapred.JobClient: Running job: job_local_0003
+09/08/17 10:50:06 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:06 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:06 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:06 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:06 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:06 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:06 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:06 INFO mapred.TaskRunner: Task:attempt_local_0003_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:06 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/file1:0+557
+09/08/17 10:50:06 INFO mapred.TaskRunner: Task 'attempt_local_0003_m_000000_0' done.
+09/08/17 10:50:06 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:06 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:06 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:06 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:06 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:06 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:06 INFO mapred.TaskRunner: Task:attempt_local_0003_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:06 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/file2:0+557
+09/08/17 10:50:06 INFO mapred.TaskRunner: Task 'attempt_local_0003_m_000001_0' done.
+09/08/17 10:50:06 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:06 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:06 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 280 bytes
+09/08/17 10:50:06 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:06 INFO mapred.TaskRunner: Task:attempt_local_0003_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:06 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:06 INFO mapred.TaskRunner: Task attempt_local_0003_r_000000_0 is allowed to commit now
+09/08/17 10:50:06 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0003_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/canopies
+09/08/17 10:50:06 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:06 INFO mapred.TaskRunner: Task 'attempt_local_0003_r_000000_0' done.
+09/08/17 10:50:07 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:07 INFO mapred.JobClient: Job complete: job_local_0003
+09/08/17 10:50:07 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:07 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:07 INFO mapred.JobClient:     FILE_BYTES_READ=142572
+09/08/17 10:50:07 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=280510
+09/08/17 10:50:07 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:07 INFO mapred.JobClient:     Reduce input groups=1
+09/08/17 10:50:07 INFO mapred.JobClient:     Combine output records=0
+09/08/17 10:50:07 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:07 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:07 INFO mapred.JobClient:     Reduce output records=2
+09/08/17 10:50:07 INFO mapred.JobClient:     Spilled Records=12
+09/08/17 10:50:07 INFO mapred.JobClient:     Map output bytes=264
+09/08/17 10:50:07 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:07 INFO mapred.JobClient:     Combine input records=0
+09/08/17 10:50:07 INFO mapred.JobClient:     Map output records=6
+09/08/17 10:50:07 INFO mapred.JobClient:     Reduce input records=6
+09/08/17 10:50:07 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:07 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:07 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:07 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:07 INFO mapred.JobClient: Running job: job_local_0004
+09/08/17 10:50:07 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:08 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:08 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:08 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:08 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:08 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:08 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:08 INFO mapred.TaskRunner: Task:attempt_local_0004_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:08 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/file1:0+557
+09/08/17 10:50:08 INFO mapred.TaskRunner: Task 'attempt_local_0004_m_000000_0' done.
+09/08/17 10:50:08 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:08 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:08 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:08 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:08 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:08 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:08 INFO mapred.TaskRunner: Task:attempt_local_0004_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:08 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/file2:0+557
+09/08/17 10:50:08 INFO mapred.TaskRunner: Task 'attempt_local_0004_m_000001_0' done.
+09/08/17 10:50:08 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:08 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:08 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 804 bytes
+09/08/17 10:50:08 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:08 INFO mapred.TaskRunner: Task:attempt_local_0004_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:08 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:08 INFO mapred.TaskRunner: Task attempt_local_0004_r_000000_0 is allowed to commit now
+09/08/17 10:50:08 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0004_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters
+09/08/17 10:50:08 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:08 INFO mapred.TaskRunner: Task 'attempt_local_0004_r_000000_0' done.
+09/08/17 10:50:08 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:08 INFO mapred.JobClient: Job complete: job_local_0004
+09/08/17 10:50:08 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:08 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:08 INFO mapred.JobClient:     FILE_BYTES_READ=191498
+09/08/17 10:50:08 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=372219
+09/08/17 10:50:08 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:08 INFO mapred.JobClient:     Reduce input groups=2
+09/08/17 10:50:08 INFO mapred.JobClient:     Combine output records=0
+09/08/17 10:50:08 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:08 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:08 INFO mapred.JobClient:     Reduce output records=20
+09/08/17 10:50:08 INFO mapred.JobClient:     Spilled Records=40
+09/08/17 10:50:08 INFO mapred.JobClient:     Map output bytes=760
+09/08/17 10:50:08 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:08 INFO mapred.JobClient:     Combine input records=0
+09/08/17 10:50:08 INFO mapred.JobClient:     Map output records=20
+09/08/17 10:50:08 INFO mapred.JobClient:     Reduce input records=20
+Txt: C0 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.0,1.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"0\"}"}
+Txt: C0 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.0,1.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"1\"}"}
+Txt: C0 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.0,2.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"2\"}"}
+Txt: C0 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.0,2.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"3\"}"}
+Txt: C0 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.0,3.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"4\"}"}
+Txt: C0 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.0,1.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"0\"}"}
+Txt: C0 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.0,1.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"1\"}"}
+Txt: C0 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[1.0,2.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"2\"}"}
+Txt: C0 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[2.0,2.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"3\"}"}
+Txt: C0 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.0,3.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"4\"}"}
+Txt: C1 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.0,3.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"4\"}"}
+Txt: C1 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.0,4.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"5\"}"}
+Txt: C1 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[5.0,4.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"6\"}"}
+Txt: C1 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.0,5.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"7\"}"}
+Txt: C1 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[5.0,5.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"8\"}"}
+Txt: C1 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[3.0,3.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"4\"}"}
+Txt: C1 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.0,4.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"5\"}"}
+Txt: C1 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[5.0,4.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"6\"}"}
+Txt: C1 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[4.0,5.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"7\"}"}
+Txt: C1 Vec: {"class":"org.apache.mahout.matrix.SparseVector","vector":"{\"values\":{\"indices\":[0,1],\"values\":[5.0,5.0],\"numMappings\":2},\"cardinality\":2,\"lengthSquared\":-1.0,\"name\":\"8\"}"}
+09/08/17 10:50:09 INFO canopy.CanopyDriver: Input: testdata Out: output/canopies Measure: org.apache.mahout.utils.EuclideanDistanceMeasure t1: 3.1 t2: 2.1 Vector Class: SparseVector
+09/08/17 10:50:09 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:09 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:09 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:09 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:10 INFO mapred.JobClient: Running job: job_local_0005
+09/08/17 10:50:10 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:10 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:10 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:10 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:10 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:10 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:10 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:10 INFO mapred.TaskRunner: Task:attempt_local_0005_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:10 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/file1:0+557
+09/08/17 10:50:10 INFO mapred.TaskRunner: Task 'attempt_local_0005_m_000000_0' done.
+09/08/17 10:50:10 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:10 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:10 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:10 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:10 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:10 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:10 INFO mapred.TaskRunner: Task:attempt_local_0005_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:10 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/file2:0+557
+09/08/17 10:50:10 INFO mapred.TaskRunner: Task 'attempt_local_0005_m_000001_0' done.
+09/08/17 10:50:10 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:10 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:10 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 280 bytes
+09/08/17 10:50:10 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:11 INFO mapred.TaskRunner: Task:attempt_local_0005_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:11 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:11 INFO mapred.TaskRunner: Task attempt_local_0005_r_000000_0 is allowed to commit now
+09/08/17 10:50:11 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0005_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/canopies
+09/08/17 10:50:11 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:11 INFO mapred.TaskRunner: Task 'attempt_local_0005_r_000000_0' done.
+09/08/17 10:50:11 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:11 INFO mapred.JobClient: Job complete: job_local_0005
+09/08/17 10:50:11 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:11 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:11 INFO mapred.JobClient:     FILE_BYTES_READ=243246
+09/08/17 10:50:11 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=467779
+09/08/17 10:50:11 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:11 INFO mapred.JobClient:     Reduce input groups=1
+09/08/17 10:50:11 INFO mapred.JobClient:     Combine output records=0
+09/08/17 10:50:11 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:11 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:11 INFO mapred.JobClient:     Reduce output records=2
+09/08/17 10:50:11 INFO mapred.JobClient:     Spilled Records=12
+09/08/17 10:50:11 INFO mapred.JobClient:     Map output bytes=264
+09/08/17 10:50:11 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:11 INFO mapred.JobClient:     Combine input records=0
+09/08/17 10:50:11 INFO mapred.JobClient:     Map output records=6
+09/08/17 10:50:11 INFO mapred.JobClient:     Reduce input records=6
+09/08/17 10:50:11 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:11 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:11 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:11 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:12 INFO mapred.JobClient: Running job: job_local_0006
+09/08/17 10:50:12 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:12 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:12 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:12 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:12 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:12 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:12 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:12 INFO mapred.TaskRunner: Task:attempt_local_0006_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:12 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/file1:0+557
+09/08/17 10:50:12 INFO mapred.TaskRunner: Task 'attempt_local_0006_m_000000_0' done.
+09/08/17 10:50:12 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:12 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:12 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:12 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:12 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:12 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:12 INFO mapred.TaskRunner: Task:attempt_local_0006_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:12 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/file2:0+557
+09/08/17 10:50:12 INFO mapred.TaskRunner: Task 'attempt_local_0006_m_000001_0' done.
+09/08/17 10:50:12 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:12 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:12 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 804 bytes
+09/08/17 10:50:12 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:12 INFO mapred.TaskRunner: Task:attempt_local_0006_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:12 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:12 INFO mapred.TaskRunner: Task attempt_local_0006_r_000000_0 is allowed to commit now
+09/08/17 10:50:12 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0006_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/clusters
+09/08/17 10:50:12 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:12 INFO mapred.TaskRunner: Task 'attempt_local_0006_r_000000_0' done.
+09/08/17 10:50:13 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:13 INFO mapred.JobClient: Job complete: job_local_0006
+09/08/17 10:50:13 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:13 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:13 INFO mapred.JobClient:     FILE_BYTES_READ=292172
+09/08/17 10:50:13 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=559488
+09/08/17 10:50:13 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:13 INFO mapred.JobClient:     Reduce input groups=2
+09/08/17 10:50:13 INFO mapred.JobClient:     Combine output records=0
+09/08/17 10:50:13 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:13 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:13 INFO mapred.JobClient:     Reduce output records=20
+09/08/17 10:50:13 INFO mapred.JobClient:     Spilled Records=40
+09/08/17 10:50:13 INFO mapred.JobClient:     Map output bytes=760
+09/08/17 10:50:13 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:13 INFO mapred.JobClient:     Combine input records=0
+09/08/17 10:50:13 INFO mapred.JobClient:     Map output records=20
+09/08/17 10:50:13 INFO mapred.JobClient:     Reduce input records=20
+09/08/17 10:50:13 INFO canopy.CanopyDriver: Input: testdata Out: output/canopies Measure: org.apache.mahout.utils.UserDefinedDistanceMeasure t1: 3.1 t2: 2.1 Vector Class: SparseVector
+09/08/17 10:50:13 INFO jvm.JvmMetrics: Cannot initialize JVM Metrics with processName=JobTracker, sessionId= - already initialized
+09/08/17 10:50:13 WARN mapred.JobClient: Use GenericOptionsParser for parsing the arguments. Applications should implement Tool for the same.
+09/08/17 10:50:13 WARN mapred.JobClient: No job jar file set.  User classes may not be found. See JobConf(Class) or JobConf#setJar(String).
+09/08/17 10:50:13 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:14 INFO mapred.JobClient: Running job: job_local_0007
+09/08/17 10:50:14 INFO mapred.FileInputFormat: Total input paths to process : 2
+09/08/17 10:50:14 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:14 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:14 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:14 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:14 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:14 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:14 INFO mapred.TaskRunner: Task:attempt_local_0007_m_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:14 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/file1:0+557
+09/08/17 10:50:14 INFO mapred.TaskRunner: Task 'attempt_local_0007_m_000000_0' done.
+09/08/17 10:50:14 INFO mapred.MapTask: numReduceTasks: 1
+09/08/17 10:50:14 INFO mapred.MapTask: io.sort.mb = 100
+09/08/17 10:50:14 INFO mapred.MapTask: data buffer = 79691776/99614720
+09/08/17 10:50:14 INFO mapred.MapTask: record buffer = 262144/327680
+09/08/17 10:50:14 INFO mapred.MapTask: Starting flush of map output
+09/08/17 10:50:14 INFO mapred.MapTask: Finished spill 0
+09/08/17 10:50:14 INFO mapred.TaskRunner: Task:attempt_local_0007_m_000001_0 is done. And is in the process of commiting
+09/08/17 10:50:14 INFO mapred.LocalJobRunner: file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/testdata/file2:0+557
+09/08/17 10:50:14 INFO mapred.TaskRunner: Task 'attempt_local_0007_m_000001_0' done.
+09/08/17 10:50:14 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:14 INFO mapred.Merger: Merging 2 sorted segments
+09/08/17 10:50:14 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 280 bytes
+09/08/17 10:50:14 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:14 INFO mapred.TaskRunner: Task:attempt_local_0007_r_000000_0 is done. And is in the process of commiting
+09/08/17 10:50:14 INFO mapred.LocalJobRunner: 
+09/08/17 10:50:14 INFO mapred.TaskRunner: Task attempt_local_0007_r_000000_0 is allowed to commit now
+09/08/17 10:50:14 INFO mapred.FileOutputCommitter: Saved output of task 'attempt_local_0007_r_000000_0' to file:/Volumes/tb/grantingersoll/projects/lucid/content/developerWorks/mahout/intro_to_mahout/mahout-src/core/output/canopies
+09/08/17 10:50:14 INFO mapred.LocalJobRunner: reduce > reduce
+09/08/17 10:50:14 INFO mapred.TaskRunner: Task 'attempt_local_0007_r_000000_0' done.
+09/08/17 10:50:15 INFO mapred.JobClient:  map 100% reduce 100%
+09/08/17 10:50:15 INFO mapred.JobClient: Job complete: job_local_0007
+09/08/17 10:50:15 INFO mapred.JobClient: Counters: 13
+09/08/17 10:50:15 INFO mapred.JobClient:   FileSystemCounters
+09/08/17 10:50:15 INFO mapred.JobClient:     FILE_BYTES_READ=343926
+09/08/17 10:50:15 INFO mapred.JobClient:     FILE_BYTES_WRITTEN=655060
+09/08/17 10:50:15 INFO mapred.JobClient:   Map-Reduce Framework
+09/08/17 10:50:15 INFO mapred.JobClient:     Reduce input groups=1
+09/08/17 10:50:15 INFO mapred.JobClient:     Combine output records=0
+09/08/17 10:50:15 INFO mapred.JobClient:     Map input records=18
+09/08/17 10:50:15 INFO mapred.JobClient:     Reduce shuffle bytes=0
+09/08/17 10:50:15 INFO mapred.JobClient:     Reduce output records=2
+09/08/17 10:50:15 INFO mapred.JobClient:     Spilled Records=12
+09/08/17 10:50:15 INFO mapred.JobClient:     Map output bytes=264
+09/08/17 10:50:15 INFO mapred.JobClient:     Map input bytes=918
+09/08/17 10:50:15 INFO mapred.JobClient:     Combine input records=0
+09/08/17 10:50:15 INFO mapred.JobClient:     Map output records=6
+09/08/17 10:50:15 INFO mapred.JobClient:     Reduce input records=6
