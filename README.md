@@ -2,14 +2,16 @@
 Tweet classification with Wikipedia Dataset
 
 ----------------------------------------------
-How to run the classification program :
+1. How to run the classification program :
  
-0. Under data_preprocess/words/
-unzip file "bag_total.txt.tar", make sure file "bag_total.txt" is under data_preprocess/words/, no extra inner directory
+1.1 Under data_preprocess/words/
+unzip file "bag_total.txt.tar", 
+make sure file "bag_total.txt" is under data_preprocess/words/, no extra inner directory
 
-( 0.5 make sure Maven plug-in is installed :
+( 1.2 make sure Maven plug-in is installed :
 If not installed :
 In Linux system, run : sudo apt-get install maven
+
 In windows, install from m2e Marketplace : 
 * Click Window -> Preferences -> Maven -> Discovery -> Open Catalog
 * Select m2e-subclipse then click Finish.
@@ -21,15 +23,15 @@ you need to install the m2eclipse plugin first from the Eclipse update site http
 You'll also need to install the m2e-wtp plugin from the m2e Marketplace.
 )
 
-1. In Eclipse, import Maven project 
+1.3 In Eclipse, import Maven project 
 File--> Import --> Maven --> Existing Maven Projects
 Browse file "pom.xml" under TweetClassification
 
-2. In Eclipse, Run the entry point
-go to NaiveBayes package, run "Run.java" 
+1.4 In Eclipse, Run the entry point
+under "src/NaiveBayes/", run "Run.java" 
 
 ------------------------------------------------
 
-How to reconstruct Bag of Words from Wikipedia dataset : 
+2. How to reconstruct Bag of Words from Wikipedia dataset : 
 
 See "apache-mahout-example/Readme.txt"
