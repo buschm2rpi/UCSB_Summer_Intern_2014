@@ -1,4 +1,5 @@
-
+How to reconstruct Bag of Words from Wikipedia Dataset
+(The results of this step have already in the "data_preprocess/" directory. So user doesn't need to do these steps.)
 
 1. go to TweetClassification/apache-mahout-examples/, (the enwiki-latest-pages-articles.xml is under wikipedia folder)
 2. go to "mahout-src/examples/src/test/resources/subjects.txt", in this file , you can set up the topic(or I should say wiki category you want to classify)
